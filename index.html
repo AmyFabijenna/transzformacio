@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amy Lang - Tudatos Transzformáció Tanácsadás | Életfordulók, Feng Shui, Sámánizmus</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Energetikai kísérés életfordulókban: Szakmai újraorientáció, Feng Shui tanácsadás, sámáni folyamatkísérés. 20+ év tapasztalat. Ingyenes első beszélgetés.">
+    <meta name="keywords" content="Energetikus Magyarország, Feng Shui tanácsadás, sámáni kísérés, életfordulók, szakmai újraorientáció, energetikai munka, folyamatkísérés">
+    <meta name="author" content="Amy Lang">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #f5e6e8 0%, #ffe4e9 50%, #f5e6e8 100%);
+            color: #000000;
+            line-height: 1.8;
+            min-height: 100vh;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+            background: linear-gradient(135deg, #f5e6e8 0%, #ffe4e9 50%, #f5e6e8 100%);
+        }
+
+        /* Blog Link - Jobb felső sarokban */
+        .blog-link-container {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            z-index: 100;
+        }
+
+        .blog-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: rgba(184, 134, 11, 0.1);
+            border: 2px solid #B8860B;
+            border-radius: 50px;
+            color: #000000;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            backdrop-filter: blur(10px);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 15px rgba(184, 134, 11, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+        }
+
+        .blog-link:hover {
+            background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 50%, #C5B358 100%);
+            border-color: #D4AF37;
+            color: #000000;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4), 0 0 20px rgba(212, 175, 55, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+        }
+
+        .blog-icon {
+            font-size: 1.1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .blog-link:hover .blog-icon {
+            transform: scale(1.2) rotate(5deg);
+        }
+
+        /* Main Heading */
+        h1 {
+            font-size: clamp(3rem, 12vw, 8rem);
+            font-weight: 200;
+            letter-spacing: 0.3em;
+            margin: 0;
+            background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 25%, #E6D399 50%, #C5B358 75%, #D4AF37 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradientShift 8s ease infinite;
+            filter: drop-shadow(0 4px 8px rgba(184, 134, 11, 0.4)) drop-shadow(0 0 20px rgba(212, 175, 55, 0.3));
+            position: relative;
+        }
+
+        /* Subtitle */
+        .subtitle {
+            font-size: clamp(1.2rem, 3vw, 2rem);
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-style: italic;
+            font-weight: 400;
+            margin: 1rem 0;
+            letter-spacing: 0.15em;
+        }
+
+        /* Tagline */
+        .tagline {
+            font-size: clamp(1rem, 2vw, 1.3rem);
+            color: #000000;
+            max-width: 700px;
+            margin: 2rem auto 3rem;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        /* CTA Button */
+        .cta-button {
+            position: relative;
+            display: inline-block;
+            padding: 1.5rem 4rem;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #000;
+            text-decoration: none;
+            background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 25%, #E6D399 50%, #C5B358 75%, #D4AF37 100%);
+            background-size: 200% auto;
+            border: 3px solid #B8860B;
+            border-radius: 60px;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 10px 40px rgba(184, 134, 11, 0.35), 0 4px 15px rgba(212, 175, 55, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.4), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+            letter-spacing: 0.08em;
+            animation: pulse 3s ease-in-out infinite, shimmer 4s linear infinite;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+            transform: scale(0);
+            transition: transform 0.6s ease-out;
+        }
+
+        .cta-button:hover::before {
+            transform: scale(1);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 15px 60px rgba(212, 175, 55, 0.5), 0 8px 25px rgba(184, 134, 11, 0.4), 0 0 30px rgba(212, 175, 55, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+            background-position: right center;
+        }
+
+        .cta-button:active {
+            transform: translateY(-2px) scale(0.98);
+        }
+
+        .cta-glow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, rgba(255, 255, 255, 0.3), transparent 70%);
+            border-radius: 60px;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .cta-button:hover .cta-glow {
+            opacity: 1;
+        }
+
+        .cta-text {
+            position: relative;
+            z-index: 1;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 10px 40px rgba(184, 134, 11, 0.35), 0 4px 15px rgba(212, 175, 55, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.4); }
+            50% { box-shadow: 0 15px 50px rgba(212, 175, 55, 0.45), 0 8px 25px rgba(184, 134, 11, 0.4), 0 0 20px rgba(212, 175, 55, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.5); }
+        }
+
+        @keyframes shimmer {
+            0% { background-position: -200% center; }
+            100% { background-position: 200% center; }
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        /* Section Styling */
+        section {
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(15px);
+            border-radius: 30px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 10px 40px rgba(184, 134, 11, 0.15);
+            border: 2px solid rgba(184, 134, 11, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(212, 175, 55, 0.25);
+        }
+
+        h2 {
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 2.5rem;
+            font-weight: 300;
+            text-align: center;
+            margin-bottom: 2rem;
+            letter-spacing: 2px;
+        }
+
+        h3 {
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 1.8rem;
+            font-weight: 400;
+            margin: 2rem 0 1rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: #000000;
+        }
+
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        li {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 0.8rem;
+            color: #000000;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2rem;
+            border: 2px solid rgba(184, 134, 11, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+            border-color: #D4AF37;
+        }
+
+        .service-card h3 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        /* Pricing */
+        .pricing-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .pricing-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2rem;
+            border: 2px solid rgba(184, 134, 11, 0.3);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+        }
+
+        .pricing-card.featured {
+            border: 3px solid #D4AF37;
+            box-shadow: 0 10px 40px rgba(212, 175, 55, 0.4);
+        }
+
+        .price {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin: 1rem 0;
+        }
+
+        /* Testimonial */
+        .testimonial {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(184, 134, 11, 0.15));
+            border-left: 5px solid #D4AF37;
+            padding: 2rem;
+            border-radius: 15px;
+            font-style: italic;
+            margin: 2rem 0;
+        }
+
+        .testimonial-author {
+            text-align: right;
+            font-weight: bold;
+            margin-top: 1rem;
+            color: #B8860B;
+        }
+
+        /* Zen Cat */
+        .zen-cat {
+            max-width: 400px;
+            margin: 0 auto 2rem;
+            text-align: center;
+        }
+
+        .zen-cat img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(184, 134, 11, 0.3);
+            border: 3px solid rgba(184, 134, 11, 0.3);
+        }
+
+        .zen-cat-caption {
+            margin-top: 1rem;
+            font-style: italic;
+            color: #B8860B;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #000000;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #B8860B;
+            text-decoration: none;
+            margin: 0 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #D4AF37;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 3rem;
+                letter-spacing: 0.2em;
+            }
+
+            .cta-button {
+                padding: 1rem 2rem;
+                font-size: 1.1rem;
+            }
+
+            section {
+                padding: 2rem 1.5rem;
+            }
+
+            .blog-link-container {
+                top: 1rem;
+                right: 1rem;
+            }
+
+            .blog-link {
+                padding: 0.5rem 1rem;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Blog Link - Jobb felső sarokban -->
+    <div class="blog-link-container">
+        <a href="blog/index.html" class="blog-link" target="_blank">
+            <span class="blog-icon">📝</span>
+            <span>BLOG</span>
+        </a>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>TRANSZFORMÁCIÓ</h1>
+        <p class="subtitle">Tudatos Transzformáció Tanácsadás</p>
+        <p class="tagline">Amikor tudod, hogy változásra van szükséged, de nem tudod, hogyan kezdj hozzá. Itt vagyok, hogy melletted álljak.</p>
+        <a href="start.html" class="cta-button">
+            <span class="cta-glow"></span>
+            <span class="cta-text">INGYENES ELSŐ BESZÉLGETÉS</span>
+        </a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Intro -->
+        <section>
+            <h2>Üdvözöllek</h2>
+            <p>Én Amy vagyok. Tanácsadóként kísérek embereket életfordulókon keresztül – szakmai újraorientációban, sámáni munkában, Feng Shui tanácsadásban.</p>
+            <p>Magyarországról online dolgozom veled – Graz-ból, ahol élek és dolgozom. 20+ év tapasztalattal rendelkezem különböző módszerekkel a személyes fejlődés, energiamunka és testi tudatosság terén.</p>
+            <p><strong>Ez nem terápia. Hanem tudatos tanácsadás azok számára, akik készen állnak a cselekvésre.</strong></p>
+        </section>
+
+        <!-- What I Offer -->
+        <section>
+            <h2>Hogyan tudok segíteni</h2>
+            <p>Három területen dolgozom – mindegyik egyedi módon támogat az életeden való változtatásban:</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Sámáni Kísérés</h3>
+                    <p>Mély, spirituális munka, amikor konkrét lépéseket akarsz tenni, de energetikai támogatásra van szükséged. Rituálék, energiamunka, kapcsolat a saját erőforrásaiddal.</p>
+                    <p><strong>Neked való, ha:</strong> Nyitott vagy a spirituális megközelítésre és érzed, hogy többről van szó, mint amit csak az ész meg tud ragadni.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Feng Shui Tanácsadás</h3>
+                    <p>Az otthonod vagy munkahelyiséged energetikai elemzése. Nem csak "csináld át a nappalid" – hanem: Hol akad el az energia? Mit kell megváltoztatni, hogy az életed áramoljon?</p>
+                    <p><strong>Neked való, ha:</strong> Érzel valamit az otthonodban/irodádban, ami nem stimmel, és tudod, hogy a terek energiája hatással van rád.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Életfordulók – Szakmai Újraorientáció</h3>
+                    <p>Ha tudod, hogy változásra van szükséged a munkádban vagy életedben, de nem tudod, hogyan kezdj hozzá. Strukturált kísérés, tiszta lépések – gyakorlatias, de energetikai mélységgel.</p>
+                    <p><strong>Neked való, ha:</strong> Szakmai vagy személyes fordulópontban állsz és nem tudod, hogyan tovább.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- For Whom Section -->
+        <section>
+            <h2>Kinek való ez a munka?</h2>
+            <p><strong>Itt jó helyen vagy, ha:</strong></p>
+            <ul style="list-style: none; padding-left: 0;">
+                <li style="background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 500;"><span style="font-weight: bold;">✓</span> Fordulópontban állsz – szakmailag vagy személyesen</li>
+                <li style="background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 500;"><span style="font-weight: bold;">✓</span> Érzed, hogy valami nincs rendben és változásra van szükséged</li>
+                <li style="background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 500;"><span style="font-weight: bold;">✓</span> Készen állsz arra, hogy őszintén ránézz – kifogások nélkül</li>
+                <li style="background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 500;"><span style="font-weight: bold;">✓</span> Konkrét lépéseket akarsz tenni, nem csak beszélni</li>
+                <li style="background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 500;"><span style="font-weight: bold;">✓</span> Spirituális vagy energetikai támogatást keresel</li>
+            </ul>
+            
+            <p style="margin-top: 2rem;"><strong>NEM vagy itt jó helyen, ha:</strong></p>
+            <ul style="list-style: none; padding-left: 0;">
+                <li style="background: linear-gradient(135deg, #888888 0%, #A8A8A8 25%, #707070 50%, #999999 75%, #888888 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 500;">❌ Gyors megoldásokat keresel saját hozzájárulás nélkül</li>
+                <li style="background: linear-gradient(135deg, #888888 0%, #A8A8A8 25%, #707070 50%, #999999 75%, #888888 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 500;">❌ Főleg a problémákról akarsz beszélni, változás nélkül</li>
+                <li style="background: linear-gradient(135deg, #888888 0%, #A8A8A8 25%, #707070 50%, #999999 75%, #888888 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 500;">❌ Terápiás támogatásra van szükséged pszichés betegségeknél</li>
+                <li style="background: linear-gradient(135deg, #888888 0%, #A8A8A8 25%, #707070 50%, #999999 75%, #888888 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 500;">❌ Nem vagy kész arra, hogy az ülések között aktívan cselekedj</li>
+            </ul>
+        </section>
+
+        <!-- Pricing Section -->
+        <section>
+            <h2>Befektetés a transzformációdba</h2>
+            
+            <div class="pricing-container">
+                <div class="pricing-card">
+                    <h3>Egyéni Alkalom</h3>
+                    <div class="price">80€</div>
+                    <p>60 perces intenzív kísérés videón keresztül</p>
+                    <p>Minden területre: Sámáni munka, Feng Shui vagy életfordulók</p>
+                </div>
+
+                <div class="pricing-card featured">
+                    <h3>Transzformációs Csomag</h3>
+                    <div class="price">450€</div>
+                    <p>6 alkalom 3 hónap alatt</p>
+                    <p>= 75€/alkalom (30€ megtakarítás)</p>
+                    <p><strong>Mély folyamatmunka egy témára fókuszálva</strong></p>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Feng Shui Tanácsadás</h3>
+                    <div class="price">150€-tól</div>
+                    <p>Helyszínen vagy alaprajz-elemzés útján</p>
+                    <p>Egyéni energiaelemzés tereidről írásos jelentéssel</p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="start.html" class="cta-button" style="display: inline-block;">
+                    <span class="cta-glow"></span>
+                    <span class="cta-text">📅 INGYENES ELSŐ BESZÉLGETÉS FOGLALÁSA</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Qualifications -->
+        <section>
+            <h2>Háttérem</h2>
+            <p>Több mint 20 év intenzív munka különböző módszerekkel a személyes fejlődés, energetikai munka és testi tudatosság terén:</p>
+            
+            <h3>Testmunka & Energia</h3>
+            <p>Pilates-oktató tanúsítvány, Tai Chi (Lorenz Huber), Qi Gong (Wei Ling Yi), Yoga & Kundalini Yoga (Akos PrAkash Vörös, MariLou Zettl)</p>
+            
+            <h3>Sámánizmus & Spirituális Gyakorlat</h3>
+            <p>Sámánizmus (Dr. Ernestina Mazza, Akos PrAkash Vörös), Shamanism in Your Home (Odette Nightsky), Buddhista meditáció (Béla F. Galló), Számos Enlightenment Intensive (Akos PrAkash Vörös, Esra Salman)</p>
+            
+            <h3>Térenergetika</h3>
+            <p>Feng Shui képzés (Hajnal Fény Diké)</p>
+            
+            <h3>Személyiségfejlesztés</h3>
+            <p>Enneagramma-terápia, Die Lehre vom Sein (Roland), 20+ év tapasztalat DAF/DAZ oktatóként, Egyetemi diploma nyelvek és kommunikáció terén</p>
+        </section>
+
+        <!-- Testimonials -->
+        <section>
+            <h2>Sikertörténetek</h2>
+            
+            <div class="testimonial">
+                "3 hónap után Amy-vel végre megvolt a tisztánlátás, amire szükségem volt: felmondtam segédmunkás állásomban és elindultam azon a karrierúton, amiről évekig csak álmodtam. Mielőtt Amy-vel találkoztam, álmom elérhetetlennek tűnt – csak fantázia. Az ő támogatásával megvolt a bátorságom minden szükséges lépést megtenni és elkezdeni a képzési utat. Ma járműtechnikát tanulok és közelebb vagyok a célomhoz, mint valaha."
+                <div class="testimonial-author">– M., 28</div>
+            </div>
+
+            <p><strong>További sikerek a gyakorlatomból:</strong></p>
+            <ul>
+                <li>✓ Kiégéstől a nagyvállalatnál a beteljesítő munkáig a szociális szektorban</li>
+                <li>✓ "Nem tudom, mit akarok"-tól az "Ez az én utam"-ig</li>
+                <li>✓ Kétségtől a bátor szakmai újraorientációig</li>
+                <li>✓ Energetikai blokádtól az új életáramlásig Feng Shui tanácsadás után</li>
+            </ul>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="contact" style="text-align: center;">
+            <div class="zen-cat">
+                <img src="images/lea2022.png" alt="Zen-nagymester Lea ;-)">
+                <div class="zen-cat-caption">Zen-nagymester Lea ;-)</div>
+            </div>
+            <h2>Készen állsz a transzformációdra?</h2>
+            <p style="font-size: 1.2rem; max-width: 700px; margin: 2rem auto;">Beszéljünk. Írj nekem vagy hívj.</p>
+            
+            <div style="margin: 3rem 0;">
+                <p style="font-size: 1.5rem; font-weight: bold; background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Így megy tovább:</p>
+                <ol style="text-align: left; max-width: 600px; margin: 2rem auto; font-size: 1.1rem;">
+                    <li>Írj nekem: "Készen állok"</li>
+                    <li>Küldök 3 kérdést előkészítésre</li>
+                    <li>Ingyenes első beszélgetés (20 perc)</li>
+                    <li>Ha passzol, foglaljuk le az első alkalmadat</li>
+                </ol>
+            </div>
+            
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin: 2rem 0;">
+                <a href="/cdn-cgi/l/email-protection#98f9f5e1f4f9f6d8f1f3b6f5fd" class="cta-button" style="display: inline-block;">
+                    <span class="cta-glow"></span>
+                    <span class="cta-text">✉️ ÍRJ NEKEM</span>
+                </a>
+                
+                <a href="https://wa.me/436764568891?text=Szia%20Amy%2C%20k%C3%A9szen%20%C3%A1llok%20a%20transzform%C3%A1ci%C3%B3mra" class="cta-button" style="display: inline-block;">
+                    <span class="cta-glow"></span>
+                    <span class="cta-text">💬 WHATSAPP</span>
+                </a>
+                
+                <a href="start.html" class="cta-button" style="display: inline-block;">
+                    <span class="cta-glow"></span>
+                    <span class="cta-text">📅 ELSŐ BESZÉLGETÉS FOGLALÁSA</span>
+                </a>
+            </div>
+            
+            <p style="margin-top: 3rem; font-size: 0.9rem; color: #000000;">
+                <strong style="background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-size: 1.1rem;">Fontos:</strong> Nem mindenkit fogadok el. Kitöltesz egy űrlapot. Én döntöm el, hogy passzolunk-e. Csak olyan emberekkel dolgozom, akik TÉNYLEG készek.
+            </p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            <a href="faq.html">GYIK</a> | 
+            <a href="aszf.html">ÁSZF</a> | 
+            <a href="adatvedelem.html">Adatvédelem</a> | 
+            <a href="blog/index.html" target="_blank">Blog</a>
+        </p>
+        <p style="margin-top: 1rem;">Amy Lang - Transzformáció | Energetikai Kísérés & Átalakulás</p>
+        <p>© 2025 Minden jog fenntartv

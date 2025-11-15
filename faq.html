@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYIK - Gyakran Ismételt Kérdések | Amy Lang - Energetikai Kísérés & Transzformáció</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #f5e6e8 0%, #ffe4e9 50%, #f5e6e8 100%);
+            min-height: 100vh;
+            line-height: 1.6;
+            color: #000000;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 8px 32px rgba(184, 134, 11, 0.2);
+            border: 2px solid rgba(184, 134, 11, 0.3);
+        }
+
+        h1 {
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #0d2137;
+            margin-bottom: 20px;
+        }
+
+        .back-link {
+            display: inline-block;
+            background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 50%, #C5B358 100%);
+            color: #000000;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: 2px solid #B8860B;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 15px rgba(184, 134, 11, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+        }
+
+        .back-link:hover {
+            background: linear-gradient(135deg, #CFB53B 0%, #D4AF37 50%, #E6D399 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+        }
+
+        .faq-section {
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(184, 134, 11, 0.15);
+            border: 2px solid rgba(184, 134, 11, 0.3);
+        }
+
+        .faq-section h2 {
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        .faq-item {
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 15px;
+            margin-bottom: 20px;
+            border: 2px solid rgba(184, 134, 11, 0.3);
+            overflow: hidden;
+            backdrop-filter: blur(5px);
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+            border-color: #D4AF37;
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1.1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.4);
+            color: #000000;
+        }
+
+        .faq-question:hover {
+            background: rgba(212, 175, 55, 0.1);
+        }
+
+        .faq-icon {
+            color: #B8860B;
+            font-size: 1.5em;
+            transition: transform 0.3s ease;
+            font-weight: bold;
+        }
+
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.3);
+            color: #000000;
+        }
+
+        .faq-answer.active {
+            padding: 20px;
+            max-height: 2000px;
+        }
+
+        .faq-answer p {
+            margin-bottom: 15px;
+        }
+
+        .faq-answer p:last-child {
+            margin-bottom: 0;
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.15), rgba(184, 134, 11, 0.2));
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #D4AF37;
+            margin: 15px 0;
+        }
+
+        .contact-promo {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 15px;
+            padding: 25px;
+            margin-top: 40px;
+            border: 2px solid rgba(184, 134, 11, 0.3);
+            box-shadow: 0 8px 32px rgba(184, 134, 11, 0.15);
+        }
+
+        .contact-promo h3 {
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .whatsapp-link {
+            display: inline-block;
+            background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 50%, #C5B358 100%);
+            color: #000000;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+            border: 2px solid #B8860B;
+            box-shadow: 0 4px 15px rgba(184, 134, 11, 0.3);
+        }
+
+        .whatsapp-link:hover {
+            background: linear-gradient(135deg, #CFB53B 0%, #D4AF37 50%, #E6D399 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #000000;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .faq-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gyakran Ismételt Kérdések</h1>
+            <p class="subtitle">Amy Lang - Transzformáció | Energetikai Kísérés</p>
+            <a href="index.html" class="back-link">← Vissza a főoldalra</a>
+        </header>
+
+        <section class="faq-section">
+            <h2>Az Energetikai Kísérésről</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Mi az energetikai kísérés? Terápia ez?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p><strong>Nem, ez nem terápia.</strong> Energetikusként az osztrák ipari törvény szerint (freies Gewerbe) dolgozom. Ez azt jelenti:</p>
+                    <p>• Nem vagyok pszichoterapeuta vagy orvos<br>
+                    • Nem gyógyítok pszichés betegségeket vagy orvosi problémákat<br>
+                    • Strukturált kísérést nyújtok életfordulókban, szakmai újraorientációban és energetikai munkában</p>
+                    <div class="highlight">
+                        <p><strong>Amire fókuszálok:</strong> Tisztánlátás, konkrét lépések, energetikai támogatás változási folyamatokban. Ha terápiás kezelésre van szükséged (pl. depresszió, szorongás, trauma), mondom neked nyíltan és segítek megtalálni a megfelelő támogatást.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Milyen módszereket használsz?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>A munkám több módszeren alapul, amelyeket 20+ év alatt tanultam és gyakoroltam:</p>
+                    <p><strong>Sámáni munka:</strong> Rituálék, energiamunka, kapcsolat a saját erőforrásaiddal<br>
+                    <strong>Feng Shui:</strong> Terek energetikai elemzése és harmonizálása<br>
+                    <strong>Folyamatkísérés:</strong> Strukturált beszélgetések, tiszta lépések, gyakorlati feladatok<br>
+                    <strong>Testtudat:</strong> Kapcsolat tested jelzéseivel (20+ év tapasztalat Pilatesben, Tai Chi-ban, Jógában)</p>
+                    <p>Minden folyamat egyedi – ami működik neked, azt használom.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Miért online? Nem jobb lenne személyesen?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Graz-ban élek (Ausztria), de Magyarországról is dolgozom kliensekkel online. Tapasztalatom szerint az online munka ugyanolyan intenzív és hatékony, mint a személyes.</p>
+                    <p><strong>Előnyök:</strong></p>
+                    <p>• Otthonodon maradhatsz – kényelmes, ismerős környezetben<br>
+                    • Nincs utazás – időt és pénzt spórolsz<br>
+                    • Rugalmasabb időpontok<br>
+                    • Az energetikai munka ugyanúgy működik távolról</p>
+                    <p><strong>Feng Shui tanácsadást</strong> alaprajz-elemzés útján is végzek – nem kell személyesen jelen lennem.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2>Gyakorlati Információk</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Mennyibe kerül? Milyen fizetési lehetőségek vannak?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="highlight">
+                        <p><strong>Egyéni alkalom (60 perc):</strong> 80€<br>
+                        <strong>Transzformációs csomag (6 alkalom):</strong> 450€ = 75€/alkalom (30€ megtakarítás)<br>
+                        <strong>Feng Shui tanácsadás:</strong> 150€-tól (egyéni árazás az igények szerint)</p>
+                    </div>
+                    <p><strong>Fizetés:</strong> Előre, az alkalom előtt banki átutalással vagy PayPal-lal. Az első alkalom foglalása után küldöm a számlát.</p>
+                    <p><strong>ÁFA:</strong> Kisvállalatként ÁFA-mentes tevékenységet folytatok (osztrák szabályozás szerint).</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Hogyan zajlik egy alkalom?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p><strong>Online videón keresztül (kMeet):</strong> Biztonságos, svájci videoplatform – nem kell telepíteni, böngészőben működik.</p>
+                    <p><strong>Az alkalom felépítése (60 perc):</strong></p>
+                    <p>1. <strong>Helyzetfelmérés:</strong> Hol állsz most? Mi történt az utolsó alkalom óta?<br>
+                    2. <strong>Fő téma:</strong> Mire fókuszálunk ma?<br>
+                    3. <strong>Munka:</strong> Beszélgetés, energetikai gyakorlatok, vagy sámáni elemek (a helyzettől függően)<br>
+                    4. <strong>Konkrét lépések:</strong> Mit teszel a következő alkalomig?</p>
+                    <p>Az alkalmak között is dolgozhatsz – kapod tőlem a feladatokat/gyakorlatokat.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Milyen gyakran találkozunk?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p><strong>Egyéni alkalmak:</strong> Amikor szükséged van rá. Foglalsz egy időpontot, találkozunk.</p>
+                    <p><strong>Transzformációs csomag:</strong> 6 alkalom 3 hónap alatt = kb. kéthetente 1 alkalom. Ez elegendő időt ad arra, hogy lépéseket tegyél az alkalmak között.</p>
+                    <p>Rugalmasság: Ha intenzívebb munkára van szükséged, gyakrabban is találkozhatunk. Ha lassabb tempóra, ritkábban.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Mennyi idő kell, hogy eredményeket lássak?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Ez egyénenként változik – függ tőled, a helyzetedtől és attól, mennyit csinálsz az alkalmak között.</p>
+                    <p><strong>Tapasztalat:</strong></p>
+                    <p>• <strong>2-3 alkalom után:</strong> Első tisztánlátás – tudod, mi a következő lépés<br>
+                    • <strong>6 alkalom után (Transzformációs csomag):</strong> Jelentős változások a gondolkodásban és cselekvésben<br>
+                    • <strong>Feng Shui után:</strong> Sokan azonnal érzik a változást a terekben</p>
+                    <div class="highlight">
+                        <strong>Fontos:</strong> Nem varázslat. Csak akkor működik, ha TÉ aktívan dolgozol rajta.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2>Foglalás és Lemondás</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Hogyan foglalok időpontot?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="highlight">
+                        <p><strong>1. lépés:</strong> Írj nekem: "Készen állok" (WhatsApp vagy email)</p>
+                        <p><strong>2. lépés:</strong> Küldök 3 kérdést előkészítésre (hogy felkészült legyél)</p>
+                        <p><strong>3. lépés:</strong> Ingyenes első beszélgetés (20 perc) - tisztázzuk, passzolunk-e</p>
+                        <p><strong>4. lépés:</strong> Ha passzol, foglaljuk le az első alkalmadat</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Elfogadsz mindenkit kliensként?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Nem. Csak olyan emberekkel dolgozom, akik tényleg készek cselekedni. Az első beszélgetés után eldöntöm, passzolunk-e.</p>
+                    <p>Ez nem a személyed elutasítása - hanem a megfelelőség és készségeid kérdése. Ha érzem, hogy más típusú támogatásra van szükséged (pl. terápia), őszintén mondom neked.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Van kedvezmény vagy részletfizetés?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>A Transzformációs csomag már kedvezőbb, mint 6 egyéni alkalom (30€ megtakarítás).</p>
+                    <p><strong>Részletfizetés:</strong> Pénzügyi nehézség esetén egyedileg megbeszélhetünk részletfizetést. Csak szólj nekem.</p>
+                    <p><strong>Szociális kedvezmény:</strong> Kivételes esetekben (munkanélküliség stb.) megállapodás szerint csökkentett árat ajánlhatok. Vedd fel velem a kapcsolatot az első beszélgetés előtt.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Mi a helyzet a lemondással/időpont áthelyezéssel?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="highlight">
+                        <p><strong>Lemondás legalább 48 órával az alkalom előtt:</strong> Az időpont elérhetőség szerint pótolható.</p>
+                        <p><strong>Rövidebb lemondás vagy meg nem jelenés:</strong> Az alkalom pótlás nélkül elveszik.</p>
+                    </div>
+                    <p><strong>Már befizetett alkalmak:</strong> A már befizetett alkalmak nem kerülnek visszatérítésre. A teljesítési kötelezettség abban áll, hogy a lefoglalt időpontokat felajánlom és rendelkezésre állok.</p>
+                    <p><strong>Technikai problémák esetén:</strong> Ha technikai problémák vannak oldaladról és az alkalom nem valósul meg, lehetőség szerint pótoljuk – de nem térül vissza.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2>Bizalmasság és Adatvédelem</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Bizalmasak a beszélgetések?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Igen, teljesen. Beszélgetéseink minden tartalma szigorúan bizalmas. Nem adok ki információt harmadik félnek.</p>
+                    <p><strong>Kivétel:</strong> Akut önveszélyeztetés vagy mások veszélyeztetése esetén kötelességem értesíteni a megfelelő hatóságokat.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Rögzítésre kerülnek az alkalmak?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Nem. Az alkalmak nem kerülnek rögzítésre. Ami a beszélgetéseinkben történik, közöttünk marad.</p>
+                    <p>Az alkalom során jegyzeteket készítek saját dokumentációmhoz, de ezek csak számomra vannak és bizalmasan kezelem őket.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Mi történik az adataimmal?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Csak a legszükségesebb adatokat tárolom (név, kapcsolattartási adatok, foglalási információk). Minden adat GDPR-konform és az osztrák adatvédelmi törvény (DSG) szerint kerül kezelésre.</p>
+                    <p>Bármikor kérheted tárolt adataid kivonatát vagy kérheted azok törlését.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2>Eredmények és Elvárások</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Garanciát adhatsz az eredményekre?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Nem. A kísérés sikere nagymértékben függ az aktív közreműködésedtől és megvalósításodtól. Strukturát, tisztánlátást és energetikai támogatást nyújtok - de a munkát neked kell elvégezned.</p>
+                    <p><strong>Amit garantálni tudok:</strong> Teljes figyelmet, őszinte visszajelzést, strukturált kísérést és 20 év tapasztalatot.</p>
+                    <p><strong>Amit neked kell hoznod:</strong> Készség a cselekvésre, őszinteség magaddal szemben, nyitottság a változásra.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Mi történik, ha a kísérés nem segít?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Ha 2-3 alkalom után nem látsz előrelépést, nyíltan meg kell beszélnünk. Néha egyszerűen nem passzol - vagy más típusú támogatásra van szükséged (pl. terápia).</p>
+                    <p>Ebben az esetben segítek megtalálni a megfelelő támogatást és közös megegyezéssel befejezzük az együttműködést.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Mi különböztet meg más energetikusoktól vagy coachoktól?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p><strong>Megközelítésem:</strong> Nem vagyok "feel-good-kísérő". Mondom, amit látok - még ha kényelmetlen is. Strukturált vagyok, pragmatikus, de mélységgel.</p>
+                    <p><strong>Tapasztalatom:</strong> 20 év munka emberekkel különböző összefüggésekben. Magam is ismerem a nagy változásokat és válságokat. Évek óta gyakorlom a sámánizmust és kiterjedt képzéseim vannak energetikai munkában.</p>
+                    <p><strong>Fókuszom:</strong> Konkrét lépések, valódi transzformáció. Nem csak spirituális beszéd - hanem az energia ÉS a struktúra összekapcsolása.</p>
+                    <p>Csak olyan emberekkel dolgozom, akik tényleg készek. Ez azt jelenti: Kisebb klienslétszám, de intenzívebb munka.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Spirituálisnak kell lennem vagy hinnem kell az energiában?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Életfordulóknál való kíséréshez: Nem. Nem kell spirituálisnak lenned. A munka gyakorlati és strukturált - energetikai komponenssel, ami azonban nem áll az előtérben.</p>
+                    <p>Sámáni kíséréshez: Igen, bizonyos nyitottság a spirituális munkára fontos. Nem kell "hinned benne", de késznek kell lenned arra, hogy bevond magad.</p>
+                    <p>Feng Shui-hoz: Nem kell az energiában "hinned" - sokan egyszerűen tapasztalják, hogy működik, amikor a terek másképp vannak kialakítva.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2>Technikai Kérdések</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Milyen technikai előfeltételekre van szükségem?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Szükséged lesz:</p>
+                    <p>• Számítógép, tablet vagy okostelefon kamerával<br>
+                    • Stabil internetkapcsolat<br>
+                    • Fülhallgató vagy headset (ajánlott a jobb hangminőségért)<br>
+                    • Csendes hely, ahol zavartalan vagy</p>
+                    <p>kMeet-et használunk - egy biztonságos, svájci videoplatformot. Nem kell alkalmazást telepítened, közvetlenül a böngészőben működik.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Mi van, ha technikai problémáim vannak?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Az első időpont előtt küldök egy teszt-linket, hogy ellenőrizhessük a technikát.</p>
+                    <p>Ha egy alkalom során technikai problémák merülnek fel, megpróbáljuk gyorsan megoldani. Vészhelyzet esetén telefonra váltunk vagy elhalasztjuk az időpontot - anélkül, hogy költségeid lennének.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="contact-promo">
+            <h3>További kérdéseid vannak?</h3>
+            <p>Szívesen válaszolok minden kérdésedre személyesen. Csak lépj kapcsolatba velem!</p>
+            <a href="/cdn-cgi/l/email-protection#5a3b3723363b341a333174373f" class="whatsapp-link">
+                ✉️ Írj nekem
+            </a>
+        </div>
+
+        <footer>
+            <p>Amy Lang - Transzformáció | Energetikai Kísérés & Átalakulás | © 2025 Minden jog fenntartva</p>
+        </footer>
+    </div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        function toggleFAQ(element) {
+            const faqItem = element.parentElement;
+            const answer = faqItem.querySelector('.faq-answer');
+            const icon = element.querySelector('.faq-icon');
+            
+            if (answer.classList.contains('active')) {
+                answer.classList.remove('active');
+                icon.textContent = '+';
+            } else {
+                answer.classList.add('active');
+                icon.textContent = '−';
+            }
+        }
+
+        // Az első GYIK elem alapértelmezett megnyitása
+        document.addEventListener('DOMContentLoaded', function() {
+            const firstFaq = document.querySele
