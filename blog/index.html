@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Amy Lang - Tudatos Transzformáció Tanácsadás</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="apple-touch-icon" href="../favicon.png">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Bepillantások a szakmai újratájékozódásba, személyes fejlődésbe és life coachingba. Amy Langtól.">
+    <meta name="keywords" content="Life Coaching Blog, Szakmai újratájékozódás, Személyes fejlődés, Karrierváltás, Változás">
+    <meta name="author" content="Amy Lang">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #f5e6e8 0%, #ffe4e9 50%, #f5e6e8 100%);
+            color: #000000;
+            line-height: 1.8;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px 40px;
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+            margin-bottom: 60px;
+            border: 2px solid rgba(184, 134, 11, 0.2);
+            box-shadow: 0 20px 60px rgba(184, 134, 11, 0.2);
+        }
+
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 300;
+            letter-spacing: 3px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #666666;
+            margin-bottom: 30px;
+        }
+
+        .back-home {
+            display: inline-block;
+            background: rgba(184, 134, 11, 0.1);
+            color: #000000;
+            padding: 10px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: 2px solid #B8860B;
+        }
+
+        .back-home:hover {
+            background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 50%, #C5B358 100%);
+            transform: translateY(-2px);
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .blog-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            overflow: hidden;
+            border: 2px solid rgba(184, 134, 11, 0.2);
+            box-shadow: 0 10px 40px rgba(184, 134, 11, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(184, 134, 11, 0.3);
+            border-color: #D4AF37;
+        }
+
+        .blog-image {
+            width: 100%;
+            height: 250px;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.3), rgba(197, 179, 88, 0.3));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4em;
+            overflow: hidden;
+        }
+
+        .blog-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .blog-content {
+            padding: 30px;
+        }
+
+        .blog-date {
+            color: #666666;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .blog-title {
+            color: #B8860B;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            font-weight: 400;
+            line-height: 1.3;
+        }
+
+        .blog-excerpt {
+            color: #333333;
+            font-size: 1.05em;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .read-more {
+            display: inline-block;
+            background: linear-gradient(135deg, #D4AF37 0%, #C5B358 100%);
+            color: #000000;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(212, 175, 55, 0.3);
+        }
+
+        .read-more:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.5);
+        }
+
+        .coming-soon {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            padding: 60px 40px;
+            text-align: center;
+            border: 2px solid rgba(184, 134, 11, 0.2);
+            margin-bottom: 40px;
+        }
+
+        .coming-soon h2 {
+            color: #B8860B;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .coming-soon p {
+            color: #666666;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .newsletter-form {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            gap: 10px;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 15px 20px;
+            border-radius: 25px;
+            border: 2px solid rgba(184, 134, 11, 0.3);
+            background: rgba(255, 255, 255, 0.8);
+            color: #000000;
+            font-size: 1em;
+        }
+
+        .newsletter-form input::placeholder {
+            color: #999999;
+        }
+
+        .newsletter-form button {
+            padding: 15px 30px;
+            border-radius: 25px;
+            border: none;
+            background: linear-gradient(135deg, #D4AF37 0%, #C5B358 100%);
+            color: #000000;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .newsletter-form button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.5);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #666666;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #666666;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #B8860B;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📖 Blog</h1>
+            <p class="subtitle">Gondolatok a változásról, egyértelműségről és valódi lépésekről</p>
+            <a href="../index.html" class="back-home">← Vissza a főoldalra</a>
+        </header>
+
+        <!-- Featured Post -->
+        <div style="background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(15px); border-radius: 30px; padding: 50px 40px; margin-bottom: 60px; border: 2px solid rgba(184, 134, 11, 0.3); box-shadow: 0 15px 50px rgba(212, 175, 55, 0.2);">
+            <div style="text-align: center; margin-bottom: 15px;">
+                <span style="background: linear-gradient(135deg, #D4AF37 0%, #C5B358 100%); color: #000000; padding: 8px 20px; border-radius: 20px; font-size: 0.9em; font-weight: bold;">✨ Új cikk</span>
+            </div>
+            
+            <!-- Liegende Acht Bild -->
+            <div style="text-align: center; margin-bottom: 30px;">
+                <img src="images/infinity.jpg" alt="Végtelenség szimbólum" style="width: 200px; height: auto; border-radius: 10px;">
+            </div>
+            
+            <h2 style="color: #B8860B; font-size: 2.5em; margin-bottom: 15px; text-align: center; font-weight: 300; line-height: 1.3;">
+                "Csak a halottaknak nincs idejük"
+            </h2>
+            
+            <p style="color: #666666; text-align: center; font-size: 1.15em; margin-bottom: 30px; font-style: italic;">
+                A legveszélyesebb hazugságról, amit magunknak mondunk
+            </p>
+            
+            <div style="text-align: center; color: #666666; font-size: 0.95em; margin-bottom: 25px;">
+                📅 2025. november 14. • ⏱️ 12 perc olvasás
+            </div>
+            
+            <p style="color: #333333; font-size: 1.15em; line-height: 1.8; margin-bottom: 25px;">
+                "Szívesen megtenném, de... egyszerűen <strong>nincs időm</strong>." Ismered ezeket az embereket? Akik ezt tették mantrájukká?
+            </p>
+            
+            <p style="color: #333333; font-size: 1.1em; line-height: 1.8; margin-bottom: 30px;">
+                Az igazság az, hogy van időd. Csak nem tudod, mi az idő valójában. És a saját önálló életed alapjait ássák alá. Ebben a cikkben megtudod, miért önámítás a "nincs időm" – és hogyan változtathat meg mindent napi öt perc.
+            </p>
+            
+            <div style="background: rgba(212, 175, 55, 0.1); padding: 25px; border-radius: 15px; margin: 30px 0; border-left: 4px solid #D4AF37;">
+                <p style="color: #B8860B; font-weight: bold; margin-bottom: 15px; font-size: 1.1em;">🔑 Amit ebben a cikkben találsz:</p>
+                <ul style="color: #333333; font-size: 1.05em; line-height: 1.9; margin-left: 20px;">
+                    <li>Miért az "nincs időm" az önámítás mantrája</li>
+                    <li>Mi az idő valójában: Filozófiai kitérő (Chronos, Kairos, Momo, Lola fut)</li>
+                    <li>Miért kezelik rosszul a problémát az időmenedzsment módszerek</li>
+                    <li>A 3 valódi ok: Függőségek, hitrendszerek és a hiányzó 5 perc</li>
+                    <li>Az 5 perces szabály, amely mindent megváltoztat</li>
+                </ul>
+            </div>
+            
+            <div style="text-align: center; margin-top: 35px;">
+                <a href="post-8-csak-a-halottak.html" style="display: inline-block; background: linear-gradient(135deg, #D4AF37 0%, #C5B358 100%); color: #000000; padding: 18px 50px; border-radius: 50px; text-decoration: none; font-size: 1.2em; font-weight: bold; transition: all 0.3s ease; box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);">
+                    Olvasom most →
+                </a>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin: 60px 0 40px 0;">
+            <h2 style="color: #B8860B; font-size: 2em; font-weight: 300;">Összes cikk</h2>
+            <p style="color: #666666; font-size: 1.1em;">Heti új gondolatok a változásról és egyértelműségről</p>
+        </div>
+
+        <div class="blog-grid">
+            <!-- Post 8 - 2025. november 14. -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="images/infinity.jpg" alt="Végtelenség szimbólum" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">📅 2025. november 14. • ⏱️ 12 perc</div>
+                    <h2 class="blog-title">"Csak a halottaknak nincs idejük"</h2>
+                    <p class="blog-excerpt">
+                        A legveszélyesebb hazugság, amit magunknak mondunk – és hogyan változtathat meg mindent napi öt perc.
+                    </p>
+                    <a href="post-8-csak-a-halottak.html" class="read-more">Tovább olvasom →</a>
+                </div>
+            </div>
+
+            <!-- Post 7 - 2025. november 2. -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="images/image7.jpg" alt="Már tudod, mit akarsz">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">📅 2025. november 2. • ⏱️ 8 perc</div>
+                    <h2 class="blog-title">Már tudod, mit akarsz<br><span style="font-size: 0.7em; color: #666666;">(csak nem mered kimondani)</span></h2>
+                    <p class="blog-excerpt">
+                        A válasz itt van. Mindig is itt volt. Csak a "kéne", "kellene" és "mit fognak mások gondolni" rétegek alá temetted.
+                    </p>
+                    <a href="post-7-mar-tudod.html" class="read-more">Tovább olvasom →</a>
+                </div>
+            </div>
+
+            <!-- Post 6 - 2025. október 26. -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="images/image6.jpg" alt="Amit 20 év alatt megtanultam">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">📅 2025. október 26. • ⏱️ 9 perc</div>
+                    <h2 class="blog-title">Amit 20 év emberekkel való munka alatt megtanultam</h2>
+                    <p class="blog-excerpt">
+                        Vannak dolgok, amiket nem könyvekből tanulsz. Hanem azzal, hogy figyelsz, hallgatsz és kísérsz.
+                    </p>
+                    <a href="post-6-20-ev.html" class="read-more">Tovább olvasom →</a>
+                </div>
+            </div>
+
+            <!-- Post 5 - 2025. október 19. -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="images/image5.jpg" alt="Nincs szükséged motivációra. Struktúrára van szükséged.">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">📅 2025. október 19. • ⏱️ 7 perc</div>
+                    <h2 class="blog-title">Nincs szükséged motivációra.<br><span style="font-size: 0.9em; color: #666666;">Struktúrára van szükséged.</span></h2>
+                    <p class="blog-excerpt">
+                        A motiváció olyan, mint az időjárás. Jön és megy. A struktúra olyan, mint egy ház. Kitart, akkor is, ha vihar van.
+                    </p>
+                    <a href="post-5-struktura.html" class="read-more">Tovább olvasom →</a>
+                </div>
+            </div>
+
+            <!-- Post 4 - 2025. október 12. -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="images/image4.jpg" alt="Miért rejtjük el saját válaszainkat">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">📅 2025. október 12. • ⏱️ 7 perc</div>
+                    <h2 class="blog-title">Miért rejtjük el saját válaszainkat</h2>
+                    <p class="blog-excerpt">
+                        A válaszok már itt vannak. Csak a "kéne", "kellene" és "mit fognak mások gondolni" rétegek alá temettük őket.
+                    </p>
+                    <a href="post-4-belso-tudas.html" class="read-more">Tovább olvasom →</a>
+                </div>
+            </div>
+
+            <!-- Post 3 - 2025. október 5. -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="images/image3.jpg" alt="Miért utasítok el néhány embert kliensekként">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">📅 2025. október 5. • ⏱️ 8 perc</div>
+                    <h2 class="blog-title">Miért utasítok el néhány embert kliensekként</h2>
+                    <p class="blog-excerpt">
+                        Nem az "elég jó" kérdése. A készenlét kérdése.
+                    </p>
+                    <a href="post-3-elutasitas.html" class="read-more">Tovább olvasom →</a>
+                </div>
+            </div>
+
+            <!-- Post 2 - 2025. szeptember 28. -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="images/image2.jpg" alt="5 jel, hogy kész vagy a változásra">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">📅 2025. szeptember 28. • ⏱️ 7 perc</div>
+                    <h2 class="blog-title">5 jel, hogy kész vagy a változásra</h2>
+                    <p class="blog-excerpt">
+                        Nem minden elégedetlenség jelentést változtatnod kell. De vannak jelek, amelyek egyértelműek.
+                    </p>
+                    <a href="post-2-5-jel.html" class="read-more">Tovább olvasom →</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="coming-soon">
+            <h2>Szeretnéd mindig megkapni az új cikkeket?</h2>
+            <p>A szakmai újratájékozódásról, életdöntésekről és arról írok, hogy mi kell valójában a változás megvalósításához.</p>
+            <p style="color: #333333; font-size: 1em;">Minden szombaton új cikk. Nincs spam. Nincs sablon.</p>
+            
+            <form class="newsletter-form" action="#" method="post">
+                <input type="email" placeholder="Az e-mail címed" required>
+                <button type="submit">Értesítés</button>
+            </form>
+            
+            <p style="margin-top: 20px; font-size: 0.9em; color: #7a9fb0;">
+                (Hírlevél funkció hamarosan elérhető)
+            </p>
+        </div>
+
+        <footer>
+            <p><a href="../index.html">Főoldal</a> | <a href="../adatvedelem.html">Adatvédelem</a> | <a href="../aszf.html">ÁSZF</a></p>
+            <p style="margin-top: 10px;">© 2025 Amy Lang - Coaching & Átalakulás</p>
+        </footer>
+    </div>
+</body>
+</html>
