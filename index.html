@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amy Lang - Tudatos Transzformáció Tanácsadás | Életfordulók, Feng Shui, Sámánizmus</title>
+    <title>Amy Lang - Energetikai Kísérés & Transzformáció | Életfordulók, Feng Shui, Sámánizmus</title>
     
     <!-- SEO Meta Tags -->
     <meta name="description" content="Energetikai kísérés életfordulókban: Szakmai újraorientáció, Feng Shui tanácsadás, sámáni folyamatkísérés. 20+ év tapasztalat. Ingyenes első beszélgetés.">
@@ -303,6 +303,38 @@
             margin-bottom: 1rem;
         }
 
+        /* Service Icons */
+        .service-icon {
+            width: 100%;
+            height: 200px;
+            margin-bottom: 1.5rem;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(184, 134, 11, 0.2);
+        }
+
+        .service-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Intro Image */
+        .intro-image {
+            max-width: 400px;
+            margin: 0 auto 2rem;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(184, 134, 11, 0.3);
+            border: 3px solid rgba(184, 134, 11, 0.3);
+        }
+
+        .intro-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
         /* Pricing */
         .pricing-container {
             display: grid;
@@ -441,8 +473,8 @@
     <!-- Hero Section -->
     <div class="hero">
         <h1>TRANSZFORMÁCIÓ</h1>
-        <p class="subtitle">Tudatos Transzformáció Tanácsadás</p>
-        <p class="tagline">Amikor tudod, hogy változásra van szükséged, de nem tudod, hogyan kezdj hozzá. Itt vagyok, hogy melletted álljak.</p>
+        <p class="subtitle">Energetikai Kísérés & Életfordulók</p>
+        <p class="tagline">Amikor tudod, hogy változásra van szükséged, de nem tudod, hogyan kezdj hozzá. Itt vagyok, hogy mellette álljak.</p>
         <a href="start.html" class="cta-button">
             <span class="cta-glow"></span>
             <span class="cta-text">INGYENES ELSŐ BESZÉLGETÉS</span>
@@ -451,35 +483,54 @@
 
     <!-- Main Content -->
     <div class="container">
-        <!-- Intro -->
-        <section>
-            <h2>Üdvözöllek</h2>
-            <p>Én Amy vagyok. Tanácsadóként kísérek embereket életfordulókon keresztül – szakmai újraorientációban, sámáni munkában, Feng Shui tanácsadásban.</p>
-            <p>Magyarországról online dolgozom veled – Graz-ból, ahol élek és dolgozom. 20+ év tapasztalattal rendelkezem különböző módszerekkel a személyes fejlődés, energiamunka és testi tudatosság terén.</p>
-            <p><strong>Ez nem terápia. Hanem tudatos tanácsadás azok számára, akik készen állnak a cselekvésre.</strong></p>
+        <!-- Intro Section -->
+        <section id="start">
+            <div class="intro-image">
+                <img src="images/amy_im_wandel.jpg" alt="Amy Lang">
+            </div>
+            <h2>Szia, Amy vagyok.</h2>
+            <p>Több mint 20 éve kísérek embereket az útjukon – energetikusként, Feng Shui tanácsadóként, sámáni kísérőként és coachként. Amit közben felfedeztem: Az embereknek nincs szükségük kész megoldásokra. Tisztánlátásra, struktúrára van szükségük, és valakire, aki segít megtalálni saját válaszaikat és bátorságot ad ahhoz, hogy éljék azokat.</p>
+            
+            <p><strong>A megközelítésem:</strong> Strukturált. Pragmatikus. De mélységgel. Látom, mi van benned – és segítek, hogy valósággá váljon.</p>
+            
+            <p>A változás kísért engem, amióta az eszemet tudom. 5 évesen csúcsteljesítményű tornászként álltam a gerendán, 7 évesen a futópályán – a sport korán megtanította: Ha valamit akarsz, kitartónak kell lenned. 10 évesen megéltem életem legnagyobb változását: Budapestről Ausztriába költöztünk. Egy milliós metropoliszból egy 5000 lelkes stájerországi faluba. Mindent elvesztettem: a sportot, a barátokat, a rokonokat, a nyelvem, az életemet, ahogy ismertem. Korán megtanultam, mit jelent teljesen újrakezdeni – idegen országban, idegen nyelvvel, mély magányban.</p>
+            
+            <p>Ez a tapasztalat formált engem. Megtanította, hogy a változás fájhat – de hogy erősebbek vagyunk, mint hisszük.</p>
+            
+            <p>18 évesen Vancouverbe költöztem és egy felszabadító szervezetben dolgoztam az őslakos lakossággal. Ez az idő kinyitotta a szemem a kultúrákra, a gyógyulásra és az emberlét spirituális dimenziójára – és megágyazott a sámánizmus útjának, amelyet azóta gyakorlok.</p>
+            
+            <p>Az évek során számos képzést végeztem energetikai munkában, testmunkában (Pilates, Yoga, Tai Chi), sámánizmusban, Feng Shuiban, személyiségfejlesztésben és spirituális gyakorlatban. Nem azért, mert tanúsítványokat akartam gyűjteni – hanem mert meg akartam érteni, hogyan működik az igazi, mély transzformáció.</p>
+            
+            <p><strong>Miért csinálom, amit csinálok:</strong><br>
+            Mert láttam – magamon és több száz emberen – hogy a változás lehetséges. Hogy nem kell ott maradnunk, ahol vagyunk. Hogy soha nem késő újrakezdeni.</p>
+            
+            <p><strong>Magyarok kísérése:</strong> Bár már évek óta Grazban élek Ausztriában, szívesen dolgozom magyar kliensekkel online. Sok magyarnak már segítettem – akár Magyarországon élnek, akár külföldön. Az online munka ugyanolyan intenzív és hatékony, mint a személyes találkozás, és így távolságtól függetlenül segíthetek neked.</p>
         </section>
 
-        <!-- What I Offer -->
+        <!-- Services Section -->
         <section>
-            <h2>Hogyan tudok segíteni</h2>
-            <p>Három területen dolgozom – mindegyik egyedi módon támogat az életeden való változtatásban:</p>
+            <h2>A Kísérésem</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">Három szinten dolgozom veled – attól függően, hol állsz most és mire van szükséged.</p>
             
             <div class="services-grid">
                 <div class="service-card">
+                    <div class="service-icon"><img src="images/shamanism.jpg" alt="Sámáni Kísérés"></div>
                     <h3>Sámáni Kísérés</h3>
-                    <p>Mély, spirituális munka, amikor konkrét lépéseket akarsz tenni, de energetikai támogatásra van szükséged. Rituálék, energiamunka, kapcsolat a saját erőforrásaiddal.</p>
-                    <p><strong>Neked való, ha:</strong> Nyitott vagy a spirituális megközelítésre és érzed, hogy többről van szó, mint amit csak az ész meg tud ragadni.</p>
+                    <p>Energetikai folyamatkísérés életfordulókban, válságokban és újrakezdésekben. Rituálék búcsúzáshoz, átalakuláshoz és újrakezdéshez. Lélekműködés és spirituális orientáció.</p>
+                    <p><strong>Neked való, ha:</strong> Mély életválságban vagy, fontos átmenetet élsz át, vagy spirituális kísérést keresel.</p>
                 </div>
 
                 <div class="service-card">
+                    <div class="service-icon"><img src="images/fengshui.jpg" alt="Feng Shui Tanácsadás"></div>
                     <h3>Feng Shui Tanácsadás</h3>
-                    <p>Az otthonod vagy munkahelyiséged energetikai elemzése. Nem csak "csináld át a nappalid" – hanem: Hol akad el az energia? Mit kell megváltoztatni, hogy az életed áramoljon?</p>
-                    <p><strong>Neked való, ha:</strong> Érzel valamit az otthonodban/irodádban, ami nem stimmel, és tudod, hogy a terek energiája hatással van rád.</p>
+                    <p>Energetikai térkialakítás lakó- és munkahelyiségekhez. Elemzem tereid energiaáramlását és megmutatom, hogyan teremthetsz tudatos kialakítással több tisztánlátást, harmóniát és életerőt.</p>
+                    <p><strong>Neked való, ha:</strong> Nem érzed jól magad a tereidben, szakmailag vagy magánéletben elakadtál, vagy újrakezdésre van szükséged.</p>
                 </div>
 
                 <div class="service-card">
-                    <h3>Életfordulók – Szakmai Újraorientáció</h3>
-                    <p>Ha tudod, hogy változásra van szükséged a munkádban vagy életedben, de nem tudod, hogyan kezdj hozzá. Strukturált kísérés, tiszta lépések – gyakorlatias, de energetikai mélységgel.</p>
+                    <div class="service-icon"><img src="images/transformation.jpg" alt="Kísérés Életfordulókban"></div>
+                    <h3>Kísérés Életfordulókban</h3>
+                    <p>Holisztikus folyamatkísérés szakmai újraorientációban, karrierváltásban és fontos életdöntésekben. Strukturált munka célokon, tisztánlátáson és konkrét lépéseken.</p>
                     <p><strong>Neked való, ha:</strong> Szakmai vagy személyes fordulópontban állsz és nem tudod, hogyan tovább.</p>
                 </div>
             </div>
