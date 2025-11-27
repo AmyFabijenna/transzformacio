@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog | Amy Lang - Tudatos Transzformáció Tanácsadás</title>
+    <title>Blog | Amy Lang - Coaching & Wandlung</title>
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="../favicon.png">
     <link rel="apple-touch-icon" href="../favicon.png">
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Bepillantások a szakmai újratájékozódásba, személyes fejlődésbe és life coachingba. Amy Langtól.">
-    <meta name="keywords" content="Life Coaching Blog, Szakmai újratájékozódás, Személyes fejlődés, Karrierváltás, Változás">
+    <meta name="description" content="Insights zu beruflicher Neuorientierung, persönlicher Entwicklung und Life-Coaching. Von Amy Lang.">
+    <meta name="keywords" content="Life Coaching Blog, Berufliche Neuorientierung, Persönliche Entwicklung, Karrierewechsel, Veränderung">
     <meta name="author" content="Amy Lang">
     
     <style>
@@ -82,9 +82,10 @@
 
         .blog-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 40px;
             margin-bottom: 60px;
+            align-items: start;
         }
 
         .blog-card {
@@ -95,6 +96,13 @@
             border: 2px solid rgba(184, 134, 11, 0.2);
             box-shadow: 0 10px 40px rgba(184, 134, 11, 0.2);
             transition: all 0.3s ease;
+            max-width: 100%;
+        }
+
+        @media (max-width: 1024px) {
+            .blog-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
 
         .blog-card:hover {
@@ -256,189 +264,271 @@
     <div class="container">
         <header>
             <h1>📖 Blog</h1>
-            <p class="subtitle">Gondolatok a változásról, egyértelműségről és valódi lépésekről</p>
-            <a href="../index.html" class="back-home">← Vissza a főoldalra</a>
+            <p class="subtitle">Gedanken zu Veränderung, Klarheit und echten Schritten</p>
+            <a href="../index.html" class="back-home">← Zurück zur Hauptseite</a>
         </header>
 
-        <!-- Featured Post -->
-        <div style="background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(15px); border-radius: 30px; padding: 50px 40px; margin-bottom: 60px; border: 2px solid rgba(184, 134, 11, 0.3); box-shadow: 0 15px 50px rgba(212, 175, 55, 0.2);">
-            <div style="text-align: center; margin-bottom: 15px;">
-                <span style="background: linear-gradient(135deg, #D4AF37 0%, #C5B358 100%); color: #000000; padding: 8px 20px; border-radius: 20px; font-size: 0.9em; font-weight: bold;">✨ Új cikk</span>
+        
+        <div style="text-align: center; margin: 60px 0 40px 0;">
+            <h2 style="color: #B8860B; font-size: 2em; font-weight: 300;">Alle Artikel</h2>
+            <p style="color: #666666; font-size: 1.1em;">Wöchentlich neue Gedanken zu Veränderung und Klarheit</p>
+        </div>
+
+        <!-- ALLE BLOG POSTS IN EINEM GRID -->
+        <div class="blog-grid">
+
+
+
+
+
+            <!-- Post 13 - 27. November 2025 -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="images/image13.jpg" alt="Einzelgängerin" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">📅 27. November 2025 • ⏱️ 12 Min</div>
+                    <h2 class="blog-title">"Die Einzelgängerin"</h2>
+                    <p class="blog-excerpt">
+                        Eine Erzählung über Schein, Sucht und die Lügen, die wir glauben wollen
+                    </p>
+                    <a href="post-13-die-einzelgaengerin.html" class="read-more">Weiterlesen →</a>
+                </div>
+            </div>    
+
+
+
+
+
+            <!-- Post 12 - 19. November 2025 -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="images/image12.jpg" alt="Selbstdisziplin" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">📅 19. November 2025 • ⏱️ 12 Min</div>
+                    <h2 class="blog-title">"Selbstdisziplin"</h2>
+                    <p class="blog-excerpt">
+                        „Strebe nach Höherem!" – und ich tat es. Sechs Jahre vegane Rohkost, extreme Arten von Fasten, sportliche Höchstleistungen. Was mich diese Zeit gelehrt hat über den Unterschied zwischen Ambition, die trägt, und Ambition, die zu viel wird.
+                    </p>
+                    <a href="post-12-selbstdisziplin.html" class="read-more">Weiterlesen →</a>
+                </div>
+            </div>     
+
+
+
+
+
+
+            <!-- Post 11 - 19. November 2025 -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="images/image11.jpg" alt="Knockout" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">📅 19. November 2025 • ⏱️ 12 Min</div>
+                    <h2 class="blog-title">"Die Autoaggression, die du nicht siehst"</h2>
+                    <p class="blog-excerpt">
+                        Wenn du Fremde besser behandelst als die Menschen, die dir am nächsten sind
+                    </p>
+                    <a href="post-11-autoaggression-die-du-nicht-siehst.html" class="read-more">Weiterlesen →</a>
+                </div>
+            </div>    
+
+
+
+
+
+
+
+            <!-- Post 10 - 19. November 2025 -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="images/image10.jpg" alt="Wachstum" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">📅 19. November 2025 • ⏱️ 15 Min</div>
+                    <h2 class="blog-title">"Hashimoto: Wenn die Aggression nach innen geht"</h2>
+                    <p class="blog-excerpt">
+                        Krankheiten sind mehr als nur Fehlfunktionen des Körpers. Sie sind Botschaften. Symbole. Spiegel dessen, was in der Seele geschieht. Hashimoto spricht über Entwicklung und Wachstum.
+                    </p>
+                    <a href="post-10-hashimoto-aggression.html" class="read-more">Weiterlesen →</a>
+                </div>
             </div>
-            
-            <!-- Liegende Acht Bild -->
-            <div style="text-align: center; margin-bottom: 30px;">
-                <img src="images/infinity.jpg" alt="Végtelenség szimbólum" style="width: 200px; height: auto; border-radius: 10px;">
+
+            <!-- Post 9 - 19. November 2025 -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="images/image9.jpg" alt="Warten" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">📅 19. November 2025 • ⏱️ 12 Min</div>
+                    <h2 class="blog-title">"Die "Keine Zeit"-Lüge"</h2>
+                    <p class="blog-excerpt">
+                        Wenn Menschen sagen "Ich habe keine Zeit", sprechen sie selten über Zeit. Sie sprechen über Prioritäten. Über Wert. Über die Frage, wofür und für wen ihr Herz schlägt.
+                    </p>
+                    <a href="post-9-die-keine-zeit-luege.html" class="read-more">Weiterlesen →</a>
+                </div>
             </div>
-            
-            <h2 style="color: #B8860B; font-size: 2.5em; margin-bottom: 15px; text-align: center; font-weight: 300; line-height: 1.3;">
-                "Csak a halottaknak nincs idejük"
-            </h2>
-            
-            <p style="color: #666666; text-align: center; font-size: 1.15em; margin-bottom: 30px; font-style: italic;">
-                A legveszélyesebb hazugságról, amit magunknak mondunk
-            </p>
-            
-            <div style="text-align: center; color: #666666; font-size: 0.95em; margin-bottom: 25px;">
-                📅 2025. november 14. • ⏱️ 12 perc olvasás
+
+            <!-- Post 8 - 14. November 2025 -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="images/infinity.jpg" alt="Unendlichkeitssymbol" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">📅 14. November 2025 • ⏱️ 12 Min</div>
+                    <h2 class="blog-title">"Nur die Toten haben keine Zeit"</h2>
+                    <p class="blog-excerpt">
+                        Die gefährlichste Lüge, die wir uns selbst erzählen – und wie fünf Minuten täglich dein Leben verändern können.
+                    </p>
+                    <a href="post-8-nur-die-toten.html" class="read-more">Weiterlesen →</a>
+                </div>
             </div>
-            
-            <p style="color: #333333; font-size: 1.15em; line-height: 1.8; margin-bottom: 25px;">
-                "Szívesen megtenném, de... egyszerűen <strong>nincs időm</strong>." Ismered ezeket az embereket? Akik ezt tették mantrájukká?
-            </p>
-            
-            <p style="color: #333333; font-size: 1.1em; line-height: 1.8; margin-bottom: 30px;">
-                Az igazság az, hogy van időd. Csak nem tudod, mi az idő valójában. És a saját önálló életed alapjait ássák alá. Ebben a cikkben megtudod, miért önámítás a "nincs időm" – és hogyan változtathat meg mindent napi öt perc.
-            </p>
-            
-            <div style="background: rgba(212, 175, 55, 0.1); padding: 25px; border-radius: 15px; margin: 30px 0; border-left: 4px solid #D4AF37;">
-                <p style="color: #B8860B; font-weight: bold; margin-bottom: 15px; font-size: 1.1em;">🔑 Amit ebben a cikkben találsz:</p>
-                <ul style="color: #333333; font-size: 1.05em; line-height: 1.9; margin-left: 20px;">
-                    <li>Miért az "nincs időm" az önámítás mantrája</li>
-                    <li>Mi az idő valójában: Filozófiai kitérő (Chronos, Kairos, Momo, Lola fut)</li>
-                    <li>Miért kezelik rosszul a problémát az időmenedzsment módszerek</li>
-                    <li>A 3 valódi ok: Függőségek, hitrendszerek és a hiányzó 5 perc</li>
-                    <li>Az 5 perces szabály, amely mindent megváltoztat</li>
-                </ul>
+
+            <!-- Post 7 - 2. November 2025 -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="images/image7.jpg" alt="Du weißt bereits, was du willst">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">📅 2. November 2025 • ⏱️ 8 Min</div>
+                    <h2 class="blog-title">Du weißt bereits, was du willst<br><span style="font-size: 0.7em; color: #666666;">(du traust dich nur nicht, es zu sagen)</span></h2>
+                    <p class="blog-excerpt">
+                        Die Antwort ist da. Sie war schon immer da. Du hast sie nur unter Schichten von "sollte", "müsste" und "was werden die anderen denken" begraben.
+                    </p>
+                    <a href="post-7-du-weisst-es-bereits.html" class="read-more">Weiterlesen →</a>
+                </div>
             </div>
+
+            <!-- Post 6 - 26. Oktober 2025 -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="images/image6.jpg" alt="Was ich in 20 Jahren gelernt habe">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">📅 26. Oktober 2025 • ⏱️ 9 Min</div>
+                    <h2 class="blog-title">Was ich in 20 Jahren Arbeit mit Menschen gelernt habe</h2>
+                    <p class="blog-excerpt">
+                        Manche Dinge lernt man nicht aus Büchern. Man lernt sie, indem man zusieht, zuhört und begleitet.
+                    </p>
+                    <a href="post-6-20-jahre.html" class="read-more">Weiterlesen →</a>
+                </div>
+            </div>
+
+            <!-- Post 5 - 19. Oktober 2025 -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="images/image5.jpg" alt="Du brauchst keine Motivation. Du brauchst Struktur.">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">📅 19. Oktober 2025 • ⏱️ 7 Min</div>
+                    <h2 class="blog-title">Du brauchst keine Motivation.<br><span style="font-size: 0.9em; color: #666666;">Du brauchst Struktur.</span></h2>
+                    <p class="blog-excerpt">
+                        Motivation ist wie Wetter. Sie kommt und geht. Struktur ist wie ein Haus. Sie hält, auch wenn es stürmt.
+                    </p>
+                    <a href="post-5-struktur.html" class="read-more">Weiterlesen →</a>
+                </div>
+            </div>
+
+            <!-- Post 4 - 12. Oktober 2025 -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="images/image4.jpg" alt="Warum wir unsere eigenen Antworten verstecken">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">📅 12. Oktober 2025 • ⏱️ 7 Min</div>
+                    <h2 class="blog-title">Warum wir unsere eigenen Antworten verstecken</h2>
+                    <p class="blog-excerpt">
+                        Die Antworten sind schon da. Wir haben sie nur unter Schichten von "Sollte", "Müsste" und "Was werden die anderen denken" begraben.
+                    </p>
+                    <a href="post-4-inneres-wissen.html" class="read-more">Weiterlesen →</a>
+                </div>
+            </div>
+
+            <!-- Post 3 - 5. Oktober 2025 -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="images/image3.jpg" alt="Warum ich manche Menschen als Klienten ablehne">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">📅 5. Oktober 2025 • ⏱️ 8 Min</div>
+                    <h2 class="blog-title">Warum ich manche Menschen als Klienten ablehne</h2>
+                    <p class="blog-excerpt">
+                        Es ist keine Frage von "gut genug sein". Es ist eine Frage von Bereitschaft.
+                    </p>
+                    <a href="post-3-ablehnung.html" class="read-more">Weiterlesen →</a>
+                </div>
+            </div>
+
+            <!-- Post 2 - 28. September 2025 -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="images/image2.jpg" alt="5 Zeichen, dass du bereit für eine Veränderung bist">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">📅 28. September 2025 • ⏱️ 7 Min</div>
+                    <h2 class="blog-title">5 Zeichen, dass du bereit für eine Veränderung bist</h2>
+                    <p class="blog-excerpt">
+                        Nicht jede Unzufriedenheit bedeutet, dass du etwas ändern musst. Aber manche Zeichen sind unmissverständlich.
+                    </p>
+                    <a href="post-2-5-zeichen.html" class="read-more">Weiterlesen →</a>
+                </div>
+            </div>
+
+            <!-- Post 1 - 21. September 2025 -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="images/image1.jpg" alt="Berufliche Neuorientierung Blog">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">📅 21. September 2025 • ⏱️ 6 Min</div>
+                    <h2 class="blog-title">Warum die meisten Karrierewechsel scheitern<br><span style="font-size: 0.8em; color: #666666;">(und wie du es richtig machst)</span></h2>
+                    <p class="blog-excerpt">
+                        Ein Karrierewechsel ist mehr als ein neuer Job. Es ist eine Neuausrichtung dessen, wer du bist und sein willst.
+                    </p>
+                    <a href="post-1-karrierewechsel.html" class="read-more">Weiterlesen →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- =========================================== -->
+        <!-- NEWSLETTER SECTION - KOPIERBARER BEREICH -->
+        <!-- =========================================== -->
+        <div class="coming-soon">
+            <h2>Möchtest du keinen Artikel verpassen?</h2>
+            <p>Ich schreibe über berufliche Neuorientierung, Lebensentscheidungen und was es wirklich braucht, um Veränderung umzusetzen.</p>
+            <p style="color: #333333; font-size: 1em;">Jeden Samstag ein neuer Artikel. Kein Spam. Keine Floskeln.</p>
             
-            <div style="text-align: center; margin-top: 35px;">
-                <a href="post-8-csak-a-halottak.html" style="display: inline-block; background: linear-gradient(135deg, #D4AF37 0%, #C5B358 100%); color: #000000; padding: 18px 50px; border-radius: 50px; text-decoration: none; font-size: 1.2em; font-weight: bold; transition: all 0.3s ease; box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);">
-                    Olvasom most →
+            <!-- Google Forms Newsletter Anmeldung -->
+            <div style="text-align: center; margin: 30px 0;">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSen6GLWokClyYMElmfx1OQLRGHF-PNdPLOyFBYE3aj_dLf6nA/viewform?usp=header" 
+                   target="_blank" 
+                   style="display: inline-block; 
+                          background: linear-gradient(135deg, #D4AF37 0%, #C5B358 100%); 
+                          color: #000000; 
+                          padding: 18px 50px; 
+                          border-radius: 50px; 
+                          text-decoration: none; 
+                          font-size: 1.2em; 
+                          font-weight: bold; 
+                          transition: all 0.3s ease; 
+                          box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);">
+                    📧 Jetzt für Newsletter anmelden
                 </a>
             </div>
-        </div>
-
-        <div style="text-align: center; margin: 60px 0 40px 0;">
-            <h2 style="color: #B8860B; font-size: 2em; font-weight: 300;">Összes cikk</h2>
-            <p style="color: #666666; font-size: 1.1em;">Heti új gondolatok a változásról és egyértelműségről</p>
-        </div>
-
-        <div class="blog-grid">
-            <!-- Post 8 - 2025. november 14. -->
-            <div class="blog-card">
-                <div class="blog-image">
-                    <img src="images/infinity.jpg" alt="Végtelenség szimbólum" style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-date">📅 2025. november 14. • ⏱️ 12 perc</div>
-                    <h2 class="blog-title">"Csak a halottaknak nincs idejük"</h2>
-                    <p class="blog-excerpt">
-                        A legveszélyesebb hazugság, amit magunknak mondunk – és hogyan változtathat meg mindent napi öt perc.
-                    </p>
-                    <a href="post-8-csak-a-halottak.html" class="read-more">Tovább olvasom →</a>
-                </div>
-            </div>
-
-            <!-- Post 7 - 2025. november 2. -->
-            <div class="blog-card">
-                <div class="blog-image">
-                    <img src="images/image7.jpg" alt="Már tudod, mit akarsz">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-date">📅 2025. november 2. • ⏱️ 8 perc</div>
-                    <h2 class="blog-title">Már tudod, mit akarsz<br><span style="font-size: 0.7em; color: #666666;">(csak nem mered kimondani)</span></h2>
-                    <p class="blog-excerpt">
-                        A válasz itt van. Mindig is itt volt. Csak a "kéne", "kellene" és "mit fognak mások gondolni" rétegek alá temetted.
-                    </p>
-                    <a href="post-7-mar-tudod.html" class="read-more">Tovább olvasom →</a>
-                </div>
-            </div>
-
-            <!-- Post 6 - 2025. október 26. -->
-            <div class="blog-card">
-                <div class="blog-image">
-                    <img src="images/image6.jpg" alt="Amit 20 év alatt megtanultam">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-date">📅 2025. október 26. • ⏱️ 9 perc</div>
-                    <h2 class="blog-title">Amit 20 év emberekkel való munka alatt megtanultam</h2>
-                    <p class="blog-excerpt">
-                        Vannak dolgok, amiket nem könyvekből tanulsz. Hanem azzal, hogy figyelsz, hallgatsz és kísérsz.
-                    </p>
-                    <a href="post-6-20-ev.html" class="read-more">Tovább olvasom →</a>
-                </div>
-            </div>
-
-            <!-- Post 5 - 2025. október 19. -->
-            <div class="blog-card">
-                <div class="blog-image">
-                    <img src="images/image5.jpg" alt="Nincs szükséged motivációra. Struktúrára van szükséged.">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-date">📅 2025. október 19. • ⏱️ 7 perc</div>
-                    <h2 class="blog-title">Nincs szükséged motivációra.<br><span style="font-size: 0.9em; color: #666666;">Struktúrára van szükséged.</span></h2>
-                    <p class="blog-excerpt">
-                        A motiváció olyan, mint az időjárás. Jön és megy. A struktúra olyan, mint egy ház. Kitart, akkor is, ha vihar van.
-                    </p>
-                    <a href="post-5-struktura.html" class="read-more">Tovább olvasom →</a>
-                </div>
-            </div>
-
-            <!-- Post 4 - 2025. október 12. -->
-            <div class="blog-card">
-                <div class="blog-image">
-                    <img src="images/image4.jpg" alt="Miért rejtjük el saját válaszainkat">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-date">📅 2025. október 12. • ⏱️ 7 perc</div>
-                    <h2 class="blog-title">Miért rejtjük el saját válaszainkat</h2>
-                    <p class="blog-excerpt">
-                        A válaszok már itt vannak. Csak a "kéne", "kellene" és "mit fognak mások gondolni" rétegek alá temettük őket.
-                    </p>
-                    <a href="post-4-belso-tudas.html" class="read-more">Tovább olvasom →</a>
-                </div>
-            </div>
-
-            <!-- Post 3 - 2025. október 5. -->
-            <div class="blog-card">
-                <div class="blog-image">
-                    <img src="images/image3.jpg" alt="Miért utasítok el néhány embert kliensekként">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-date">📅 2025. október 5. • ⏱️ 8 perc</div>
-                    <h2 class="blog-title">Miért utasítok el néhány embert kliensekként</h2>
-                    <p class="blog-excerpt">
-                        Nem az "elég jó" kérdése. A készenlét kérdése.
-                    </p>
-                    <a href="post-3-elutasitas.html" class="read-more">Tovább olvasom →</a>
-                </div>
-            </div>
-
-            <!-- Post 2 - 2025. szeptember 28. -->
-            <div class="blog-card">
-                <div class="blog-image">
-                    <img src="images/image2.jpg" alt="5 jel, hogy kész vagy a változásra">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-date">📅 2025. szeptember 28. • ⏱️ 7 perc</div>
-                    <h2 class="blog-title">5 jel, hogy kész vagy a változásra</h2>
-                    <p class="blog-excerpt">
-                        Nem minden elégedetlenség jelentést változtatnod kell. De vannak jelek, amelyek egyértelműek.
-                    </p>
-                    <a href="post-2-5-jel.html" class="read-more">Tovább olvasom →</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="coming-soon">
-            <h2>Szeretnéd mindig megkapni az új cikkeket?</h2>
-            <p>A szakmai újratájékozódásról, életdöntésekről és arról írok, hogy mi kell valójában a változás megvalósításához.</p>
-            <p style="color: #333333; font-size: 1em;">Minden szombaton új cikk. Nincs spam. Nincs sablon.</p>
-            
-            <form class="newsletter-form" action="#" method="post">
-                <input type="email" placeholder="Az e-mail címed" required>
-                <button type="submit">Értesítés</button>
-            </form>
             
             <p style="margin-top: 20px; font-size: 0.9em; color: #7a9fb0;">
-                (Hírlevél funkció hamarosan elérhető)
+                Einfach das Formular ausfüllen und du erhältst Benachrichtigungen über neue Artikel.
             </p>
         </div>
+        <!-- =========================================== -->
+        <!-- ENDE NEWSLETTER SECTION -->
+        <!-- =========================================== -->
 
         <footer>
-            <p><a href="../index.html">Főoldal</a> | <a href="../adatvedelem.html">Adatvédelem</a> | <a href="../aszf.html">ÁSZF</a></p>
-            <p style="margin-top: 10px;">© 2025 Amy Lang - Coaching & Átalakulás</p>
+            <p><a href="../index.html">Startseite</a> | <a href="../datenschutz.html">Datenschutz</a> | <a href="../agb_coaching.html">AGB</a></p>
+            <p style="margin-top: 10px;">© 2025 Amy Lang - Coaching & Wandlung</p>
         </footer>
     </div>
 </body>
