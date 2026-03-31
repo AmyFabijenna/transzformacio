@@ -6,7 +6,7 @@
     <title>Testtranszformáció 35+ nőknek | Fiatalabban kinézni, tele energiával | Raw & Real</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Alakítsd át a tested, nyerd vissza az energiád és nézz ki 10 évvel fiatalabbnak. A Raw & Real coaching segíti a 35+ nőket fenntartható testtranszformációban és ragyogó vitalitásban. Nincs diéta. Nincs kiégés. Valódi átalakulás.">
+    <meta name="description" content="Alakítsd át a tested, nyerd vissza az energiád és nézz ki 10 évvel fiatalabbnak. A Raw & Real Coaching segíti a 35+ nőket fenntartható testtranszformációban és ragyogó vitalitásban. Nincs diéta. Nincs kiégés. Valódi átalakulás.">
     <meta name="keywords" content="testtranszformáció nők 35+, fiatalabban kinézni természetesen, fenntartható fogyás, energia coaching, holisztikus testtranszformáció, anti-aging átalakulás, női egészség coaching, vitalitás visszanyerése, természetes testváltozás, transzformációs coaching nőknek">
     <meta name="author" content="Amy Lang">
     <meta name="robots" content="index, follow">
@@ -18,7 +18,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://gorawandreal.com/hu.html">
     <meta property="og:title" content="Testtranszformáció 35+ nőknek | Fiatalabban kinézni, tele energiával">
-    <meta property="og:description" content="Alakítsd át a tested, nyerd vissza az energiád és nézz ki 10 évvel fiatalabbnak. Raw & Real coaching fenntartható átalakulásért.">
+    <meta property="og:description" content="Alakítsd át a tested, nyerd vissza az energiád és nézz ki 10 évvel fiatalabbnak. Raw & Real Coaching fenntartható átalakulásért.">
     <meta property="og:site_name" content="Raw & Real">
     
     <!-- Twitter Card -->
@@ -36,7 +36,7 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" href="favicon.png">
     
-    <!-- Schema.org Structured Data for Rich Snippets -->
+    <!-- Schema.org Structured Data Rich Snippets-hez -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -146,74 +146,83 @@
 
         .lang-link:hover, .lang-link.active {
             background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 50%, #C5B358 100%);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
-        }
-
-        .lang-link.active {
             border-color: #D4AF37;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
         }
 
         h1 {
-            font-size: 3.5rem;
+            font-size: clamp(3rem, 12vw, 8rem);
             font-weight: 300;
-            letter-spacing: 3px;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
             background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
         }
 
-        .hero-subtitle {
-            font-size: 1.8rem;
+        .subtitle {
+            font-size: clamp(1.2rem, 4vw, 2rem);
+            font-weight: 300;
             margin-bottom: 2rem;
-            color: #0d2137;
-            font-weight: 400;
-        }
-
-        .hero-description {
-            font-size: 1.3rem;
-            max-width: 800px;
-            margin: 0 auto 3rem;
             color: #000000;
-            line-height: 1.9;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
+        .hero-tagline {
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            font-weight: 500;
+            margin: 2rem 0;
+            color: #000000;
+        }
+
+        /* CTA Button */
         .cta-button {
-            display: inline-flex;
-            align-items: center;
-            padding: 1.2rem 3rem;
-            background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 50%, #C5B358 100%);
+            position: relative;
+            display: inline-block;
+            padding: 1.5rem 3rem;
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
             color: #000000;
             text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: 2px;
             border-radius: 50px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            border: 3px solid #B8860B;
-            box-shadow: 0 8px 30px rgba(184, 134, 11, 0.3), inset 0 2px 0 rgba(255, 255, 255, 0.4);
-            position: relative;
             overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 
+                0 10px 40px rgba(184, 134, 11, 0.3),
+                0 0 60px rgba(212, 175, 55, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.4);
+            border: 2px solid rgba(212, 175, 55, 0.5);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 
+                0 15px 60px rgba(184, 134, 11, 0.4),
+                0 0 80px rgba(212, 175, 55, 0.4),
+                inset 0 1px 0 rgba(255, 255, 255, 0.6);
         }
 
         .cta-glow {
             position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-            transition: left 0.6s;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+            animation: glow-pulse 3s ease-in-out infinite;
+            pointer-events: none;
         }
 
-        .cta-button:hover .cta-glow {
-            left: 100%;
-        }
-
-        .cta-button:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 40px rgba(212, 175, 55, 0.5), inset 0 2px 0 rgba(255, 255, 255, 0.5);
+        @keyframes glow-pulse {
+            0%, 100% { opacity: 0.5; transform: scale(0.9); }
+            50% { opacity: 0.8; transform: scale(1.1); }
         }
 
         .cta-text {
@@ -228,186 +237,246 @@
         }
 
         section {
-            margin: 6rem 0;
-            background: rgba(255, 255, 255, 0.5);
-            backdrop-filter: blur(15px);
-            border-radius: 30px;
-            padding: 4rem 3rem;
-            box-shadow: 0 10px 40px rgba(184, 134, 11, 0.15);
-            border: 2px solid rgba(184, 134, 11, 0.3);
+            margin-bottom: 5rem;
+            padding: 3rem 0;
         }
 
         h2 {
-            font-size: 2.8rem;
+            font-size: clamp(2rem, 6vw, 3.5rem);
             font-weight: 300;
-            letter-spacing: 2px;
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             text-align: center;
+        }
+
+        h3 {
+            font-size: clamp(1.3rem, 4vw, 2rem);
+            margin-bottom: 1.5rem;
             background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
 
-        h3 {
-            color: #B8860B;
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-            font-weight: 400;
+        p {
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            margin-bottom: 1.5rem;
+            color: #000000;
         }
 
-        p {
-            font-size: 1.15rem;
+        /* Testimonial Section */
+        .testimonial-hero {
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 30px;
+            padding: 4rem 3rem;
+            margin: 5rem 0;
+            box-shadow: 0 20px 60px rgba(184, 134, 11, 0.15);
+            border: 2px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .testimonial-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .testimonial-image {
+            text-align: center;
+        }
+
+        .testimonial-image img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+            border: 3px solid #D4AF37;
+        }
+
+        .testimonial-name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-top: 1rem;
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .testimonial-text {
+            font-size: 1.1rem;
             line-height: 1.9;
             color: #000000;
-            margin-bottom: 1.3rem;
         }
 
-        .testimonial-box {
-            background: rgba(255, 255, 255, 0.7);
-            border-radius: 20px;
-            padding: 3rem;
-            margin: 2rem 0;
-            border-left: 5px solid #D4AF37;
-            box-shadow: 0 6px 25px rgba(184, 134, 11, 0.2);
-        }
-
-        .testimonial-box h3 {
+        .testimonial-text p {
             margin-bottom: 1.5rem;
         }
 
+        .testimonial-text strong {
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+        }
+
+        /* Process Steps */
         .process-steps {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2.5rem;
-            margin-top: 3rem;
+            gap: 2rem;
+            margin: 3rem 0;
         }
 
         .step {
-            background: rgba(255, 255, 255, 0.6);
+            background: rgba(255, 255, 255, 0.5);
             border-radius: 20px;
             padding: 2.5rem;
             text-align: center;
+            border: 2px solid rgba(212, 175, 55, 0.3);
             transition: all 0.4s ease;
-            border: 2px solid rgba(184, 134, 11, 0.2);
         }
 
         .step:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 10px 35px rgba(212, 175, 55, 0.3);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(184, 134, 11, 0.2);
         }
 
         .step-number {
-            display: inline-block;
-            width: 60px;
-            height: 60px;
-            line-height: 60px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 50%, #C5B358 100%);
-            color: #000000;
-            font-size: 1.8rem;
-            font-weight: bold;
-            margin-bottom: 1.5rem;
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
         }
 
+        /* Pricing */
         .pricing-hero {
-            background: rgba(255, 255, 255, 0.7);
-            border-radius: 25px;
-            padding: 3.5rem;
+            background: linear-gradient(135deg, rgba(184, 134, 11, 0.1) 0%, rgba(212, 175, 55, 0.1) 100%);
+            border-radius: 30px;
+            padding: 4rem 3rem;
+            margin: 4rem 0;
             text-align: center;
             border: 3px solid #D4AF37;
-            box-shadow: 0 10px 40px rgba(184, 134, 11, 0.25);
+            box-shadow: 
+                0 20px 60px rgba(184, 134, 11, 0.2),
+                0 0 80px rgba(212, 175, 55, 0.15);
+        }
+
+        .price-tag {
+            font-size: 4rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin: 2rem 0;
+        }
+
+        .price-duration {
+            font-size: 1.5rem;
+            color: #666;
+            margin-bottom: 2rem;
         }
 
         .price-features {
             list-style: none;
-            padding: 0;
-            max-width: 700px;
-            margin: 2rem auto;
+            font-size: 1.2rem;
+            margin: 2rem 0;
             text-align: left;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .price-features li {
-            padding: 1rem 0;
-            font-size: 1.2rem;
-            border-bottom: 1px solid rgba(184, 134, 11, 0.2);
+            padding: 0.8rem 0;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
         }
 
+        .price-features li:last-child {
+            border-bottom: none;
+        }
+
+        /* FAQ */
         .faq-item {
-            background: rgba(255, 255, 255, 0.6);
+            background: rgba(255, 255, 255, 0.5);
             border-radius: 15px;
             padding: 2rem;
-            margin: 1.5rem 0;
-            border-left: 4px solid #B8860B;
-            transition: all 0.3s ease;
-        }
-
-        .faq-item:hover {
-            box-shadow: 0 6px 25px rgba(184, 134, 11, 0.2);
-            transform: translateY(-3px);
+            margin-bottom: 1.5rem;
+            border: 2px solid rgba(212, 175, 55, 0.2);
         }
 
         .faq-question {
-            color: #B8860B;
             font-size: 1.3rem;
             font-weight: 600;
             margin-bottom: 1rem;
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         .faq-answer {
-            color: #000000;
             font-size: 1.1rem;
+            color: #000000;
             line-height: 1.8;
         }
 
+        /* Footer */
         footer {
-            text-align: center;
+            background: rgba(0, 0, 0, 0.05);
             padding: 3rem 2rem;
-            background: rgba(255, 255, 255, 0.3);
-            border-top: 2px solid rgba(184, 134, 11, 0.3);
-            margin-top: 4rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
         }
 
         footer a {
-            color: #000000;
+            color: #B8860B;
             text-decoration: none;
-            margin: 0 1rem;
+            margin: 0 0.5rem;
             transition: color 0.3s ease;
         }
 
         footer a:hover {
-            color: #B8860B;
+            color: #D4AF37;
         }
 
+        /* Responsive */
         @media (max-width: 768px) {
+            .testimonial-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
             .language-switcher {
                 top: 1rem;
                 right: 1rem;
             }
 
-            h1 {
-                font-size: 2.2rem;
-                letter-spacing: 1px;
+            .hero {
+                padding: 1rem;
             }
 
-            .hero-subtitle {
-                font-size: 1.3rem;
+            .container {
+                padding: 2rem 1rem;
             }
 
-            .hero-description {
-                font-size: 1.1rem;
+            .pricing-hero {
+                padding: 2rem 1.5rem;
             }
 
-            h2 {
-                font-size: 2rem;
-            }
-
-            section {
-                padding: 2.5rem 1.5rem;
-            }
-
-            .process-steps {
-                grid-template-columns: 1fr;
+            .price-tag {
+                font-size: 3rem;
             }
         }
     </style>
@@ -415,17 +484,20 @@
 <body>
     <!-- Language Switcher -->
     <div class="language-switcher">
-        <a href="index.html" class="lang-link" title="English">EN</a>
-        <a href="de.html" class="lang-link" title="Deutsch">DE</a>
-        <a href="hu.html" class="lang-link active" title="Magyar">HU</a>
+        <a href="index.html" class="lang-link">EN</a>
+        <a href="de.html" class="lang-link">DE</a>
+        <a href="hu.html" class="lang-link active">HU</a>
     </div>
 
     <!-- Hero Section -->
     <div class="hero">
-        <h1>RAW & REAL</h1>
-        <p class="hero-subtitle">Valódi testtranszformáció 35+ nőknek</p>
-        <p class="hero-description">
-            Alakítsd át a tested, nyerd vissza az energiád és nézz ki 10 évvel fiatalabbnak – fenntarthatóan, támogatottan, eredményekkel.
+        <h1>Alakítsd át a tested, energiád & kisugárzásod</h1>
+        <p class="subtitle">
+            35+ nőknek, akik könnyedén szeretnének karcsú és erős testet elérni,<br>
+            10 évvel fiatalabban kinézni és energikusan és ragyogóan érezni magukat.
+        </p>
+        <p class="hero-tagline">
+            Nincs diéta. Nincs kiégés. Nincs baromság.
         </p>
         <a href="#contact" class="cta-button">
             <span class="cta-glow"></span>
@@ -433,114 +505,81 @@
         </a>
     </div>
 
+    <!-- Main Content -->
     <div class="container">
-        <!-- Problem Section -->
+        
+        <!-- About Amy Section -->
         <section>
-            <h2>Ismered ezt?</h2>
-            <p>Dolgozol magadon. Próbálkozol. De soha nem marad meg.</p>
-            <p>Energiád alacsony. Bőröd fáradt. Tested nem olyan, mint korábban volt.</p>
-            <p>Minden egyes diéta lelkesedéssel kezdődik. Aztán összeomlik. És újra egyedül vagy.</p>
-            <p><strong>A probléma nem az akaraterőd. Hanem hogy egyedül vagy benne.</strong></p>
-            <p>Szükséged van valakire, aki végigkísér az egészen – aki már járt ott, ahol te vagy. Aki tudja, mi fog jönni, mielőtt te tudnád. Aki hisz benned akkor is, amikor te már nem hiszel magadban.</p>
-        </section>
-
-        <!-- What You Get -->
-        <section>
-            <h2>Mit kapsz a Raw & Real-lel</h2>
-            <p>Ez nem egy "tervezem, aztán eltűnök" program. Ez 12 hét intenzív, személyre szabott kísérés. Velem. Minden egyes lépésnél.</p>
-            
-            <div class="testimonial-box">
-                <h3>12 x 60 perces coaching hívások</h3>
-                <p>Hetenként találkozunk. Megbeszéljük, merre tartasz. Mit érzel. Mik a kihívásaid. Mindent testreszabunk az aktuális helyzetedre.</p>
-            </div>
-
-            <div class="testimonial-box">
-                <h3>WhatsApp támogatás hétfőtől péntekig</h3>
-                <p>Kérdésed van? Küldj egy üzenetet. Mutatnál valamit, amit ettél? Küldd el. Elakadtál? Írd meg nekem. Nem vagy egyedül ebben a folyamatban.</p>
-            </div>
-
-            <div class="testimonial-box">
-                <h3>Teljes Feng Shui elemzés</h3>
-                <p>Az otthonod támogathat téged – vagy blokkolhat. Elvégzem a teljes lakásod energetikai elemzését és konkrét optimalizálási javaslatokat kapsz, amelyeket azonnal végrehajthatasz.</p>
-            </div>
-
-            <div class="testimonial-box">
-                <h3>Személyre szabott étrend-tervezés</h3>
-                <p>Megkapod a receptötleteket, az ételkombinációk ismereteit és a konkrét útmutatást – lépésről lépésre, hogy mit, mikor és hogyan egyél.</p>
-            </div>
-
-            <div class="testimonial-box">
-                <h3>Lélekgyógyítás és belső munka</h3>
-                <p>A testtranszformáció nem csak arról szól, amit eszel. A kételyekkel, a limitáló meggyőződésekkel és az érzelmi blokkokkal is foglalkozunk – bármivel, ami visszatart.</p>
-            </div>
-
-            <p style="text-align: center; font-size: 1.3rem; margin-top: 3rem; font-weight: 600;">
-                <strong>Alapos vagyok. Nem hagyok ki egyetlen részletet sem. És itt leszek veled az egész úton.</strong>
-            </p>
-        </section>
-
-        <!-- Testimonial - Nicole -->
-        <section>
-            <h2>Nicole története</h2>
-            
-            <div class="testimonial-box">
-                <div style="text-align: center; margin-bottom: 2rem;">
-                    <p style="font-size: 1.8rem; font-weight: 600; background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
-                        "Megvannak az energiablokkjaim. És amikor elvégzem a napi Feng Shui gyakorlatot, az azonnali változásokat hoz."
-                    </p>
-                    <p style="font-style: italic; color: #666; margin-top: 1rem;">— Nicole Vogt</p>
-                </div>
-
-                <div style="background: rgba(255, 255, 255, 0.5); padding: 2.5rem; border-radius: 15px; border-left: 4px solid #D4AF37;">
-                    <p><strong>Nicole története:</strong></p>
-                    <p>Nicole három gyereket nevel. Már sok mindent kipróbált. Sosem maradt meg.</p>
-                    
-                    <p>Akkor csatlakozott a Raw & Real-hez.</p>
-                    
-                    <p>A Feng Shui lépéseit elkezdte végrehajtani a lakásában. Megszabadult az áttéttől. Megtisztította a helyeket, ahol az energia elakadt. És azonnal érezte a változást.</p>
-                    
-                    <p>Nem csak elmélet volt. Működött. Naponta. Érezhető módon.</p>
-                    
-                    <p>Az étrendjével is ugyanez volt. Lépésről lépésre. Egyértelmű utasításokkal. Amikor elakadt, ott voltam. Minden alkalommal.</p>
-                    
-                    <p>Nem kellett kitalálnia. Nem kellett keresnie. Csak követnie kellett.</p>
-                    
-                    <p><strong>És ez működött.</strong></p>
+            <h2>Ismerd meg a coachod</h2>
+            <div class="testimonial-hero">
+                <div class="testimonial-content">
+                    <div class="testimonial-image">
+                        <img src="images/amy.jpg" alt="Amy Lang - Raw & Real Coach">
+                        <div class="testimonial-name">Amy Lang</div>
+                    </div>
+                    <div class="testimonial-text">
+                        <p><strong>A legtöbb coach a felszínen dolgozik. Adnak neked egy tervet. Megmondják, mit egyél. Nem kérdezik meg, miért nem tudtad korábban végigcsinálni.</strong></p>
+                        
+                        <p>Én másként dolgozom. Mert értek valamit, amit a legtöbben figyelmen kívül hagynak: a tested nem létezik elszigetelten. Az átalakulásod nem csak az evésről szól. A térről szól, amelyben élsz. A meggyőződésekről, amelyeket hordozol. Az energetikai mintákról, amelyek visszatartanak.</p>
+                        
+                        <p>Magam jártam végig ezt az utat. Nem egyszer, hanem többször. Tudom, mit jelent kudarcot vallani. Újrakezdeni. Felfedezni, hogy a válasz nem a következő programban rejlik – hanem az egész rendszer megértésében.</p>
+                        
+                        <p><strong>Ezért vagyok alapos.</strong> Nem hagyok figyelmen kívül egyetlen részletet sem. Nem adok neked egy sablont és nem tűnök el. Rendszerszerűen gondolkodom. A tested. Az otthonod. A belső tájad. Mindez számít.</p>
+                        
+                        <p>Ha velem dolgozol, nem csak táplálkozási kísérést kapsz. Kapsz valakit, aki látja azokat a kapcsolatokat, amelyeket mások figyelmen kívül hagynak. Valakit, aki tudja, hogy egy elzárt konyha befolyásolja az étellel való kapcsolatodat. Hogy a megoldatlan érzelmi minták megjelennek az evési szokásaidban. Hogy a környezeted vagy támogatja az átalakulásodat – vagy szabotálja.</p>
+                        
+                        <p><strong>Az én megközelítésem:</strong> Összekapcsolom a testtranszformációt a klasszikus Feng Shui-val (az iránytű módszer, nem dekorációs tippek) és mély belső munkával. A fizikai tested. Az energetikai tered. A pszichológiai mintáid. Mind a háromnak össze kell hangolódnia a tartós változáshoz.</p>
+                        
+                        <p>Amit átadok neked, az nem csak információ. Az én rendíthetetlen meggyőződésem, hogy ez működik. Hogy meg fogod csinálni. Hogy az átalakulás elkerülhetetlenné válik, amikor az egész rendszert megcélozzuk.</p>
+                        
+                        <p>Abbahagyod a kételkedést. Elkezdel tudni.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Another Testimonial - Elisabeth -->
+        <!-- Nicole's Testimonial -->
         <section>
-            <h2>Elisabeth története</h2>
-            
-            <div class="testimonial-box">
-                <div style="text-align: center; margin-bottom: 2rem;">
-                    <p style="font-size: 1.8rem; font-weight: 600; background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
-                        "A férjem korábban gúnyolódott rajta. Ma már azt kérdezi, mit eszem. Érdeklődik. Látja az eredményeket rajtam."
-                    </p>
-                    <p style="font-style: italic; color: #666; margin-top: 1rem;">— Elisabeth (Ausztria)</p>
-                </div>
-
-                <div style="background: rgba(255, 255, 255, 0.5); padding: 2.5rem; border-radius: 15px; border-left: 4px solid #D4AF37;">
-                    <p><strong>Elisabeth története:</strong></p>
-                    <p>A férje szkeptikus volt. Teljesen. Minden alkalommal, amikor elkezdett valamit, ő gúnyolódott rajta.</p>
-                    
-                    <p>"Megint az egészségügyi dolog."</p>
-                    
-                    <p>Elisabeth egyedül volt benne. És fáradt volt attól, hogy egyedül van.</p>
-                    
-                    <p>Aztán csatlakozott a Raw & Real-hez.</p>
-                    
-                    <p>Nem próbálta meggyőzni a férjét. Csak csendben csinálta. Lépésről lépésre. Az útmutatásom szerint.</p>
-                    
-                    <p>A teste megváltozott. Az energiája visszatért. A bőre tiszta lett. És amikor mindenki más beteg lett télen, ő egészséges maradt.</p>
-                    
-                    <p>Ma már kérdezi, mit eszik. Érdeklődik. Látja az eredményeket rajta.</p>
-                    
-                    <p>Nem azért, mert meggyőzte őt. Hanem mert látta, milyen jól érzi magát. Hogyan néz ki. Hogyan maradt egészséges, miközben mindenki más beteg volt.</p>
-                    
-                    <p><strong>Amy átadja rád a hitét. És hirtelen már nem kételkedsz – egyszerűen tudod, hogy működik.</strong></p>
+            <h2>Valódi eredmények, valódi nő</h2>
+            <div class="testimonial-hero">
+                <div class="testimonial-content">
+                    <div class="testimonial-image">
+                        <img src="images/nicole.jpg" alt="Nicole Vogt">
+                        <div class="testimonial-name">Nicole Vogt</div>
+                    </div>
+                    <div class="testimonial-text">
+                        <p><strong>Korábban kipróbáltam transzformációs programokat. Egyik sem foglalkozott azzal, amire tényleg szükségem volt.</strong></p>
+                        
+                        <p>Három kisgyerekkel, akiknek külön főzök, miközben magam a saját utamat járom – szétszakítva éreztem magam. Hogyan tiszteljem azt, amit helyesnek ismerek fel a testemnek, miközben a családom másként él? Hogyan adjak újra teret a saját igényeimnek, évek után, amikor mindent másoknak adtam?</p>
+                        
+                        <p><strong>Aztán megtaláltam Amyt.</strong></p>
+                        
+                        <p>Nem adott nekem egy sablon tervet. Megmutatta, hogyan járjam a saját utam, miközben a családom az övét járja – világosan, konfliktusok nélkül, anélkül, hogy családi projektté tenném.</p>
+                        
+                        <p>WhatsAppon (hétfőtől péntekig) mindig elérhető volt. Egyetlen részlet sem volt neki túl kicsi. Minden bizonytalanság, minden kérdés – neki voltak gyakorlati válaszai. Nem elmélet. Valódi megoldások.</p>
+                        
+                        <p>Amikor nem tudtam, hogyan kezeljek családi étkezéseket – megmutatta, hogyan.</p>
+                        
+                        <p>Amikor kételkedtem benne, hogy valóban meg tudom-e csinálni – adta a <strong>rendíthetetlen hitét</strong>. Hogy működik. Hogy meg fogom csinálni. Hogy nem kell nehéznek lennie.</p>
+                        
+                        <p><strong>Három hónap múlva:</strong></p>
+                        
+                        <p>Remek formában érzem magam. Tele vagyok energiával. Mentálisan tiszta. Kevesebb alvásra van szükségem, több vitalitásom van, és újra úgy érzem magam, mint önmagam – tényleg én magam, nem csak „anya".</p>
+                        
+                        <p><strong>És aztán jött a pillanat, amit soha nem fogok elfelejteni:</strong></p>
+                        
+                        <p>A családomban mindenkinek influenzája volt. Láz. Köhögés. A teljes program.</p>
+                        
+                        <p><strong>Én voltam az egyetlen, aki nem lett beteg.</strong></p>
+                        
+                        <p>A férjem – aki mindig azt gondolta, az én megközelítésem „egy kicsit sok" – rám nézett és azt mondta: <strong>„Mit csinálsz másként? Én is ki akarom próbálni."</strong></p>
+                        
+                        <p>Ma már kérdezi, mit eszem. Érdeklődik. Látja rajtam az eredményeket.</p>
+                        
+                        <p>Nem azért, mert meggyőztem őt. Hanem mert látta, milyen jól vagyok. Hogyan nézek ki. Hogyan maradtam egészséges, miközben mindenki más beteg volt.</p>
+                        
+                        <p><strong>Amy átadja neked a hitét. És hirtelen már nem kételkedsz – egyszerűen tudod, hogy működik.</strong></p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -580,14 +619,14 @@
                     <li>✅ 12 x 60 perces privát coaching hívások</li>
                     <li>✅ WhatsApp támogatás hétfőtől péntekig</li>
                     <li>✅ Teljes Feng Shui elemzés a lakásodról</li>
-                    <li>✅ Személyre szabott étkezési tervezés és táplálkozási kísérés</li>
-                    <li>✅ Food Combining (ételkombináció) információk</li>
-                    <li>✅ Lépésről lépésre támogatás minden kihívásban</li>
+                    <li>✅ Személyre szabott étkezési tervezés & táplálkozási kísérés</li>
+                    <li>✅ Food Combining információk</li>
+                    <li>✅ Lépésről lépésre támogatás minden kihívásnál</li>
                     <li>✅ Egyetlen részlet sem marad figyelmen kívül</li>
                 </ul>
                 
                 <p style="margin-top: 2rem; font-size: 1.2rem; color: #000; font-weight: 600;">
-                    A befektetési részleteket az ingyenes első beszélgetésen tárgyaljuk meg.
+                    A befektetési részleteket az ingyenes első beszélgetésben tárgyaljuk meg.
                 </p>
                 
                 <p style="margin-top: 2rem; font-size: 0.9rem; color: #666; max-width: 700px; margin-left: auto; margin-right: auto;">
@@ -613,8 +652,8 @@
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">Mi van, ha a családom nem érdeklődik az "egészségügyi dologom" iránt?</div>
-                <div class="faq-answer">Tökéletes. A legtöbb kliensemnél ez van. Megmutatom, hogyan járd a saját utad, miközben ők járják az övékét – természetesen, nyomás nélkül, anélkül, hogy furcsa lenne. Nicole háromgyerekesen sikerült.</div>
+                <div class="faq-question">Mi van, ha a családom nem érdeklődik az „egészségügyi dologom" iránt?</div>
+                <div class="faq-answer">Tökéletes. A legtöbb kliensemnél ez van. Megmutatom, hogyan járd a saját utad, miközben ők járják az övékét – természetesen, nyomás nélkül, anélkül, hogy furcsa lenne. Nicole háromgyerekesen megcsinálta.</div>
             </div>
 
             <div class="faq-item">
@@ -640,9 +679,9 @@
                     Így megy tovább:
                 </p>
                 <ol style="text-align: left; max-width: 600px; margin: 2rem auto; font-size: 1.2rem; line-height: 2;">
-                    <li>Foglald le az ingyenes 20 perces beszélgetést</li>
+                    <li>Foglald le az ingyenes 20 perces beszélgetésedet</li>
                     <li>Beszélgetünk – ellenőrzöm, hogy a Raw & Real neked való-e</li>
-                    <li>Ha megfelelünk egymásnak, elindítjuk az átalakulásod</li>
+                    <li>Ha megfelelünk egymásnak, elindítjuk az átalakulásodat</li>
                 </ol>
             </div>
             
