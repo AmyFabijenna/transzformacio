@@ -3,16 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog | Amy Lang - Tudatos Transzformáció Tanácsadás</title>
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="../favicon.png">
-    <link rel="apple-touch-icon" href="../favicon.png">
+    <title>Testtranszformáció 35+ nőknek | Fiatalabban kinézni, tele energiával | Raw & Real</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Bepillantások a szakmai újratájékozódásba, személyes fejlődésbe és life coachingba. Amy Langtól.">
-    <meta name="keywords" content="Life Coaching Blog, Szakmai újratájékozódás, Személyes fejlődés, Karrierváltás, Változás">
+    <meta name="description" content="Alakítsd át a tested, nyerd vissza az energiád és nézz ki 10 évvel fiatalabbnak. A Raw & Real coaching segíti a 35+ nőket fenntartható testtranszformációban és ragyogó vitalitásban. Nincs diéta. Nincs kiégés. Valódi átalakulás.">
+    <meta name="keywords" content="testtranszformáció nők 35+, fiatalabban kinézni természetesen, fenntartható fogyás, energia coaching, holisztikus testtranszformáció, anti-aging átalakulás, női egészség coaching, vitalitás visszanyerése, természetes testváltozás, transzformációs coaching nőknek">
     <meta name="author" content="Amy Lang">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://gorawandreal.com/hu.html">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gorawandreal.com/hu.html">
+    <meta property="og:title" content="Testtranszformáció 35+ nőknek | Fiatalabban kinézni, tele energiával">
+    <meta property="og:description" content="Alakítsd át a tested, nyerd vissza az energiád és nézz ki 10 évvel fiatalabbnak. Raw & Real coaching fenntartható átalakulásért.">
+    <meta property="og:site_name" content="Raw & Real">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Testtranszformáció 35+ nőknek | Raw & Real">
+    <meta name="twitter:description" content="Alakítsd át a tested, nyerd vissza az energiád és nézz ki 10 évvel fiatalabbnak. Fenntartható transzformációs coaching 35+ nőknek.">
+    
+    <!-- Language -->
+    <meta http-equiv="content-language" content="hu">
+    <link rel="alternate" hreflang="hu" href="https://gorawandreal.com/hu.html">
+    <link rel="alternate" hreflang="de" href="https://gorawandreal.com/de.html">
+    <link rel="alternate" hreflang="en" href="https://gorawandreal.com/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    
+    <!-- Schema.org Structured Data for Rich Snippets -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "ProfessionalService",
+                "name": "Raw & Real Transzformációs Coaching",
+                "description": "Holisztikus testtranszformációs coaching 35+ nők számára. Fenntartható életmódváltás, energia-helyreállítás és természetes vitalitásfokozás.",
+                "url": "https://gorawandreal.com/hu.html",
+                "priceRange": "$$",
+                "areaServed": {
+                    "@type": "Place",
+                    "name": "Világszerte"
+                },
+                "availableLanguage": ["Magyar", "Német", "Angol"],
+                "founder": {
+                    "@type": "Person",
+                    "name": "Amy Lang",
+                    "jobTitle": "Transzformációs Coach",
+                    "description": "Holisztikus életmód coach, testtranszformációra specializálódva 35+ nők számára"
+                },
+                "offers": {
+                    "@type": "Offer",
+                    "name": "12 hetes testtranszformációs program",
+                    "description": "Intenzív 1:1 coaching WhatsApp támogatással, személyre szabott kísérés és holisztikus transzformációs segítség"
+                }
+            },
+            {
+                "@type": "Organization",
+                "name": "Raw & Real",
+                "url": "https://gorawandreal.com/hu.html",
+                "logo": "https://gorawandreal.com/favicon.png",
+                "sameAs": [],
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "contactType": "Ügyfélszolgálat",
+                    "availableLanguage": ["Magyar", "Német", "Angol"]
+                }
+            },
+            {
+                "@type": "WebSite",
+                "name": "Raw & Real",
+                "url": "https://gorawandreal.com/hu.html",
+                "inLanguage": "hu",
+                "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": "https://gorawandreal.com/hu.html?s={search_term_string}",
+                    "query-input": "required name=search_term_string"
+                }
+            }
+        ]
+    }
+    </script>
     
     <style>
         * {
@@ -29,208 +106,273 @@
             min-height: 100vh;
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        header {
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-            padding: 60px 20px 40px;
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(10px);
-            border-radius: 30px;
-            margin-bottom: 60px;
-            border: 2px solid rgba(184, 134, 11, 0.2);
-            box-shadow: 0 20px 60px rgba(184, 134, 11, 0.2);
+            padding: 2rem;
+            position: relative;
+            background: linear-gradient(135deg, #f5e6e8 0%, #ffe4e9 50%, #f5e6e8 100%);
         }
 
-        h1 {
-            font-size: 3.5em;
-            margin-bottom: 15px;
-            background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 50%, #C5B358 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            font-weight: 300;
-            letter-spacing: 3px;
+        /* Language Switcher */
+        .language-switcher {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            z-index: 100;
+            display: flex;
+            gap: 0.5rem;
         }
 
-        .subtitle {
-            font-size: 1.2em;
-            color: #666666;
-            margin-bottom: 30px;
-        }
-
-        .back-home {
-            display: inline-block;
+        .lang-link {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.5rem 1rem;
             background: rgba(184, 134, 11, 0.1);
-            color: #000000;
-            padding: 10px 25px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: all 0.3s ease;
             border: 2px solid #B8860B;
+            border-radius: 50px;
+            color: #000000;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            backdrop-filter: blur(10px);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        .back-home:hover {
+        .lang-link:hover, .lang-link.active {
             background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 50%, #C5B358 100%);
             transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
         }
 
-        .blog-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 40px;
-            margin-bottom: 60px;
-        }
-
-        .blog-card {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(15px);
-            border-radius: 20px;
-            overflow: hidden;
-            border: 2px solid rgba(184, 134, 11, 0.2);
-            box-shadow: 0 10px 40px rgba(184, 134, 11, 0.2);
-            transition: all 0.3s ease;
-        }
-
-        .blog-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 50px rgba(184, 134, 11, 0.3);
+        .lang-link.active {
             border-color: #D4AF37;
         }
 
-        .blog-image {
-            width: 100%;
-            height: 250px;
-            background: linear-gradient(135deg, rgba(212, 175, 55, 0.3), rgba(197, 179, 88, 0.3));
-            display: flex;
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 300;
+            letter-spacing: 3px;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            color: #0d2137;
+            font-weight: 400;
+        }
+
+        .hero-description {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            color: #000000;
+            line-height: 1.9;
+        }
+
+        .cta-button {
+            display: inline-flex;
             align-items: center;
-            justify-content: center;
-            font-size: 4em;
+            padding: 1.2rem 3rem;
+            background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 50%, #C5B358 100%);
+            color: #000000;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 3px solid #B8860B;
+            box-shadow: 0 8px 30px rgba(184, 134, 11, 0.3), inset 0 2px 0 rgba(255, 255, 255, 0.4);
+            position: relative;
             overflow: hidden;
         }
 
-        .blog-image img {
+        .cta-glow {
+            position: absolute;
+            top: 0;
+            left: -100%;
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transition: left 0.6s;
         }
 
-        .blog-content {
-            padding: 30px;
+        .cta-button:hover .cta-glow {
+            left: 100%;
         }
 
-        .blog-date {
-            color: #666666;
-            font-size: 0.9em;
-            margin-bottom: 10px;
+        .cta-button:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(212, 175, 55, 0.5), inset 0 2px 0 rgba(255, 255, 255, 0.5);
         }
 
-        .blog-title {
-            color: #B8860B;
-            font-size: 1.8em;
-            margin-bottom: 15px;
-            font-weight: 400;
-            line-height: 1.3;
+        .cta-text {
+            position: relative;
+            z-index: 1;
         }
 
-        .blog-excerpt {
-            color: #333333;
-            font-size: 1.05em;
-            line-height: 1.7;
-            margin-bottom: 20px;
-        }
-
-        .read-more {
-            display: inline-block;
-            background: linear-gradient(135deg, #D4AF37 0%, #C5B358 100%);
-            color: #000000;
-            padding: 12px 30px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            box-shadow: 0 5px 20px rgba(212, 175, 55, 0.3);
-        }
-
-        .read-more:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.5);
-        }
-
-        .coming-soon {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(15px);
-            border-radius: 20px;
-            padding: 60px 40px;
-            text-align: center;
-            border: 2px solid rgba(184, 134, 11, 0.2);
-            margin-bottom: 40px;
-        }
-
-        .coming-soon h2 {
-            color: #B8860B;
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-
-        .coming-soon p {
-            color: #666666;
-            font-size: 1.2em;
-            margin-bottom: 30px;
-        }
-
-        .newsletter-form {
-            max-width: 500px;
+        .container {
+            max-width: 1200px;
             margin: 0 auto;
-            display: flex;
-            gap: 10px;
+            padding: 4rem 2rem;
         }
 
-        .newsletter-form input {
-            flex: 1;
-            padding: 15px 20px;
-            border-radius: 25px;
+        section {
+            margin: 6rem 0;
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(15px);
+            border-radius: 30px;
+            padding: 4rem 3rem;
+            box-shadow: 0 10px 40px rgba(184, 134, 11, 0.15);
             border: 2px solid rgba(184, 134, 11, 0.3);
-            background: rgba(255, 255, 255, 0.8);
-            color: #000000;
-            font-size: 1em;
         }
 
-        .newsletter-form input::placeholder {
-            color: #999999;
+        h2 {
+            font-size: 2.8rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            margin-bottom: 3rem;
+            text-align: center;
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
-        .newsletter-form button {
-            padding: 15px 30px;
-            border-radius: 25px;
-            border: none;
-            background: linear-gradient(135deg, #D4AF37 0%, #C5B358 100%);
+        h3 {
+            color: #B8860B;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            font-weight: 400;
+        }
+
+        p {
+            font-size: 1.15rem;
+            line-height: 1.9;
             color: #000000;
+            margin-bottom: 1.3rem;
+        }
+
+        .testimonial-box {
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 20px;
+            padding: 3rem;
+            margin: 2rem 0;
+            border-left: 5px solid #D4AF37;
+            box-shadow: 0 6px 25px rgba(184, 134, 11, 0.2);
+        }
+
+        .testimonial-box h3 {
+            margin-bottom: 1.5rem;
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .step {
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 20px;
+            padding: 2.5rem;
+            text-align: center;
+            transition: all 0.4s ease;
+            border: 2px solid rgba(184, 134, 11, 0.2);
+        }
+
+        .step:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 35px rgba(212, 175, 55, 0.3);
+        }
+
+        .step-number {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 50%, #C5B358 100%);
+            color: #000000;
+            font-size: 1.8rem;
             font-weight: bold;
-            cursor: pointer;
+            margin-bottom: 1.5rem;
+        }
+
+        .pricing-hero {
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 25px;
+            padding: 3.5rem;
+            text-align: center;
+            border: 3px solid #D4AF37;
+            box-shadow: 0 10px 40px rgba(184, 134, 11, 0.25);
+        }
+
+        .price-features {
+            list-style: none;
+            padding: 0;
+            max-width: 700px;
+            margin: 2rem auto;
+            text-align: left;
+        }
+
+        .price-features li {
+            padding: 1rem 0;
+            font-size: 1.2rem;
+            border-bottom: 1px solid rgba(184, 134, 11, 0.2);
+        }
+
+        .faq-item {
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 1.5rem 0;
+            border-left: 4px solid #B8860B;
             transition: all 0.3s ease;
         }
 
-        .newsletter-form button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.5);
+        .faq-item:hover {
+            box-shadow: 0 6px 25px rgba(184, 134, 11, 0.2);
+            transform: translateY(-3px);
+        }
+
+        .faq-question {
+            color: #B8860B;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .faq-answer {
+            color: #000000;
+            font-size: 1.1rem;
+            line-height: 1.8;
         }
 
         footer {
             text-align: center;
-            padding: 40px 20px;
-            color: #666666;
-            font-size: 0.9em;
+            padding: 3rem 2rem;
+            background: rgba(255, 255, 255, 0.3);
+            border-top: 2px solid rgba(184, 134, 11, 0.3);
+            margin-top: 4rem;
         }
 
         footer a {
-            color: #666666;
+            color: #000000;
             text-decoration: none;
+            margin: 0 1rem;
+            transition: color 0.3s ease;
         }
 
         footer a:hover {
@@ -238,234 +380,309 @@
         }
 
         @media (max-width: 768px) {
+            .language-switcher {
+                top: 1rem;
+                right: 1rem;
+            }
+
             h1 {
-                font-size: 2.5em;
+                font-size: 2.2rem;
+                letter-spacing: 1px;
             }
 
-            .blog-grid {
+            .hero-subtitle {
+                font-size: 1.3rem;
+            }
+
+            .hero-description {
+                font-size: 1.1rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            section {
+                padding: 2.5rem 1.5rem;
+            }
+
+            .process-steps {
                 grid-template-columns: 1fr;
-            }
-
-            .newsletter-form {
-                flex-direction: column;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>📖 Blog</h1>
-            <p class="subtitle">Gondolatok a változásról, egyértelműségről és valódi lépésekről</p>
-            <a href="../index.html" class="back-home">← Vissza a főoldalra</a>
-        </header>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <a href="index.html" class="lang-link" title="English">EN</a>
+        <a href="de.html" class="lang-link" title="Deutsch">DE</a>
+        <a href="hu.html" class="lang-link active" title="Magyar">HU</a>
+    </div>
 
-        <!-- Featured Post -->
-        <div style="background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(15px); border-radius: 30px; padding: 50px 40px; margin-bottom: 60px; border: 2px solid rgba(184, 134, 11, 0.3); box-shadow: 0 15px 50px rgba(212, 175, 55, 0.2);">
-            <div style="text-align: center; margin-bottom: 15px;">
-                <span style="background: linear-gradient(135deg, #D4AF37 0%, #C5B358 100%); color: #000000; padding: 8px 20px; border-radius: 20px; font-size: 0.9em; font-weight: bold;">✨ Új cikk</span>
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>RAW & REAL</h1>
+        <p class="hero-subtitle">Valódi testtranszformáció 35+ nőknek</p>
+        <p class="hero-description">
+            Alakítsd át a tested, nyerd vissza az energiád és nézz ki 10 évvel fiatalabbnak – fenntarthatóan, támogatottan, eredményekkel.
+        </p>
+        <a href="#contact" class="cta-button">
+            <span class="cta-glow"></span>
+            <span class="cta-text">INGYENES ELSŐ BESZÉLGETÉS FOGLALÁSA</span>
+        </a>
+    </div>
+
+    <div class="container">
+        <!-- Problem Section -->
+        <section>
+            <h2>Ismered ezt?</h2>
+            <p>Dolgozol magadon. Próbálkozol. De soha nem marad meg.</p>
+            <p>Energiád alacsony. Bőröd fáradt. Tested nem olyan, mint korábban volt.</p>
+            <p>Minden egyes diéta lelkesedéssel kezdődik. Aztán összeomlik. És újra egyedül vagy.</p>
+            <p><strong>A probléma nem az akaraterőd. Hanem hogy egyedül vagy benne.</strong></p>
+            <p>Szükséged van valakire, aki végigkísér az egészen – aki már járt ott, ahol te vagy. Aki tudja, mi fog jönni, mielőtt te tudnád. Aki hisz benned akkor is, amikor te már nem hiszel magadban.</p>
+        </section>
+
+        <!-- What You Get -->
+        <section>
+            <h2>Mit kapsz a Raw & Real-lel</h2>
+            <p>Ez nem egy "tervezem, aztán eltűnök" program. Ez 12 hét intenzív, személyre szabott kísérés. Velem. Minden egyes lépésnél.</p>
+            
+            <div class="testimonial-box">
+                <h3>12 x 60 perces coaching hívások</h3>
+                <p>Hetenként találkozunk. Megbeszéljük, merre tartasz. Mit érzel. Mik a kihívásaid. Mindent testreszabunk az aktuális helyzetedre.</p>
             </div>
-            
-            <!-- Liegende Acht Bild -->
-            <div style="text-align: center; margin-bottom: 30px;">
-                <img src="images/infinity.jpg" alt="Végtelenség szimbólum" style="width: 200px; height: auto; border-radius: 10px;">
+
+            <div class="testimonial-box">
+                <h3>WhatsApp támogatás hétfőtől péntekig</h3>
+                <p>Kérdésed van? Küldj egy üzenetet. Mutatnál valamit, amit ettél? Küldd el. Elakadtál? Írd meg nekem. Nem vagy egyedül ebben a folyamatban.</p>
             </div>
-            
-            <h2 style="color: #B8860B; font-size: 2.5em; margin-bottom: 15px; text-align: center; font-weight: 300; line-height: 1.3;">
-                "Csak a halottaknak nincs idejük"
-            </h2>
-            
-            <p style="color: #666666; text-align: center; font-size: 1.15em; margin-bottom: 30px; font-style: italic;">
-                A legveszélyesebb hazugságról, amit magunknak mondunk
-            </p>
-            
-            <div style="text-align: center; color: #666666; font-size: 0.95em; margin-bottom: 25px;">
-                📅 2025. november 14. • ⏱️ 12 perc olvasás
+
+            <div class="testimonial-box">
+                <h3>Teljes Feng Shui elemzés</h3>
+                <p>Az otthonod támogathat téged – vagy blokkolhat. Elvégzem a teljes lakásod energetikai elemzését és konkrét optimalizálási javaslatokat kapsz, amelyeket azonnal végrehajthatasz.</p>
             </div>
-            
-            <p style="color: #333333; font-size: 1.15em; line-height: 1.8; margin-bottom: 25px;">
-                "Szívesen megtenném, de... egyszerűen <strong>nincs időm</strong>." Ismered ezeket az embereket? Akik ezt tették mantrájukká?
+
+            <div class="testimonial-box">
+                <h3>Személyre szabott étrend-tervezés</h3>
+                <p>Megkapod a receptötleteket, az ételkombinációk ismereteit és a konkrét útmutatást – lépésről lépésre, hogy mit, mikor és hogyan egyél.</p>
+            </div>
+
+            <div class="testimonial-box">
+                <h3>Lélekgyógyítás és belső munka</h3>
+                <p>A testtranszformáció nem csak arról szól, amit eszel. A kételyekkel, a limitáló meggyőződésekkel és az érzelmi blokkokkal is foglalkozunk – bármivel, ami visszatart.</p>
+            </div>
+
+            <p style="text-align: center; font-size: 1.3rem; margin-top: 3rem; font-weight: 600;">
+                <strong>Alapos vagyok. Nem hagyok ki egyetlen részletet sem. És itt leszek veled az egész úton.</strong>
             </p>
+        </section>
+
+        <!-- Testimonial - Nicole -->
+        <section>
+            <h2>Nicole története</h2>
             
-            <p style="color: #333333; font-size: 1.1em; line-height: 1.8; margin-bottom: 30px;">
-                Az igazság az, hogy van időd. Csak nem tudod, mi az idő valójában. És a saját önálló életed alapjait ássák alá. Ebben a cikkben megtudod, miért önámítás a "nincs időm" – és hogyan változtathat meg mindent napi öt perc.
-            </p>
+            <div class="testimonial-box">
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <p style="font-size: 1.8rem; font-weight: 600; background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                        "Megvannak az energiablokkjaim. És amikor elvégzem a napi Feng Shui gyakorlatot, az azonnali változásokat hoz."
+                    </p>
+                    <p style="font-style: italic; color: #666; margin-top: 1rem;">— Nicole Vogt</p>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.5); padding: 2.5rem; border-radius: 15px; border-left: 4px solid #D4AF37;">
+                    <p><strong>Nicole története:</strong></p>
+                    <p>Nicole három gyereket nevel. Már sok mindent kipróbált. Sosem maradt meg.</p>
+                    
+                    <p>Akkor csatlakozott a Raw & Real-hez.</p>
+                    
+                    <p>A Feng Shui lépéseit elkezdte végrehajtani a lakásában. Megszabadult az áttéttől. Megtisztította a helyeket, ahol az energia elakadt. És azonnal érezte a változást.</p>
+                    
+                    <p>Nem csak elmélet volt. Működött. Naponta. Érezhető módon.</p>
+                    
+                    <p>Az étrendjével is ugyanez volt. Lépésről lépésre. Egyértelmű utasításokkal. Amikor elakadt, ott voltam. Minden alkalommal.</p>
+                    
+                    <p>Nem kellett kitalálnia. Nem kellett keresnie. Csak követnie kellett.</p>
+                    
+                    <p><strong>És ez működött.</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Another Testimonial - Elisabeth -->
+        <section>
+            <h2>Elisabeth története</h2>
             
-            <div style="background: rgba(212, 175, 55, 0.1); padding: 25px; border-radius: 15px; margin: 30px 0; border-left: 4px solid #D4AF37;">
-                <p style="color: #B8860B; font-weight: bold; margin-bottom: 15px; font-size: 1.1em;">🔑 Amit ebben a cikkben találsz:</p>
-                <ul style="color: #333333; font-size: 1.05em; line-height: 1.9; margin-left: 20px;">
-                    <li>Miért az "nincs időm" az önámítás mantrája</li>
-                    <li>Mi az idő valójában: Filozófiai kitérő (Chronos, Kairos, Momo, Lola fut)</li>
-                    <li>Miért kezelik rosszul a problémát az időmenedzsment módszerek</li>
-                    <li>A 3 valódi ok: Függőségek, hitrendszerek és a hiányzó 5 perc</li>
-                    <li>Az 5 perces szabály, amely mindent megváltoztat</li>
+            <div class="testimonial-box">
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <p style="font-size: 1.8rem; font-weight: 600; background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                        "A férjem korábban gúnyolódott rajta. Ma már azt kérdezi, mit eszem. Érdeklődik. Látja az eredményeket rajtam."
+                    </p>
+                    <p style="font-style: italic; color: #666; margin-top: 1rem;">— Elisabeth (Ausztria)</p>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.5); padding: 2.5rem; border-radius: 15px; border-left: 4px solid #D4AF37;">
+                    <p><strong>Elisabeth története:</strong></p>
+                    <p>A férje szkeptikus volt. Teljesen. Minden alkalommal, amikor elkezdett valamit, ő gúnyolódott rajta.</p>
+                    
+                    <p>"Megint az egészségügyi dolog."</p>
+                    
+                    <p>Elisabeth egyedül volt benne. És fáradt volt attól, hogy egyedül van.</p>
+                    
+                    <p>Aztán csatlakozott a Raw & Real-hez.</p>
+                    
+                    <p>Nem próbálta meggyőzni a férjét. Csak csendben csinálta. Lépésről lépésre. Az útmutatásom szerint.</p>
+                    
+                    <p>A teste megváltozott. Az energiája visszatért. A bőre tiszta lett. És amikor mindenki más beteg lett télen, ő egészséges maradt.</p>
+                    
+                    <p>Ma már kérdezi, mit eszik. Érdeklődik. Látja az eredményeket rajta.</p>
+                    
+                    <p>Nem azért, mert meggyőzte őt. Hanem mert látta, milyen jól érzi magát. Hogyan néz ki. Hogyan maradt egészséges, miközben mindenki más beteg volt.</p>
+                    
+                    <p><strong>Amy átadja rád a hitét. És hirtelen már nem kételkedsz – egyszerűen tudod, hogy működik.</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section>
+            <h2>Hogyan működik</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Ingyenes 20 perces beszélgetés</h3>
+                    <p>Ellenőrizzük, hogy a Raw & Real neked való-e. Nem mindenkit fogadok be – ez mindkettőnket véd.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>12 hét együtt</h3>
+                    <p>12 x 60 perces hívások + WhatsApp támogatás hétfőtől péntekig. Minden egyes lépésnél melletted vagyok.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Teljes átalakulás</h3>
+                    <p>Testtranszformáció + energetikai térmegújítás + belső munka. A tested, az energiád és a kisugárzásod – átváltozva.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing -->
+        <section>
+            <h2>Befektetés</h2>
+            <div class="pricing-hero">
+                <h3>Raw & Real Transzformáció</h3>
+                <div style="font-size: 2rem; font-weight: 600; margin: 2rem 0; background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                    12 hét | Intenzív 1:1 kísérés
+                </div>
+                
+                <ul class="price-features">
+                    <li>✅ 12 x 60 perces privát coaching hívások</li>
+                    <li>✅ WhatsApp támogatás hétfőtől péntekig</li>
+                    <li>✅ Teljes Feng Shui elemzés a lakásodról</li>
+                    <li>✅ Személyre szabott étkezési tervezés és táplálkozási kísérés</li>
+                    <li>✅ Food Combining (ételkombináció) információk</li>
+                    <li>✅ Lépésről lépésre támogatás minden kihívásban</li>
+                    <li>✅ Egyetlen részlet sem marad figyelmen kívül</li>
                 </ul>
+                
+                <p style="margin-top: 2rem; font-size: 1.2rem; color: #000; font-weight: 600;">
+                    A befektetési részleteket az ingyenes első beszélgetésen tárgyaljuk meg.
+                </p>
+                
+                <p style="margin-top: 2rem; font-size: 0.9rem; color: #666; max-width: 700px; margin-left: auto; margin-right: auto;">
+                    <strong>Jogi megjegyzés:</strong> Ez életmód-coaching és tapasztalatcsere, nem orvosi kezelés, táplálkozásterápia vagy pszichoterápia. Az egyéni eredmények változnak. Mindig konzultálj orvossal nagyobb táplálkozási változtatások előtt.
+                </p>
+                
+                <div style="margin-top: 3rem;">
+                    <a href="#contact" class="cta-button">
+                        <span class="cta-glow"></span>
+                        <span class="cta-text">INGYENES ELSŐ BESZÉLGETÉS FOGLALÁSA</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section>
+            <h2>Gyakran ismételt kérdések</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">Milyen eredményekre számíthatok?</div>
+                <div class="faq-answer">A legtöbb nő látható energia-változásokat tapasztal 2-3 héten belül. A testtranszformáció láthatóvá válik a 4-6. hétnél. 12 hét után megvan a karcsú, erős tested, amit akartál, plusz az energia, amitől újra élőnek érzed magad.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Mi van, ha a családom nem érdeklődik az "egészségügyi dologom" iránt?</div>
+                <div class="faq-answer">Tökéletes. A legtöbb kliensemnél ez van. Megmutatom, hogyan járd a saját utad, miközben ők járják az övékét – természetesen, nyomás nélkül, anélkül, hogy furcsa lenne. Nicole háromgyerekesen sikerült.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Mi van, ha már minden diétánál megbuktam?</div>
+                <div class="faq-answer">Ezúttal nem. Mert ez itt nem diéta. És nem leszel egyedül. Alapos vagyok. Nem hagyok ki egyetlen részletet sem. Átadom rád a hitemet – hogy tudd, működik.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Végig éhes leszek?</div>
+                <div class="faq-answer">Nem. Az evési módszer, amire megtanítalak, nagy térfogatú és tápanyagdús. Valójában többet fogsz enni, mint korábban – csak jobban fogod érezni magad. A legtöbb kliens meglepődik azon, mennyit ehetnek, miközben mégis átformálják a testüket.</div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section id="contact" style="text-align: center;">
+            <h2>Kész vagy az átalakulásra?</h2>
+            <p style="font-size: 1.3rem; max-width: 700px; margin: 2rem auto;">
+                Derítsük ki, hogy a Raw & Real neked való-e.
+            </p>
+            
+            <div style="margin: 3rem 0;">
+                <p style="font-size: 1.5rem; font-weight: bold; background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                    Így megy tovább:
+                </p>
+                <ol style="text-align: left; max-width: 600px; margin: 2rem auto; font-size: 1.2rem; line-height: 2;">
+                    <li>Foglald le az ingyenes 20 perces beszélgetést</li>
+                    <li>Beszélgetünk – ellenőrzöm, hogy a Raw & Real neked való-e</li>
+                    <li>Ha megfelelünk egymásnak, elindítjuk az átalakulásod</li>
+                </ol>
             </div>
             
-            <div style="text-align: center; margin-top: 35px;">
-                <a href="post-8-csak-a-halottak.html" style="display: inline-block; background: linear-gradient(135deg, #D4AF37 0%, #C5B358 100%); color: #000000; padding: 18px 50px; border-radius: 50px; text-decoration: none; font-size: 1.2em; font-weight: bold; transition: all 0.3s ease; box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);">
-                    Olvasom most →
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin: 3rem 0;">
+                <a href="mailto:amylan@ik.me" class="cta-button">
+                    <span class="cta-glow"></span>
+                    <span class="cta-text">✉️ EMAIL ÍRÁSA</span>
+                </a>
+                
+                <a href="https://wa.me/4368120283291?text=Szia%20Amy%2C%20%C3%A9rdekel%20a%20Raw%20%26%20Real" class="cta-button">
+                    <span class="cta-glow"></span>
+                    <span class="cta-text">💬 WHATSAPP</span>
                 </a>
             </div>
-        </div>
-
-        <div style="text-align: center; margin: 60px 0 40px 0;">
-            <h2 style="color: #B8860B; font-size: 2em; font-weight: 300;">Összes cikk</h2>
-            <p style="color: #666666; font-size: 1.1em;">Heti új gondolatok a változásról és egyértelműségről</p>
-        </div>
-
-        <div class="blog-grid">
-
-
-
-
-
-
-            <!-- Post 8 - 2025. november 27. -->
-            <div class="blog-card">
-                <div class="blog-image">
-                    <img src="images/image13.jpg" alt="magányfarkas" style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-date">📅 2025. november 27. • ⏱️ 20 perc</div>
-                    <h2 class="blog-title">"A Magányfarkas"</h2>
-                    <p class="blog-excerpt">
-                        Elbeszélés a látszatról, a függőségről és a hazugságokról, amelyeket hinni akarunk
-                    </p>
-                    <a href="post-13-a-maganyfarkas.html" class="read-more">Tovább olvasom →</a>
-                </div>
-            </div>
-
-
-
-
-
-
-            <!-- Post 8 - 2025. november 14. -->
-            <div class="blog-card">
-                <div class="blog-image">
-                    <img src="images/infinity.jpg" alt="Végtelenség szimbólum" style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-date">📅 2025. november 14. • ⏱️ 12 perc</div>
-                    <h2 class="blog-title">"Csak a halottaknak nincs idejük"</h2>
-                    <p class="blog-excerpt">
-                        A legveszélyesebb hazugság, amit magunknak mondunk – és hogyan változtathat meg mindent napi öt perc.
-                    </p>
-                    <a href="post-8-csak-a-halottak.html" class="read-more">Tovább olvasom →</a>
-                </div>
-            </div>
-
-            <!-- Post 7 - 2025. november 2. -->
-            <div class="blog-card">
-                <div class="blog-image">
-                    <img src="images/image7.jpg" alt="Már tudod, mit akarsz">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-date">📅 2025. november 2. • ⏱️ 8 perc</div>
-                    <h2 class="blog-title">Már tudod, mit akarsz<br><span style="font-size: 0.7em; color: #666666;">(csak nem mered kimondani)</span></h2>
-                    <p class="blog-excerpt">
-                        A válasz itt van. Mindig is itt volt. Csak a "kéne", "kellene" és "mit fognak mások gondolni" rétegek alá temetted.
-                    </p>
-                    <a href="post-7-mar-tudod.html" class="read-more">Tovább olvasom →</a>
-                </div>
-            </div>
-
-            <!-- Post 6 - 2025. október 26. -->
-            <div class="blog-card">
-                <div class="blog-image">
-                    <img src="images/image6.jpg" alt="Amit 20 év alatt megtanultam">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-date">📅 2025. október 26. • ⏱️ 9 perc</div>
-                    <h2 class="blog-title">Amit 20 év emberekkel való munka alatt megtanultam</h2>
-                    <p class="blog-excerpt">
-                        Vannak dolgok, amiket nem könyvekből tanulsz. Hanem azzal, hogy figyelsz, hallgatsz és kísérsz.
-                    </p>
-                    <a href="post-6-20-ev.html" class="read-more">Tovább olvasom →</a>
-                </div>
-            </div>
-
-            <!-- Post 5 - 2025. október 19. -->
-            <div class="blog-card">
-                <div class="blog-image">
-                    <img src="images/image5.jpg" alt="Nincs szükséged motivációra. Struktúrára van szükséged.">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-date">📅 2025. október 19. • ⏱️ 7 perc</div>
-                    <h2 class="blog-title">Nincs szükséged motivációra.<br><span style="font-size: 0.9em; color: #666666;">Struktúrára van szükséged.</span></h2>
-                    <p class="blog-excerpt">
-                        A motiváció olyan, mint az időjárás. Jön és megy. A struktúra olyan, mint egy ház. Kitart, akkor is, ha vihar van.
-                    </p>
-                    <a href="post-5-struktura.html" class="read-more">Tovább olvasom →</a>
-                </div>
-            </div>
-
-            <!-- Post 4 - 2025. október 12. -->
-            <div class="blog-card">
-                <div class="blog-image">
-                    <img src="images/image4.jpg" alt="Miért rejtjük el saját válaszainkat">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-date">📅 2025. október 12. • ⏱️ 7 perc</div>
-                    <h2 class="blog-title">Miért rejtjük el saját válaszainkat</h2>
-                    <p class="blog-excerpt">
-                        A válaszok már itt vannak. Csak a "kéne", "kellene" és "mit fognak mások gondolni" rétegek alá temettük őket.
-                    </p>
-                    <a href="post-4-belso-tudas.html" class="read-more">Tovább olvasom →</a>
-                </div>
-            </div>
-
-            <!-- Post 3 - 2025. október 5. -->
-            <div class="blog-card">
-                <div class="blog-image">
-                    <img src="images/image3.jpg" alt="Miért utasítok el néhány embert kliensekként">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-date">📅 2025. október 5. • ⏱️ 8 perc</div>
-                    <h2 class="blog-title">Miért utasítok el néhány embert kliensekként</h2>
-                    <p class="blog-excerpt">
-                        Nem az "elég jó" kérdése. A készenlét kérdése.
-                    </p>
-                    <a href="post-3-elutasitas.html" class="read-more">Tovább olvasom →</a>
-                </div>
-            </div>
-
-            <!-- Post 2 - 2025. szeptember 28. -->
-            <div class="blog-card">
-                <div class="blog-image">
-                    <img src="images/image2.jpg" alt="5 jel, hogy kész vagy a változásra">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-date">📅 2025. szeptember 28. • ⏱️ 7 perc</div>
-                    <h2 class="blog-title">5 jel, hogy kész vagy a változásra</h2>
-                    <p class="blog-excerpt">
-                        Nem minden elégedetlenség jelentést változtatnod kell. De vannak jelek, amelyek egyértelműek.
-                    </p>
-                    <a href="post-2-5-jel.html" class="read-more">Tovább olvasom →</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="coming-soon">
-            <h2>Szeretnéd mindig megkapni az új cikkeket?</h2>
-            <p>A szakmai újratájékozódásról, életdöntésekről és arról írok, hogy mi kell valójában a változás megvalósításához.</p>
-            <p style="color: #333333; font-size: 1em;">Minden szombaton új cikk. Nincs spam. Nincs sablon.</p>
             
-            <form class="newsletter-form" action="#" method="post">
-                <input type="email" placeholder="Az e-mail címed" required>
-                <button type="submit">Értesítés</button>
-            </form>
-            
-            <p style="margin-top: 20px; font-size: 0.9em; color: #7a9fb0;">
-                (Hírlevél funkció hamarosan elérhető)
+            <p style="margin-top: 3rem; font-size: 1rem; color: #666; max-width: 700px; margin-left: auto; margin-right: auto;">
+                <strong style="background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-size: 1.1rem;">Megjegyzés:</strong> 
+                Az ingyenes beszélgetésben együtt ellenőrizzük, hogy a Raw & Real alkalmas-e a helyzetedre. Nem mindenkit fogadok be – ez mindkét fél védelmét szolgálja.
             </p>
-        </div>
-
-        <footer>
-            <p><a href="../index.html">Főoldal</a> | <a href="../adatvedelem.html">Adatvédelem</a> | <a href="../aszf.html">ÁSZF</a></p>
-            <p style="margin-top: 10px;">© 2025 Amy Lang - Coaching & Átalakulás</p>
-        </footer>
+        </section>
     </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            <a href="faq_coaching_hu.html" title="Gyakran ismételt kérdések a testtranszformációs coachingról">GYIK</a> | 
+            <a href="erstgespraech_hu.html" title="Ingyenes első beszélgetés foglalása">Időpont foglalás</a> | 
+            <a href="agb_coaching_hu.html" title="Általános Szerződési Feltételek">ÁSZF</a> | 
+            <a href="datenschutz_hu.html" title="Adatvédelmi nyilatkozat - GDPR megfelelő">Adatvédelem</a> |
+            <a href="blog/index.html" title="Raw & Real Blog - Transzformációs történetek">Blog</a> |
+            <a href="food-diary.html" title="Food Diary - Valódi ételek">Food Diary</a>
+        </p>
+        <p style="margin-top: 1rem;">Amy Lang - Raw & Real | Holisztikus Életmód Coaching</p>
+        <p style="margin-top: 0.5rem; font-size: 0.85rem;">Neue Selbständige (§ 2 Abs. 1 Z 4 GSVG) | Ausztria</p>
+        <p style="margin-top: 0.5rem; font-size: 0.8rem; max-width: 800px; margin-left: auto; margin-right: auto; color: #666;">
+            <strong>Disclaimer:</strong> A Raw & Real életmód-coachingot és tapasztalatcserét kínál holisztikus testtranszformációról, Feng Shui-ról és wellness gyakorlatokról. Ez NEM orvosi kezelés, táplálkozásterápia, pszichoterápia vagy helyettesítője a szakmai orvosi tanácsadásnak. Amy Langnak nincs orvosi vagy táplálkozástudományi végzettsége. Az egyéni eredmények változhatnak. Mindig konzultálj orvossal nagyobb táplálkozási vagy életmódbeli változtatások előtt.
+        </p>
+        <p style="margin-top: 1rem;">© 2025 Minden jog fenntartva</p>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
 </body>
 </html>

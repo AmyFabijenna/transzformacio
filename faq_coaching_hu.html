@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYIK - Gyakran Ismételt Kérdések | Raw & Real | Amy Lang</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #f5e6e8 0%, #ffe4e9 50%, #f5e6e8 100%);
+            min-height: 100vh;
+            line-height: 1.6;
+            color: #000000;
+        }
+        .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 8px 32px rgba(184, 134, 11, 0.2);
+            border: 2px solid rgba(184, 134, 11, 0.3);
+        }
+        h1 {
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+        .subtitle { font-size: 1.2em; color: #0d2137; margin-bottom: 20px; }
+        .back-link {
+            display: inline-block;
+            background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 50%, #C5B358 100%);
+            color: #000000;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: 2px solid #B8860B;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 15px rgba(184, 134, 11, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+        }
+        .back-link:hover {
+            background: linear-gradient(135deg, #CFB53B 0%, #D4AF37 50%, #E6D399 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+        }
+        .faq-section {
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(184, 134, 11, 0.15);
+            border: 2px solid rgba(184, 134, 11, 0.3);
+        }
+        .faq-section h2 {
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+        .faq-item {
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 4px solid #B8860B;
+            transition: all 0.3s ease;
+        }
+        .faq-item:hover {
+            box-shadow: 0 5px 20px rgba(184, 134, 11, 0.2);
+            transform: translateY(-2px);
+        }
+        .faq-item h3 {
+            color: #B8860B;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+        .faq-item p {
+            color: #000000;
+            font-size: 1.05em;
+            line-height: 1.7;
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #000000;
+            font-size: 0.9em;
+            background: rgba(255, 255, 255, 0.3);
+            border-top: 2px solid rgba(184, 134, 11, 0.3);
+            border-radius: 10px;
+        }
+        footer a {
+            color: #000000;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            margin: 0 10px;
+        }
+        footer a:hover { color: #B8860B; }
+        @media (max-width: 768px) {
+            .container { padding: 10px; }
+            h1 { font-size: 2em; }
+            .faq-section { padding: 20px; }
+            .faq-item { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gyakran Ismételt Kérdések</h1>
+            <p class="subtitle">Minden, amit a Raw & Real-ről tudnod kell</p>
+            <a href="hu.html" class="back-link">← Vissza a kezdőlapra</a>
+        </header>
+
+        <div class="faq-section">
+            <h2>A programról</h2>
+            
+            <div class="faq-item">
+                <h3>Naptól az első naptól 100%-ban nyersen kell ennem?</h3>
+                <p>Nem. Lépésről lépésre dolgozunk. Te döntöd el a tempót. Én magam is átéltem minden kihívást – tudom, mi működik és mi nem. Egyesek gyorsan átállnak, mások lassan. Mindkettő működik.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Mi van, ha a családom főtt ételt eszik?</h3>
+                <p>Megmutatom, hogyan főzz nekik, miközben te nyersen eszel – anélkül, hogy két különálló étkezést készítenél. Nicole megcsinálta három gyerekkel. Te is meg tudod csinálni. A legtöbb kliensemnek olyan családja van, aki főtt ételt eszik. Teljesen megvalósítható.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Szükségem van főzési ismeretekre vagy speciális eszközökre?</h3>
+                <p>Nincs szükség speciális ismeretekre. Megtanítalak mindent az alapoktól. Eszközök: Valamikor akarsz majd egy szárítógépet (nyers kenyérhez/kekszekhez) és egy jó turmixgépet, de azzal kezdhetünk, amid otthon van.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Mi van, ha újra kudarcot vallok?</h3>
+                <p>Nem fogsz. Mert ezúttal nem vagy egyedül. Alapos vagyok. Nem hagyok ki egyetlen részletet sem. És átadom rád a hitemet – hogy tudd, működik. Minden kihívást, amit te átélsz, én is átéltem. Ismerem a megoldásokat.</p>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h2>A támogatásról</h2>
+            
+            <div class="faq-item">
+                <h3>Hogyan működik a WhatsApp támogatás?</h3>
+                <p>Hétfőtől péntekig küldhetsz nekem üzeneteket – kérdéseket, fotókat az étkezéseidről, nehézségeket, sikereket – bármit. 24 órán belül válaszolok (általában sokkal gyorsabban). Olyan, mintha egy coach lenne a zsebedben.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Mi történik a 12 hívásban?</h3>
+                <p>Minden hívás 60 percig tart. Feldolgozzuk a specifikus kihívásaidat, megválaszolom a kérdéseidet, áttekintjük a haladásodat és megtervezzük a következő lépéseket. Minden hívás az aktuális helyzetedhez igazodik.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Mi van, ha el kell halasztanom egy hívást?</h3>
+                <p>Csak szólj legalább 24 órával előre, és találunk egy új időpontot. Az élet megtörténik – ezt értem.</p>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h2>Feng Shui & Lélekgyógyítás</h2>
+            
+            <div class="faq-item">
+                <h3>Mi van a Feng Shui elemzésben?</h3>
+                <p>A lakásod teljes elemzése – szobáról szobára, családtagról családtagra. Kapsz egy részletes jelentést konkrét optimalizálási javaslatokkal, amelyeket azonnal végrehajthatóz. Ez segít létrehozni egy olyan teret, ami támogatja az átalakulásodat.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Mi pontosan a "lélekgyógyítás"?</h3>
+                <p>Ez a belső munka, ami túlmutat a táplálkozáson. Dolgozunk a kételyeken, a limitáló meggyőződéseken, az érzelmi blokkokon – bármi, ami visszatart. Néhány eszközöm sámán gyakorlatból származik, de nem kell hinned semmiben. Gyakorlatias, nem elméleti.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Hinnem kell a Feng Shui-ban vagy a sámánizmusban, hogy működjön?</h3>
+                <p>Nem. Önmagában a nyers étrend át fogja alakítani a tested. A Feng Shui és a lélekgyógyítás olyan eszközök, amelyek támogatják a folyamatot. Használd, ami neked való, hagyd el, ami nem.</p>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h2>Gyakorlati kérdések</h2>
+            
+            <div class="faq-item">
+                <h3>Milyen eredményekre számíthatok?</h3>
+                <p>Az eredmények egyénileg jelentősen változnak. Sok kliensem több energiáról, jobb alvásról, tisztább bőrről és természetes fogyásról számol be, amikor a test készen áll rá. A hangsúly a fenntartható életmódváltozásokon van, nem a gyors javításokon. Az eredményeid a kiindulópontoddtól, az elkötelezettségedtől és az egyéni körülményeidtől függenek.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Végig éhes leszek?</h3>
+                <p>Nem. A nyers étrendnek nagy a térfogata, kevés a kalóriája. Több térfogatot fogsz enni, mint korábban, de kevesebb kalóriát. A legtöbb kliens meglepődik azon, mennyit ehetnek. Megmutatom, hogyan egyél eleget ahhoz, hogy jóllakj.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Mi a helyzet a társasági helyzetekkel és az étteremben étkezéssel?</h3>
+                <p>Dolgozunk stratégiákon az éttermekhez, buliyokhoz és családi találkozókhoz. Teljesen megvalósítható. A legtöbb kliensem fenntart egy társasági életet, miközben nyersen eszik. Csak tudnod kell, hogyan.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Drága ez (élelmiszerköltségek)?</h3>
+                <p>A nyers étrend lehet olyan olcsó vagy drága, amilyenné teszed. A szezonális gyümölcs és zöldség megfizethető. Az egzotikus superfoodok opcionálisak. Megmutatom, hogyan csináld meg bármelyik költségvetéssel.</p>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h2>Befektetés & Fizetés</h2>
+            
+            <div class="faq-item">
+                <h3>Mennyibe kerül a program?</h3>
+                <p>A befektetési részleteket az ingyenes első beszélgetésen tárgyaljuk meg. Így megérthetem a helyzetedet, és biztosíthatom, hogy a Raw & Real neked való, mielőtt az árról beszélnénk.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Fizethetek részletekben?</h3>
+                <p>Igen, részletfizetési tervek állnak rendelkezésre. Az első beszélgetésben olyan lehetőségeket tárgyalunk meg, amelyek neked megfelelnek.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Van visszatérítési szabályzat?</h3>
+                <p>Ha az első hívás után úgy érzed, hogy ez nem neked való, lemondhatod és teljes visszatérítést kapsz. Az első hívás után nincs visszatérítés – de még soha nem volt senki, aki abbahagyta volna. Ha megfelelően támogatnak, sikeres leszel.</p>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h2>Amyről</h2>
+            
+            <div class="faq-item">
+                <h3>Mi különböztet meg más coachoktól?</h3>
+                <p>Alapos vagyok. Évek óta nyers étrendet követek, és minden kihívást átéltem, amit te is át fogsz élni. Nem adok neked egy tervet és eltűnök – veled megyek, amíg működik. És kombinálon a nyers étrendet a Feng Shui-val és a lélekgyógyítással, amit a legtöbb coach nem csinál.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Mi a háttered?</h3>
+                <p>2014 óta gyakorlom a nyers vegán étrendet (néhány szünettel). Tanulmányoztam a klasszikus iránytű Feng Shui-t, a sámánizmust és különböző testmunka-gyakorlatokat. De fontosabb, mint a képesítések: magam is átéltem ezt. Tudom, mi működik, mert magam is megcsináltam.</p>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h2>További kérdések?</h2>
+            
+            <div class="faq-item">
+                <p style="text-align: center; font-size: 1.1em;">
+                    Ha a kérdésed itt nincs megválaszolva, <a href="mailto:amylan@ik.me" style="color: #B8860B; font-weight: bold;">írj nekem egy emailt</a> vagy <a href="https://wa.me/4368120283291" style="color: #B8860B; font-weight: bold;">írj WhatsAppon</a>.
+                </p>
+                <p style="text-align: center; margin-top: 20px;">
+                    <a href="hu.html#contact" class="back-link">Ingyenes első beszélgetés foglalása</a>
+                </p>
+            </div>
+        </div>
+
+        <footer>
+            <p>
+                <a href="hu.html">Kezdőlap</a> | <a href="blog/index.html">Blog</a> | <a href="food-diary.html">Food Diary</a> | 
+                <a href="faq_coaching_hu.html">GYIK</a> | 
+                <a href="agb_coaching_hu.html">ÁSZF</a> | 
+                <a href="datenschutz_hu.html">Adatvédelem</a>
+            </p>
+            <p style="margin-top: 10px;">© 2025 Amy Lang - Raw & Real | Holisztikus Életmód Coaching</p>
+        </footer>
+    </div>
+</body>
+</html>

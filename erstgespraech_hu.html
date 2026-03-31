@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingyenes első beszélgetés foglalása | Raw & Real | Amy Lang</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <meta name="description" content="Foglald le az ingyenes 20 perces első beszélgetésedet Amy Langgal. Derítsük ki, hogy a Raw & Real neked való-e.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #f5e6e8 0%, #ffe4e9 50%, #f5e6e8 100%);
+            min-height: 100vh;
+            line-height: 1.8;
+            color: #000000;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 8px 32px rgba(184, 134, 11, 0.2);
+            border: 2px solid rgba(184, 134, 11, 0.3);
+        }
+        h1 {
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+        .subtitle { font-size: 1.2em; color: #0d2137; margin-bottom: 20px; }
+        .back-link {
+            display: inline-block;
+            background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 50%, #C5B358 100%);
+            color: #000000;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: 2px solid #B8860B;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 15px rgba(184, 134, 11, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+        }
+        .back-link:hover {
+            background: linear-gradient(135deg, #CFB53B 0%, #D4AF37 50%, #E6D399 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+        }
+        .content-section {
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(184, 134, 11, 0.15);
+            border: 2px solid rgba(184, 134, 11, 0.3);
+        }
+        .content-section h2 {
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 300;
+        }
+        .content-section p {
+            color: #000000;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+        .info-box {
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 30px 0;
+            border-left: 4px solid #B8860B;
+        }
+        .info-box h3 {
+            color: #B8860B;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            font-weight: 400;
+        }
+        .info-box ul {
+            list-style: none;
+            padding: 0;
+        }
+        .info-box li {
+            color: #000000;
+            font-size: 1.05em;
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+        }
+        .info-box li:before {
+            content: "✓";
+            color: #B8860B;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.15), rgba(184, 134, 11, 0.2));
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 4px solid #D4AF37;
+            margin: 30px 0;
+        }
+        .highlight-box strong {
+            color: #B8860B;
+            font-size: 1.1em;
+        }
+        .warning-box {
+            background: linear-gradient(135deg, rgba(220, 53, 69, 0.1), rgba(220, 53, 69, 0.15));
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 4px solid #dc3545;
+            margin: 30px 0;
+        }
+        .warning-box strong {
+            color: #dc3545;
+            font-size: 1.1em;
+        }
+        .cal-embed {
+            background: rgba(255, 255, 255, 0.4);
+            border-radius: 20px;
+            padding: 20px;
+            margin-top: 40px;
+            min-height: 700px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #000000;
+            font-size: 0.9em;
+            background: rgba(255, 255, 255, 0.3);
+            border-top: 2px solid rgba(184, 134, 11, 0.3);
+            border-radius: 10px;
+        }
+        footer a {
+            color: #000000;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            margin: 0 10px;
+        }
+        footer a:hover { color: #B8860B; }
+        @media (max-width: 768px) {
+            .container { padding: 10px; }
+            h1 { font-size: 2em; }
+            .content-section { padding: 25px; }
+            .cal-embed { min-height: 800px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ingyenes első beszélgetés</h1>
+            <p class="subtitle">Derítsük ki, hogy a Raw & Real neked való-e</p>
+            <a href="hu.html" class="back-link">← Vissza a kezdőlapra</a>
+        </header>
+
+        <div class="content-section">
+            <h2>Hogyan zajlik az első beszélgetés?</h2>
+            
+            <p>Az ingyenes első beszélgetésben 20 percet szánunk arra, hogy megismerjük egymást. A beszélgetés online videón keresztül zajlik – kényelmesen otthonról.</p>
+
+            <div class="info-box">
+                <h3>Mi történik az első beszélgetésben?</h3>
+                <ul>
+                    <li>Elmondod, mi foglalkoztat most</li>
+                    <li>Ellenőrizzük, hogy a Raw & Real alkalmas-e a helyzetedre</li>
+                    <li>Elmondom, hogyan dolgozom és mire számíthatsz</li>
+                    <li>Felteheted minden kérdésedet</li>
+                    <li>Megnézzük, jól passzolunk-e egymáshoz</li>
+                </ul>
+            </div>
+
+            <div class="warning-box">
+                <p><strong>Fontos megjegyzés:</strong></p>
+                <p>Az első beszélgetés arra is szolgál, hogy ellenőrizzük, vajon a Raw & Real egyáltalán alkalmas-e a helyzetedre. Ez életmód-coaching személyes tapasztalat alapján, NEM orvosi kezelés, táplálkozásterápia vagy pszichoterápia.</p>
+                <p style="margin-top: 10px;"><strong>Amy Lang Neue Selbständige (Ausztria) orvosi vagy táplálkozástudományi végzettség nélkül.</strong> Ha akut mentális problémáid vannak, evészavarod van, vagy orvosi/terápiás támogatásra van szükséged, őszintén megmondom neked, és megfelelő szakembereket ajánlok.</p>
+                <p style="margin-top: 10px;">Konzultálnod kell az orvosoddal, mielőtt nagyobb táplálkozási változtatásokat végzel, különösen, ha egészségügyi problémáid vannak, gyógyszert szedsz, terhes vagy szoptatsz.</p>
+            </div>
+
+            <div class="highlight-box">
+                <p><strong>Nem kötelező és ingyenes:</strong> Az első beszélgetés teljesen nem kötelező. Nincs értékesítési nyomás – csak arról szól, hogy kiderítsük, jól passzolunk-e egymáshoz, és hogy a munkám alkalmas-e számodra.</p>
+            </div>
+
+            <p style="text-align: center; font-size: 1.15em; color: #0d2137; margin: 30px 0;">
+                <strong>Időtartam:</strong> 20 perc | <strong>Formátum:</strong> Online (Videó) | <strong>Költség:</strong> Ingyenes
+            </p>
+
+            <div class="info-box">
+                <h3>Az első beszélgetés után...</h3>
+                <ul>
+                    <li>...TE döntöd el, hogy folytatni akarod-e</li>
+                    <li>...kapsz tőlem egy őszinte értékelést, hogy a Raw & Real alkalmas-e a helyzetedre</li>
+                    <li>...beszélünk a lehetséges következő lépésekről (ha kívánod)</li>
+                    <li>...minden információd megvan ahhoz, hogy megalapozott döntést hozz</li>
+                </ul>
+            </div>
+
+            <h2 style="margin-top: 50px; text-align: center;">Foglald le most az első beszélgetésedet</h2>
+            <p style="text-align: center; color: #0d2137; margin-bottom: 30px;">Válassz egy megfelelő időpontot:</p>
+
+            <!-- Cal.com Embed -->
+            <div class="cal-embed">
+                <iframe 
+                    src="https://cal.com/wandlung/20min" 
+                    style="width: 100%; height: 100%; min-height: 650px; border: none; border-radius: 10px;"
+                    frameborder="0"
+                    scrolling="yes">
+                </iframe>
+            </div>
+
+            <div class="highlight-box" style="margin-top: 40px;">
+                <p><strong>Felkészülési tipp:</strong> Gondold át röviden, mi foglalkoztat most, és mit szeretnél elérni a Raw & Real-lel. Így optimálisan tudjuk kihasználni a 20 percet.</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>
+                <a href="hu.html">Kezdőlap</a> | 
+                <a href="faq_coaching_hu.html">GYIK</a> | 
+                <a href="agb_coaching_hu.html">ÁSZF</a> | 
+                <a href="datenschutz_hu.html">Adatvédelem</a> |
+                <a href="blog/index.html">Blog</a> |
+                <a href="food-diary.html">Food Diary</a>
+            </p>
+            <p style="margin-top: 10px;">© 2025 Amy Lang - Raw & Real | Holisztikus Életmód Coaching</p>
+        </footer>
+    </div>
+</body>
+</html>
