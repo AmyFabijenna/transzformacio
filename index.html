@@ -1,385 +1,528 @@
 <!DOCTYPE html>
+
 <html lang="hu">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Holisztikus Gyógyító & Táplálkozási Szakértő | Amy Dorothy Ronja Lang | Raw & Real</title>
-
-    <meta name="description" content="Holisztikus gyógyítás és táplálkozási tanácsadás Amy Dorothy Ronja Langgal. Azoknak, akik tudják, hogy több van bennük, és készen állnak lángra lobbantani. Sámánikus gyógyítás · Feng Shui · Numerológia · Nyers ételek · Étrendtervezés.">
-    <meta name="keywords" content="holisztikus gyógyító, táplálkozási szakértő, sámánikus gyógyítás, feng shui tanácsadás, numerológia, nyersétel táplálkozás, étrendterv, átalakulás, belső munka">
-    <meta name="author" content="Amy Dorothy Ronja Lang">
-    <meta name="robots" content="index, follow">
-
-    <link rel="canonical" href="http://amyfabijenna.github.io/transzformacio/">
-
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Holisztikus Gyógyító & Táplálkozási Szakértő | Amy Dorothy Ronja Lang">
-    <meta property="og:description" content="Holisztikus gyógyítás és táplálkozási tanácsadás. Azoknak, akik tudják, hogy több lehetséges — és készen állnak arra, hogy valóra váltsák.">
-    <meta property="og:site_name" content="Raw & Real">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Holisztikus Gyógyító & Táplálkozási Szakértő | Amy Dorothy Ronja Lang">
-
-    <meta http-equiv="content-language" content="hu">
-    <link rel="alternate" hreflang="hu" href="http://amyfabijenna.github.io/transzformacio/">
-    <link rel="alternate" hreflang="de" href="https://gorawandreal.com/de.html">
-    <link rel="alternate" hreflang="en" href="https://gorawandreal.com/">
-
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="apple-touch-icon" href="favicon.png">
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "ProfessionalService",
-                "name": "Raw & Real — Holisztikus Gyógyítás & Táplálkozási Tanácsadás",
-                "description": "Holisztikus gyógyító és táplálkozási szakértő. Sámánikus gyógyítás, klasszikus Feng Shui, numerológia, nyersétel táplálkozási tanácsadás és személyes étrendtervezés.",
-                "url": "http://amyfabijenna.github.io/transzformacio/",
-                "priceRange": "$$",
-                "areaServed": { "@type": "Place", "name": "Világszerte" },
-                "availableLanguage": ["Magyar", "Angol", "Német", "Holland"],
-                "founder": {
-                    "@type": "Person",
-                    "name": "Amy Dorothy Ronja Lang",
-                    "jobTitle": "Holisztikus Gyógyító & Táplálkozási Szakértő"
-                }
-            },
-            {
-                "@type": "Organization",
-                "name": "Raw & Real",
-                "url": "http://amyfabijenna.github.io/transzformacio/"
-            }
-        ]
-    }
-    </script>
-
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Helvetica Neue', Arial, sans-serif; background: linear-gradient(135deg, #f5e6e8 0%, #ffe4e9 50%, #f5e6e8 100%); color: #000000; line-height: 1.8; min-height: 100vh; }
-        .hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 2rem; position: relative; background: linear-gradient(135deg, #f5e6e8 0%, #ffe4e9 50%, #f5e6e8 100%); }
-        .language-switcher { position: absolute; top: 2rem; right: 2rem; z-index: 100; display: flex; gap: 0.5rem; }
-        .lang-link { display: inline-flex; align-items: center; padding: 0.5rem 1rem; background: rgba(184, 134, 11, 0.1); border: 2px solid #B8860B; border-radius: 50px; color: #000000; text-decoration: none; font-size: 0.9rem; font-weight: 600; backdrop-filter: blur(10px); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
-        .lang-link:hover, .lang-link.active { background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 50%, #C5B358 100%); border-color: #D4AF37; transform: translateY(-2px); box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4); }
-        h1 { font-size: clamp(3rem, 12vw, 8rem); font-weight: 300; margin-bottom: 1rem; background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; letter-spacing: -0.02em; line-height: 1.1; }
-        .subtitle { font-size: clamp(1.2rem, 4vw, 2rem); font-weight: 300; margin-bottom: 2rem; color: #000000; max-width: 900px; margin-left: auto; margin-right: auto; }
-        .hero-tagline { font-size: clamp(1rem, 3vw, 1.5rem); font-weight: 500; margin: 2rem 0; color: #000000; }
-        .cta-button { position: relative; display: inline-block; padding: 1.5rem 3rem; background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%); color: #000000; text-decoration: none; font-size: 1.2rem; font-weight: 700; letter-spacing: 2px; border-radius: 50px; overflow: hidden; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 10px 40px rgba(184, 134, 11, 0.3), 0 0 60px rgba(212, 175, 55, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.4); border: 2px solid rgba(212, 175, 55, 0.5); }
-        .cta-button:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 15px 60px rgba(184, 134, 11, 0.4), 0 0 80px rgba(212, 175, 55, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.6); }
-        .cta-glow { position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%); animation: glow-pulse 3s ease-in-out infinite; pointer-events: none; }
-        @keyframes glow-pulse { 0%, 100% { opacity: 0.5; transform: scale(0.9); } 50% { opacity: 0.8; transform: scale(1.1); } }
-        .cta-text { position: relative; z-index: 1; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 4rem 2rem; }
-        section { margin-bottom: 5rem; padding: 3rem 0; }
-        h2 { font-size: clamp(2rem, 6vw, 3.5rem); font-weight: 300; margin-bottom: 2rem; background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-align: center; }
-        h3 { font-size: clamp(1.3rem, 4vw, 2rem); margin-bottom: 1.5rem; background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-        p { font-size: clamp(1rem, 2vw, 1.2rem); margin-bottom: 1.5rem; color: #000000; }
-        .testimonial-hero { background: rgba(255, 255, 255, 0.5); border-radius: 30px; padding: 4rem 3rem; margin: 5rem 0; box-shadow: 0 20px 60px rgba(184, 134, 11, 0.15); border: 2px solid rgba(212, 175, 55, 0.3); }
-        .testimonial-content { display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; align-items: center; max-width: 1100px; margin: 0 auto; }
-        .testimonial-image { text-align: center; }
-        .testimonial-image img { width: 100%; max-width: 300px; border-radius: 20px; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); border: 3px solid #D4AF37; }
-        .testimonial-name { font-size: 1.3rem; font-weight: 600; margin-top: 1rem; background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-        .testimonial-text { font-size: 1.1rem; line-height: 1.9; color: #000000; }
-        .testimonial-text p { margin-bottom: 1.5rem; }
-        .testimonial-text strong { background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 700; }
-        .process-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 3rem 0; }
-        .step { background: rgba(255, 255, 255, 0.5); border-radius: 20px; padding: 2.5rem; text-align: center; border: 2px solid rgba(212, 175, 55, 0.3); transition: all 0.4s ease; }
-        .step:hover { transform: translateY(-5px); box-shadow: 0 15px 40px rgba(184, 134, 11, 0.2); }
-        .step-number { font-size: 3rem; font-weight: 700; background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 1rem; }
-        .pricing-hero { background: rgba(255, 255, 255, 0.5); border-radius: 30px; padding: 4rem 3rem; text-align: center; box-shadow: 0 20px 60px rgba(184, 134, 11, 0.2), 0 0 80px rgba(212, 175, 55, 0.15); }
-        .price-features { list-style: none; font-size: 1.2rem; margin: 2rem 0; text-align: left; max-width: 600px; margin-left: auto; margin-right: auto; }
-        .price-features li { padding: 0.8rem 0; border-bottom: 1px solid rgba(212, 175, 55, 0.2); }
-        .price-features li:last-child { border-bottom: none; }
-        .faq-item { background: rgba(255, 255, 255, 0.5); border-radius: 15px; padding: 2rem; margin-bottom: 1.5rem; border: 2px solid rgba(212, 175, 55, 0.2); }
-        .faq-question { font-size: 1.3rem; font-weight: 600; margin-bottom: 1rem; background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-        .faq-answer { font-size: 1.1rem; color: #000000; line-height: 1.8; }
-        .track-card { background: rgba(255, 255, 255, 0.5); border-radius: 20px; padding: 3rem; border: 2px solid rgba(212, 175, 55, 0.3); transition: all 0.4s ease; }
-        .track-card:hover { transform: translateY(-5px); box-shadow: 0 15px 40px rgba(184, 134, 11, 0.2); }
-        .track-list { list-style: none; margin-top: 1.5rem; }
-        .track-list li { padding: 0.7rem 0; border-bottom: 1px solid rgba(212, 175, 55, 0.2); font-size: 1.1rem; color: #000; }
-        .track-list li:last-child { border-bottom: none; }
-        footer { background: rgba(0, 0, 0, 0.05); padding: 3rem 2rem; text-align: center; font-size: 0.9rem; color: #666; }
-        footer a { color: #B8860B; text-decoration: none; margin: 0 0.5rem; transition: color 0.3s ease; }
-        footer a:hover { color: #D4AF37; }
-        @media (max-width: 768px) {
-            .testimonial-content { grid-template-columns: 1fr; gap: 2rem; }
-            .language-switcher { top: 1rem; right: 1rem; }
-            .hero { padding: 1rem; }
-            .container { padding: 2rem 1rem; }
-            .pricing-hero { padding: 2rem 1.5rem; }
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Holisztikus életmódkísérés · Élő táplálkozás · Természetes kibontakozás | Amy Dorothy Ronja Lang</title>
+<meta content="Holisztikus életmódkísérés nőknek, akik szépséget, elevenséget, ragyogást és tiszta, saját életirányt szeretnének megtestesíteni – élő táplálkozással, természetközelséggel, klasszikus feng shuival, numerológiával és sámáni folyamatkíséréssel." name="description"/>
+<meta content="holisztikus életmódkísérés, életmód- és táplálkozási coaching, élő táplálkozás, természetes táplálkozás, nyerskoszt, ételtársítás, természetes szépség, elevenség, ragyogás, személyes kibontakozás, életalakítás, természetközelség, klasszikus feng shui, iránytű-módszer, numerológia, szimbólummunka, sámáni folyamatkísérés, nőiség, életvízió, átalakulás, Raw and Real, Die Wandlung" name="keywords"/>
+<meta content="Amy Dorothy Ronja Lang" name="author"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://amyfabijenna.github.io/transzformacio/" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="https://amyfabijenna.github.io/transzformacio/" property="og:url"/>
+<meta content="Holisztikus életmódkísérés · Szépség, elevenség és természetes kibontakozás" property="og:title"/>
+<meta content="A szépség már itt van. Az erő már itt van. Egy tér, amelyben a test, az otthon és az életirány a saját kézjegyedet viseli." property="og:description"/>
+<meta content="Raw &amp; Real" property="og:site_name"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Holisztikus életmódkísérés · Amy Dorothy Ronja Lang" name="twitter:title"/>
+<meta content="Szépség, elevenség, ragyogás és egy életalakítás, amely a saját természetedből nő ki." name="twitter:description"/>
+<link href="favicon.png" rel="icon" type="image/png"/>
+<link href="favicon.png" rel="apple-touch-icon"/>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "name": "Raw & Real — Holisztikus életmódkísérés",
+        "description": "Holisztikus életmódkísérés az élő táplálkozás, a természetközelség, a természetes szépség, a személyes kibontakozás, a klasszikus feng shui, a numerológia és a sámáni ihletésű folyamatmunka útjain.",
+        "url": "https://amyfabijenna.github.io/transzformacio/",
+        "priceRange": "$$",
+        "areaServed": {"@type": "Place", "name": "Online"},
+        "availableLanguage": ["magyar", "német", "angol", "holland"],
+        "founder": {
+          "@type": "Person",
+          "name": "Amy Dorothy Ronja Lang",
+          "jobTitle": "Holisztikus életmódkísérő",
+          "description": "Kísérő az élő táplálkozás, a természetközelség, a szépség, a ragyogás és egy olyan életalakítás útján, amely a saját kézjegyedet viseli."
         }
-    </style>
+      },
+      {
+        "@type": "WebSite",
+        "name": "Raw & Real",
+        "url": "https://amyfabijenna.github.io/transzformacio/",
+        "inLanguage": "hu"
+      }
+    ]
+  }
+  </script>
+<style>
+    :root {
+      /* Edelstein-Palette: Rosenquarz · Obsidian · rostiges Gold · Silberperle */
+      --ink: #26262c;
+      --muted: #5b555f;
+      --gold: #b8892c;
+      --gold-deep: #8f6317;
+      --gold-light: #ecd07e;
+      --gold-shine: #fff3c9;
+      --quartz: #f0bcc6;              /* Rosenquarz: kühles, klares Rosa */
+      --quartz-light: #fadde3;
+      --quartz-shine: #fff3f5;        /* milchiger Kristallglanz */
+      --obsidian: #0d0d12;            /* tiefes Glasschwarz */
+      --pearl: #e7ebf3;               /* Perlsilber für Fließtext auf Dunkel */
+      --paper: rgba(255,255,255,.68);
+      --shadow: 0 18px 55px rgba(38, 38, 52, .13);
+      --radius: 28px;
+      /* Metall- und Stein-Verläufe */
+      --metal-gold: linear-gradient(110deg, var(--gold-deep) 0%, #d9b355 30%, var(--gold-shine) 50%, #cfa440 68%, var(--gold-deep) 100%);
+      --metal-gold-soft: linear-gradient(135deg, #a97e22 0%, #e6c76e 40%, var(--gold-shine) 55%, #d3ab48 72%, #9a6f1c 100%);
+      /* Lesbarer Goldverlauf für Text auf hellem Grund: kein blendendes Lichtband */
+      --metal-gold-text: linear-gradient(110deg, #6e4c10 0%, #a1761c 32%, #c2952e 50%, #8d6316 70%, #6e4c10 100%);
+      /* Obsidian: glasige Tiefe mit scharfer Spiegelung */
+      --obsidian-glass: linear-gradient(150deg, #0a0a0f 0%, #17171e 34%, #33323e 48%, #14141a 60%, #060609 100%);
+      /* Silberperle im Sonnenaufgang: kühles Silber mit goldenem Aufblitzen */
+      --metal-silver: linear-gradient(110deg, #99a2b2 0%, #dde3ed 34%, #ffffff 47%, #fff4d6 53%, #cdd4e0 66%, #8d95a5 100%);
+      --metal-quartz-ring: linear-gradient(135deg, #dd9dab 0%, var(--quartz-shine) 45%, #eeb3c0 60%, #cf8d9c 100%);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Avenir Next", Avenir, "Inter", "Segoe UI", Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      line-height: 1.72;
+      /* Rosenquarz: klares Rosa mit milchigen Einschlüssen und Kristallglanz */
+      background:
+        radial-gradient(circle at 12% 8%, rgba(255,255,255,.85), transparent 22%),
+        radial-gradient(circle at 78% 18%, rgba(255,243,245,.75), transparent 26%),
+        radial-gradient(circle at 30% 62%, rgba(255,255,255,.5), transparent 24%),
+        radial-gradient(circle at 90% 78%, rgba(255,240,243,.6), transparent 28%),
+        linear-gradient(150deg,
+          #eeb4c0 0%,
+          #f8d7de 16%,
+          var(--quartz-shine) 32%,
+          #f1c0ca 50%,
+          #fbe2e7 66%,
+          #ecafbc 84%,
+          #f7d3da 100%);
+      background-attachment: fixed;
+      min-height: 100vh;
+    }
+
+    a { color: inherit; }
+    .container { width: min(1180px, calc(100% - 32px)); margin: 0 auto; padding: 20px 0 56px; }
+
+    .top-navigation {
+      display: flex; justify-content: space-between; align-items: center; gap: 18px;
+      padding: 15px 20px; margin-bottom: 22px; border-radius: 22px;
+      background: var(--obsidian-glass);
+      border: 1px solid rgba(222,184,88,.55);
+      box-shadow: var(--shadow), inset 0 1px 0 rgba(255,244,214,.28), inset 0 0 22px rgba(230,199,110,.08);
+      flex-wrap: wrap; position: relative; overflow: hidden;
+    }
+    .top-navigation::before { content: ""; position: absolute; inset: 0; background: linear-gradient(115deg, transparent 44%, rgba(255,255,255,.14) 50%, transparent 56%); pointer-events: none; }
+    .brand-mark { position: relative; font-size: .88rem; font-weight: 700; letter-spacing: .16em; background: var(--metal-silver); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .brand-mark span { background: var(--metal-gold); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .top-nav-links { position: relative; display: flex; flex-wrap: wrap; gap: 8px; }
+    .top-nav-links a { text-decoration: none; padding: 8px 13px; border-radius: 999px; font-size: .88rem; font-weight: 650; background: var(--metal-silver); -webkit-background-clip: text; background-clip: text; color: transparent; border: 1px solid rgba(222,184,88,.35); }
+    .top-nav-links a:hover, .top-nav-links .blog-link { background: var(--metal-gold-soft); -webkit-background-clip: border-box; background-clip: border-box; -webkit-text-fill-color: #241d0e; color: #241d0e; box-shadow: inset 0 1px 0 rgba(255,255,255,.55); border-color: rgba(143,99,23,.5); }
+
+    header, section, .combined-section, footer { margin-bottom: 34px; }
+    header, .glass {
+      background: var(--paper); backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,.85);
+      box-shadow: var(--shadow), inset 0 1px 0 rgba(255,255,255,.9), inset 0 -1px 0 rgba(240,188,198,.45);
+      border-radius: var(--radius);
+    }
+    header { text-align: center; padding: clamp(42px, 7vw, 76px) clamp(22px, 6vw, 72px); position: relative; overflow: hidden; }
+    header::before { content: ""; position: absolute; width: 380px; height: 380px; border-radius: 50%; right: -170px; top: -200px; background: radial-gradient(circle at 35% 35%, rgba(255,243,201,.55), rgba(236,208,126,.18) 55%, transparent 75%); }
+    header::after { content: ""; position: absolute; inset: 0; background: linear-gradient(115deg, transparent 42%, rgba(255,255,255,.5) 50%, transparent 58%); pointer-events: none; }
+    .eyebrow { position: relative; z-index: 1; font-size: .8rem; text-transform: uppercase; letter-spacing: .2em; font-weight: 750; color: #7d5f16; margin-bottom: 18px; }
+    h1, h2, h3 { font-family: "Avenir Next", Avenir, "Inter", "Segoe UI", sans-serif; }
+    h1 { position: relative; z-index: 1; font-size: clamp(2.55rem, 7vw, 5.2rem); line-height: 1.03; letter-spacing: -.045em; font-weight: 620; max-width: 940px; margin: 0 auto 22px; }
+    /* Lesbarer Goldverlauf auf hellem Grund + feine Kante für Definition */
+    .gold-text { background: var(--metal-gold-text); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 1px 0 rgba(96,66,12,.3)); }
+    .header-subtitle { position: relative; z-index: 1; max-width: 810px; margin: 0 auto 27px; font-size: clamp(1.08rem, 2.3vw, 1.35rem); color: #4a444e; }
+    .wisdom-line { position: relative; font-size: clamp(1.18rem, 2.7vw, 1.7rem); line-height: 1.45; max-width: 840px; margin: 0 auto 28px; font-weight: 540; }
+
+    .star-badge { position: relative; z-index: 1; display: inline-flex; align-items: center; gap: 9px; font-size: .92rem; font-weight: 700; color: #6d5218; margin: 3px 9px; }
+    .gold-star { width: 17px; height: 17px; flex: 0 0 17px; filter: drop-shadow(0 2px 3px rgba(120,88,20,.25)); }
+    .badges { position: relative; z-index: 1; display: flex; justify-content: center; flex-wrap: wrap; gap: 5px 12px; margin: 20px auto 4px; }
+
+    .cta-row { position: relative; z-index: 1; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
+    .cta-button {
+      display: inline-flex; align-items: center; justify-content: center; min-height: 54px; padding: 13px 25px;
+      border-radius: 999px; text-decoration: none; font-weight: 780; letter-spacing: .02em; color: #241d0e;
+      border: 1px solid rgba(143,99,23,.45);
+      background: var(--metal-gold-soft);
+      box-shadow: 0 12px 30px rgba(150,110,35,.28), inset 0 1px 0 rgba(255,255,255,.65), inset 0 -2px 4px rgba(120,84,15,.28);
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+    .cta-button:hover { transform: translateY(-2px); box-shadow: 0 16px 38px rgba(150,110,35,.36), inset 0 1px 0 rgba(255,255,255,.75), inset 0 -2px 4px rgba(120,84,15,.28); }
+    .cta-button.secondary {
+      background: linear-gradient(135deg, #ecb2be 0%, var(--quartz-shine) 45%, #f6ccd4 60%, #e19fae 100%);
+      border: 1px solid rgba(199,124,140,.55);
+      box-shadow: 0 8px 24px rgba(170,100,118,.2), inset 0 1px 0 rgba(255,255,255,.85), inset 0 -2px 4px rgba(180,105,122,.28);
+    }
+
+    .intro-section { padding: clamp(26px, 5vw, 50px); }
+    .intro-container { display: grid; grid-template-columns: minmax(220px, 310px) 1fr; gap: clamp(28px, 5vw, 58px); align-items: center; }
+    .photo-container { text-align: center; }
+    .photo-ring { display: inline-block; padding: 7px; border-radius: 50%; background: var(--metal-quartz-ring); box-shadow: 0 18px 45px rgba(60,45,55,.22), inset 0 1px 0 rgba(255,255,255,.7); }
+    .profile-photo { display: block; width: min(100%, 271px); aspect-ratio: 1; object-fit: cover; border-radius: 50%; border: 3px solid rgba(255,255,255,.85); }
+    .photo-name { margin-top: 14px; font-weight: 760; background: var(--metal-gold-text); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .intro-text { font-size: clamp(1.02rem, 2vw, 1.16rem); }
+    .intro-text p { margin-bottom: 1.15rem; }
+    .lead { font-size: clamp(1.32rem, 3vw, 2rem); line-height: 1.35; font-weight: 640; letter-spacing: -.02em; }
+    .mini-stats { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 23px; }
+    .mini-stat { padding: 8px 13px; border: 1px solid rgba(184,137,44,.32); background: linear-gradient(135deg, rgba(255,255,255,.92), rgba(250,221,227,.6)); border-radius: 999px; font-size: .86rem; font-weight: 650; box-shadow: inset 0 1px 0 rgba(255,255,255,.9); }
+
+    h2 { text-align: center; font-size: clamp(2rem, 5vw, 3.3rem); line-height: 1.12; letter-spacing: -.035em; font-weight: 620; margin-bottom: 16px; }
+    .section-intro { max-width: 800px; margin: 0 auto 30px; text-align: center; font-size: 1.08rem; color: #4d4752; }
+
+    .outcomes {
+      padding: clamp(30px, 6vw, 66px);
+      background: var(--obsidian-glass);
+      border-radius: 34px;
+      border: 1px solid rgba(222,184,88,.6);
+      box-shadow: 0 24px 70px rgba(10,10,18,.4), inset 0 1px 0 rgba(255,244,214,.3), inset 0 0 34px rgba(230,199,110,.07);
+      overflow: hidden; position: relative;
+    }
+    /* Glasige Obsidian-Spiegelung: zwei scharfe Lichtstreifen */
+    .outcomes::before { content: ""; position: absolute; inset: 0; background: linear-gradient(115deg, transparent 38%, rgba(255,255,255,.09) 46%, rgba(255,255,255,.16) 49%, rgba(255,255,255,.05) 53%, transparent 62%), linear-gradient(115deg, transparent 68%, rgba(255,255,255,.06) 74%, transparent 80%); pointer-events: none; }
+    .outcomes::after { content: ""; position: absolute; inset: auto -110px -150px auto; width: 330px; height: 330px; border-radius: 50%; background: radial-gradient(circle at 40% 40%, rgba(236,208,126,.22), transparent 70%); }
+    .outcomes h2 { background: var(--metal-gold-soft); -webkit-background-clip: text; background-clip: text; color: transparent; position: relative; z-index: 1; }
+    .outcomes .section-intro { color: var(--pearl); position: relative; z-index: 1; font-size: clamp(1.08rem, 2.2vw, 1.3rem); }
+    .outcome-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 16px; position: relative; z-index: 1; }
+    .outcome-card { min-height: 190px; padding: 25px; border-radius: 22px; background: linear-gradient(160deg, rgba(255,255,255,.1), rgba(255,255,255,.03)); border: 1px solid rgba(230,199,110,.4); box-shadow: inset 0 1px 0 rgba(255,244,214,.22), inset 0 0 18px rgba(230,199,110,.05); display: flex; flex-direction: column; justify-content: space-between; }
+    .outcome-card strong { font-size: clamp(1.22rem, 2.6vw, 1.7rem); line-height: 1.25; background: linear-gradient(110deg, #dcb453, var(--gold-shine) 50%, #d3a63e); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .outcome-card p { margin-top: 12px; color: var(--pearl); font-size: 1rem; }
+    .outcome-card.featured { grid-column: 1 / -1; min-height: 235px; background: linear-gradient(135deg, rgba(230,199,110,.22), rgba(255,255,255,.08) 55%, rgba(240,188,198,.14)); border: 1px solid rgba(230,199,110,.55); padding: clamp(28px, 5vw, 48px); }
+    .outcome-card.featured strong { font-size: clamp(1.75rem, 4vw, 3.05rem); max-width: 900px; }
+    .outcome-card.featured p { max-width: 900px; font-size: clamp(1.08rem, 2vw, 1.28rem); }
+
+    .services-section { padding: clamp(28px, 5vw, 52px); }
+    .services-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 20px; }
+    .service-card { padding: 27px; border-radius: 24px; background: linear-gradient(160deg, rgba(255,255,255,.82), rgba(250,231,235,.55)); border: 1px solid rgba(184,137,44,.28); box-shadow: 0 12px 34px rgba(45,45,60,.08), inset 0 1px 0 rgba(255,255,255,.95), inset 0 -1px 0 rgba(240,188,198,.4); }
+    .service-icon { font-size: 2rem; display: block; margin-bottom: 10px; }
+    .service-card h3 { font-size: 1.42rem; margin-bottom: 10px; background: var(--metal-gold-text); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .service-card p { margin-bottom: 13px; }
+    .gold-list { list-style: none; }
+    .gold-list li { position: relative; padding-left: 25px; margin: 8px 0; }
+    .gold-list li::before { content: "✦"; position: absolute; left: 0; top: 0; color: var(--gold-deep); }
+
+    .process-section { padding: clamp(28px, 5vw, 52px); }
+    .process-steps { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 18px; }
+    .step { background: linear-gradient(160deg, rgba(255,255,255,.8), rgba(250,231,235,.5)); border: 1px solid rgba(184,137,44,.25); padding: 26px; border-radius: 24px; box-shadow: inset 0 1px 0 rgba(255,255,255,.95), inset 0 -1px 0 rgba(240,188,198,.35); }
+    .step-number { width: 45px; height: 45px; display: grid; place-items: center; border-radius: 50%; color: #241d0e; background: var(--metal-gold-soft); box-shadow: inset 0 1px 0 rgba(255,255,255,.6), inset 0 -2px 3px rgba(120,84,15,.3), 0 6px 16px rgba(150,110,35,.25); font-weight: 800; margin-bottom: 16px; }
+    .step h3 { font-size: 1.22rem; margin-bottom: 8px; }
+
+    .testimonial-hero { padding: clamp(28px, 5vw, 52px); }
+    .testimonial-content { display: grid; grid-template-columns: minmax(210px, 300px) 1fr; gap: clamp(28px, 5vw, 52px); align-items: center; }
+    .testimonial-image { text-align: center; }
+    .testimonial-frame { display: inline-block; padding: 6px; border-radius: 28px; background: var(--metal-gold-soft); box-shadow: 0 16px 44px rgba(45,45,60,.18), inset 0 1px 0 rgba(255,255,255,.55); }
+    .testimonial-image img { display: block; width: min(100%, 268px); border-radius: 22px; border: 3px solid rgba(255,255,255,.85); }
+    .testimonial-name { margin-top: 14px; font-size: 1.2rem; font-weight: 760; background: var(--metal-gold-text); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .testimonial-text p { margin-bottom: 1rem; font-size: 1.04rem; }
+    .testimonial-text strong { background: var(--metal-gold-text); -webkit-background-clip: text; background-clip: text; color: transparent; font-weight: 750; }
+    .testimonial-highlight { font-size: clamp(1.25rem, 2.7vw, 1.72rem) !important; line-height: 1.45; font-weight: 650; }
+
+    .faq-wrap { padding: clamp(28px, 5vw, 52px); }
+    .faq-item { background: linear-gradient(160deg, rgba(255,255,255,.8), rgba(250,231,235,.5)); border: 1px solid rgba(184,137,44,.25); padding: 20px 23px; border-radius: 20px; margin-bottom: 12px; box-shadow: inset 0 1px 0 rgba(255,255,255,.95); transition: background .3s ease, border-color .3s ease, box-shadow .3s ease, transform .3s ease; }
+    .faq-question { font-weight: 780; background: var(--metal-gold-text); -webkit-background-clip: text; background-clip: text; color: transparent; margin-bottom: 6px; transition: none; }
+    /* Beim Hovern verwandelt sich die Frage in poliertes Gold — Schrift wird tief dunkel für vollen Kontrast */
+    .faq-item:hover { background: var(--metal-gold-soft); border-color: rgba(120,84,15,.55); box-shadow: 0 14px 34px rgba(150,110,35,.3), inset 0 1px 0 rgba(255,255,255,.6), inset 0 -2px 5px rgba(120,84,15,.25); transform: translateY(-2px); }
+    .faq-item:hover .faq-question { background: none; -webkit-text-fill-color: #221a08; color: #221a08; }
+    .faq-item:hover .faq-answer { color: #2a2210; }
+
+    .final-cta { padding: clamp(36px, 7vw, 72px); text-align: center; }
+    .final-cta p { max-width: 760px; margin: 0 auto; font-size: 1.12rem; }
+
+    .blog-section { padding: clamp(28px, 5vw, 52px); }
+    .blog-grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 15px; }
+    .blog-card { text-decoration: none; padding: 22px; border-radius: 20px; background: linear-gradient(160deg, rgba(255,255,255,.8), rgba(250,231,235,.5)); border: 1px solid rgba(184,137,44,.25); box-shadow: inset 0 1px 0 rgba(255,255,255,.95); transition: transform .2s ease, box-shadow .2s ease; }
+    .blog-card:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(150,110,35,.18), inset 0 1px 0 rgba(255,255,255,.95); }
+    .blog-card h3 { font-size: 1.05rem; background: var(--metal-gold-text); -webkit-background-clip: text; background-clip: text; color: transparent; margin-bottom: 7px; }
+    .blog-card p { font-size: .92rem; }
+
+    .footer { padding: 30px; background: var(--obsidian-glass); border-radius: 28px; border: 1px solid rgba(222,184,88,.6); box-shadow: var(--shadow), inset 0 1px 0 rgba(255,244,214,.28), inset 0 0 26px rgba(230,199,110,.07); position: relative; overflow: hidden; }
+    .footer::before { content: ""; position: absolute; inset: 0; background: linear-gradient(115deg, transparent 40%, rgba(255,255,255,.08) 49%, transparent 58%); pointer-events: none; }
+    .footer > * { position: relative; }
+    .footer p, .footer li { color: var(--pearl); }
+    .footer a { color: var(--pearl); }
+    .footer-buttons { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 26px; }
+    .footer-button { text-decoration: none; border: 1px solid rgba(230,199,110,.65); border-radius: 999px; padding: 9px 16px; font-size: .9rem; font-weight: 650; background: linear-gradient(160deg, rgba(255,255,255,.08), rgba(230,199,110,.06)); box-shadow: inset 0 1px 0 rgba(255,244,214,.22); transition: background .25s ease, color .25s ease; }
+    .footer-button:hover { background: var(--metal-gold-soft); color: #241d0e; }
+    .footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .footer-panel { padding: 22px; background: linear-gradient(160deg, rgba(255,255,255,.09), rgba(230,199,110,.05)); border: 1px solid rgba(230,199,110,.45); border-radius: 20px; box-shadow: inset 0 1px 0 rgba(255,244,214,.2); }
+    .footer-panel h3 { background: linear-gradient(110deg, #dcb453, var(--gold-shine) 50%, #d3a63e); -webkit-background-clip: text; background-clip: text; color: transparent; margin-bottom: 10px; }
+    .footer-panel p { margin-bottom: 7px; }
+    .footer-panel .gold-list li::before { color: var(--gold-light); }
+    .footer-bottom { border-top: 1px solid rgba(230,199,110,.4); margin-top: 23px; padding-top: 20px; text-align: center; font-size: .84rem; }
+    .footer-bottom p { color: #c9cfdb; }
+    .legal-note { max-width: 900px; margin: 0 auto 11px; }
+
+    @media (max-width: 900px) {
+      .services-grid, .outcome-grid, .footer-grid { grid-template-columns: 1fr; }
+      .outcome-card.featured { grid-column: auto; }
+      .process-steps { grid-template-columns: 1fr; }
+      .blog-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+    }
+    @media (max-width: 720px) {
+      .intro-container, .testimonial-content { grid-template-columns: 1fr; }
+      .photo-container, .testimonial-image { order: 0; }
+      .top-navigation { justify-content: center; text-align: center; }
+      .blog-grid { grid-template-columns: 1fr; }
+      .container { width: min(100% - 20px, 1180px); }
+    }
+  </style>
 </head>
 <body>
-    <div class="language-switcher">
-        <a href="blog/index.html" class="lang-link" style="border-color: #D4AF37;">BLOG</a>
-        <a href="http://gorawandreal.com" class="lang-link">EN</a>
-        <a href="http://die-wandlung.eu" class="lang-link">DE</a>
-        <a href="index.html" class="lang-link active">HU</a>
-    </div>
-
-    <div class="hero">
-        <p style="font-size: clamp(0.9rem, 2vw, 1.1rem); font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: #B8860B; margin-bottom: 1.5rem;">
-            Amy Dorothy Ronja Lang · Holisztikus Gyógyító & Táplálkozási Szakértő
-        </p>
-        <h1>A szikra már benned van.</h1>
-        <p class="subtitle">
-            Azoknak, akik tudják, hogy több van bennük —<br>
-            és készen állnak, hogy valóban lángra lobbantják.
-        </p>
-        <p class="hero-tagline">
-            A táplálkozás a kezdet. Az átalakulás a cél.
-        </p>
-        <a href="#contact" class="cta-button">
-            <span class="cta-glow"></span>
-            <span class="cta-text">INGYENES ELSŐ BESZÉLGETÉS</span>
-        </a>
-    </div>
-
-    <div class="container">
-
-        <section>
-            <h2>A mögöttes filozófia</h2>
-            <div class="testimonial-hero">
-                <div class="testimonial-content">
-                    <div class="testimonial-image">
-                        <img src="images/amy.jpg" alt="Amy Dorothy Ronja Lang - Holisztikus Gyógyító & Táplálkozási Szakértő">
-                        <div class="testimonial-name">Amy Dorothy Ronja Lang</div>
-                    </div>
-                    <div class="testimonial-text">
-                        <p><strong>Szinte minden probléma, ha alaposan megnézzük, táplálkozási probléma is.</strong></p>
-
-                        <p>Egy test, amely nem kapja meg, amire valóban szüksége van, jeleket küld. Hiányzó tisztánlátás. Hiányzó energia. Érzelmi instabilitás. Az az érzés, hogy valami nem működik — anélkül, hogy pontosan tudnánk, miért. Én ott kezdem a munkát: a testnél. Azzal, amit eszel, hogyan táplálod magad, hogyan érted és gondozod azt a testet, amelyben élsz.</p>
-
-                        <p>De több mint 20 év alatt megtanultam egy igazságot, amely mindent megváltoztat: <strong>nem lehet egyszerűen ráerőltetni az egészséges táplálkozást egy egészségtelen életmódra.</strong> Nem marad tartós. Mert a táplálkozásod nem létezik légüres térben — összefonódik azzal, ahogy gondolkodsz, alszol, ahogy az otthonod be van rendezve, és azokkal a régi mintákkal, amelyek csendben szabotálnak.</p>
-
-                        <p>És aztán valami más is történik — valami, ami mindig lenyűgöz: amint az emberek valóban változtatni kezdenek a táplálkozásukon, többet akarnak. Nemcsak jobban enni. Másként akarnak gondolkodni. Gyökeresen megváltoztatni a szokásaikat. Kitisztítani a terüket. Újra egyensúlyba hozni az életenergiájukat. <strong>A test megnyitja az ajtót a mélyebb átalakulás felé.</strong></p>
-
-                        <p>Ezért vagyok egyszerre táplálkozási szakértő és holisztikus gyógyító. Ott kezdem, ahol minden kezdődik — a testben — és elkísérlek oda, ahová valóban el akarsz jutni. Sámánikus gyógyítással, klasszikus Feng Shui-val az iránytű módszerrel és numerológiával azon szinteken dolgozom, amelyek a táplálkozás mögött nyílnak meg.</p>
-
-                        <p>Amit adok neked, az nem csupán tudás. Az én rendíthetetlen meggyőződésem, hogy ez az út működik — mert magam is végigjártam. Többször is. És mert tanúja voltam annak, mi történik, amikor valaki valóban készen áll.</p>
-
-                        <p><strong>Te készen állsz. Különben nem lennél itt.</strong></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>Két út — egy utazás</h2>
-            <p style="text-align: center; max-width: 750px; margin: 0 auto 3rem; font-size: clamp(1rem, 2vw, 1.2rem);">
-                A táplálkozás a belépési pont — mert a test a legigazabb tükör, amivel rendelkezünk. És amikor a test megváltozik, a lélek is követni akarja. Mindkét út ugyanoda vezet.
-            </p>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin: 3rem 0;">
-
-                <div class="track-card">
-                    <div style="font-size: 2.5rem; margin-bottom: 1.5rem;">🌿</div>
-                    <h3>Táplálkozási Tanácsadás</h3>
-                    <p>Tudod, hogy a táplálkozás az alapod — de még nem tudod, hogyan építsd fel úgy, hogy valóban illeskedjen az életedhez. Az első beszélgetéstől egészen a személyes étrendig kísérlek, amely a valódi neked szól.</p>
-                    <ul class="track-list">
-                        <li>✦ Holisztikus táplálkozási tanácsadás és kísérés</li>
-                        <li>✦ Személyes étrendterv — rád szabva</li>
-                        <li>✦ Nyers ételek és élő táplálkozás</li>
-                        <li>✦ Food combining elvek</li>
-                        <li>✦ Lépésről lépésre haladó átállás</li>
-                        <li>✦ WhatsApp támogatás hétfőtől péntekig</li>
-                    </ul>
-                </div>
-
-                <div class="track-card">
-                    <div style="font-size: 2.5rem; margin-bottom: 1.5rem;">🔥</div>
-                    <h3>Holisztikus Gyógyítás</h3>
-                    <p>Ha tudod, hogy a probléma mélyebben gyökerezik, mint a táplálkozás vagy a napi rutinok — ez a te utad. Azzal dolgozunk, ami valóban ott van: az életenergiáddal, a rejtett mintáiddal, a teredddel.</p>
-                    <ul class="track-list">
-                        <li>✦ Sámánikus gyógyítás</li>
-                        <li>✦ Klasszikus Feng Shui (iránytű módszer)</li>
-                        <li>✦ Numerológia és életminták elemzése</li>
-                        <li>✦ Energetikai térmegújítás</li>
-                        <li>✦ Mély belső átalakulási munka</li>
-                        <li>✦ Kísérés életválságokon és stagnáláson át</li>
-                    </ul>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Nicole Testimonial — untouched HU version -->
-        <section>
-            <h2>Valódi eredmények, valódi nő</h2>
-            <div class="testimonial-hero">
-                <div class="testimonial-content">
-                    <div class="testimonial-image">
-                        <img src="images/nicole.jpg" alt="Nicole Vogt">
-                        <div class="testimonial-name">Nicole Vogt</div>
-                    </div>
-                    <div class="testimonial-text">
-                        <p><strong>Korábban kipróbáltam transzformációs programokat. Egyik sem foglalkozott azzal, amire tényleg szükségem volt.</strong></p>
-                        
-                        <p>Három kisgyerekkel, akiknek külön főzök, miközben magam a saját utamat járom – szétszakítva éreztem magam. Hogyan tiszteljem azt, amit helyesnek ismerek fel a testemnek, miközben a családom másként él? Hogyan adjak újra teret a saját igényeimnek, évek után, amikor mindent másoknak adtam?</p>
-                        
-                        <p><strong>Aztán megtaláltam Amyt.</strong></p>
-                        
-                        <p>Nem adott nekem egy sablon tervet. Megmutatta, hogyan járjam a saját utam, miközben a családom az övét járja – világosan, konfliktusok nélkül, anélkül, hogy családi projektté tenném.</p>
-                        
-                        <p>WhatsAppon (hétfőtől péntekig) mindig elérhető volt. Egyetlen részlet sem volt neki túl kicsi. Minden bizonytalanság, minden kérdés – neki voltak gyakorlati válaszai. Nem elmélet. Valódi megoldások.</p>
-                        
-                        <p>Amikor nem tudtam, hogyan kezeljek családi étkezéseket – megmutatta, hogyan.</p>
-                        
-                        <p>Amikor kételkedtem benne, hogy valóban meg tudom-e csinálni – adta a <strong>rendíthetetlen hitét</strong>. Hogy működik. Hogy meg fogom csinálni. Hogy nem kell nehéznek lennie.</p>
-                        
-                        <p><strong>Három hónap múlva:</strong></p>
-                        
-                        <p>Remek formában érzem magam. Tele vagyok energiával. Mentálisan tiszta. Kevesebb alvásra van szükségem, több vitalitásom van, és újra úgy érzem magam, mint önmagam – tényleg én magam, nem csak „anya".</p>
-                        
-                        <p><strong>És aztán jött a pillanat, amit soha nem fogok elfelejteni:</strong></p>
-                        
-                        <p>A családomban mindenkinek influenzája volt. Láz. Köhögés. A teljes program.</p>
-                        
-                        <p><strong>Én voltam az egyetlen, aki nem lett beteg.</strong></p>
-                        
-                        <p>A férjem – aki mindig azt gondolta, az én megközelítésem „egy kicsit sok" – rám nézett és azt mondta: <strong>„Mit csinálsz másként? Én is ki akarom próbálni."</strong></p>
-                        
-                        <p>Ma már kérdezi, mit eszem. Érdeklődik. Látja rajtam az eredményeket.</p>
-                        
-                        <p>Nem azért, mert meggyőztem őt. Hanem mert látta, milyen jól vagyok. Hogyan nézek ki. Hogyan maradtam egészséges, miközben mindenki más beteg volt.</p>
-                        
-                        <p><strong>Amy átadja neked a hitét. És hirtelen már nem kételkedsz – egyszerűen tudod, hogy működik.</strong></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>Hogyan működik</h2>
-            <div class="process-steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Ingyenes 20 perces beszélgetés</h3>
-                    <p>Megvizsgáljuk, hogy és hogyan tudok segíteni — és hogy illenek-e egymáshoz. Nem mindenkit fogadok be. Ez mindkettőnket védi és biztosítja a munkám minőségét.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>A te személyes utad</h3>
-                    <p>Attól függően, mire van szükséged, egy vagy mindkét szinten dolgozunk — táplálkozási tanácsadás, gyógyítás vagy teljes holisztikus kísérés. Személyes hívások és WhatsApp támogatás hétfőtől péntekig.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Valódi változás</h3>
-                    <p>Test, tér és lélek összhangban. Érzed a különbséget — nemcsak átmenetileg, hanem tartósan. Mert az egész rendszert megszólítottuk, nem csak a felszínt.</p>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>Amit kapsz</h2>
-            <div class="pricing-hero">
-                <h3>Holisztikus 1:1 Kísérés</h3>
-                <div style="font-size: 2rem; font-weight: 600; margin: 2rem 0; background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
-                    Egyéni · Intenzív · Valódi
-                </div>
-                <ul class="price-features">
-                    <li>✅ Privát ülések — amennyire szükséged van</li>
-                    <li>✅ WhatsApp támogatás hétfőtől péntekig</li>
-                    <li>✅ Személyes étrendterv és táplálkozási kísérés</li>
-                    <li>✅ Food combining és nyersétel tudás</li>
-                    <li>✅ Klasszikus Feng Shui elemzés a teredről</li>
-                    <li>✅ Sámánikus gyógyítás és energetikai kísérés</li>
-                    <li>✅ Numerológiai elemzés az életmintáidról</li>
-                    <li>✅ Egyetlen részlet sem marad figyelmen kívül</li>
-                </ul>
-                <p style="margin-top: 2rem; font-size: 1.2rem; color: #000; font-weight: 600;">
-                    A befektetés részleteit az ingyenes első beszélgetésben tárgyaljuk meg.
-                </p>
-                <p style="margin-top: 2rem; font-size: 0.9rem; color: #666; max-width: 700px; margin-left: auto; margin-right: auto;">
-                    <strong>Megjegyzés:</strong> A munkám nem helyettesíti az orvosi vagy pszichoterápiás kezelést. Komolyabb egészségügyi panaszok esetén mindig fordulj orvoshoz is.
-                </p>
-                <div style="margin-top: 3rem;">
-                    <a href="#contact" class="cta-button">
-                        <span class="cta-glow"></span>
-                        <span class="cta-text">INGYENES ELSŐ BESZÉLGETÉS</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>Gyakran ismételt kérdések</h2>
-
-            <div class="faq-item">
-                <div class="faq-question">Kinek szól a munkád?</div>
-                <div class="faq-answer">Azoknak, akik tudják, hogy több van bennük — és készen állnak arra, hogy kihozzák. Akik nem egy újabb módszert keresnek, hanem valódi, tartós változást. Az ügyfeleim általában nem kezdők az egészség vagy személyes fejlődés terén — sokféle dolgot kipróbáltak, és most azt a megközelítést keresik, amely valóban működik.</div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">Miért mindig a táplálkozással kezdesz?</div>
-                <div class="faq-answer">Mert a test a legigazabb kiindulópontunk. Szinte minden kihívásnak van táplálkozási összetevője — hiányzó energia, mentális köd, érzelmi hullámzás. Amikor a test megkapja, amire valóban szüksége van, minden más könnyebben megváltozik. A táplálkozás nem az utazás vége, de szinte mindig a megfelelő kezdet.</div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">Mit foglal magában konkrétan a táplálkozási tanácsadás?</div>
-                <div class="faq-answer">Egy részletes első beszélgetést az életedről, céljaidról, testedről. Ebből egy személyes étrendtervet állítok össze, amely a valódi nekednek szól. Elmagyarázom a food combining elveket, a nyers ételek alapjait, és azt, hogyan illesztheted be az élő táplálkozást az életedbe úgy, hogy természetesnek érezd. WhatsAppon (hétfőtől péntekig) kísérlek végig minden lépésen, és folyamatosan igazítom a tervet.</div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">Mi pontosan a sámánikus gyógyítás?</div>
-                <div class="faq-answer">A világ egyik legősibb gyógyítási hagyománya — és olyan, amely oda ér el, ahová más módszerek nem képesek. A lélek szintjén, energiákkal és mintákkal dolgozva, amelyek sokszor évek alatt épültek fel. Nem beavatottaknak szóló rituálé. Mély, gyakorlati munka, amelyet tisztelettel és éves tapasztalattal kísérek.</div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">Foglalhatok csak táplálkozási tanácsadást, gyógyítás nélkül?</div>
-                <div class="faq-answer">Természetesen — mindkét terület külön is elérhető. Sokan a táplálkozással kezdik, majd érzik, hogy mélyebbre akarnak menni. Mások közvetlenül a holisztikus gyógyítás miatt jönnek. Te döntöd el, hol kezdődik az utazásod.</div>
-            </div>
-        </section>
-
-        <section id="contact" style="text-align: center;">
-            <h2>Készen állsz lángra lobbantani?</h2>
-            <p style="font-size: 1.3rem; max-width: 700px; margin: 2rem auto;">
-                Ha úgy érzed, ez neked szól — akkor beszéljünk. Nincs értékesítési nyomás. Csak egy őszinte beszélgetés arról, mit szeretnél, és hogy én vagyok-e a megfelelő személy, aki elkísér oda.
-            </p>
-            <div style="margin: 3rem 0;">
-                <p style="font-size: 1.5rem; font-weight: bold; background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
-                    Így folytatódik:
-                </p>
-                <ol style="text-align: left; max-width: 600px; margin: 2rem auto; font-size: 1.2rem; line-height: 2;">
-                    <li>Foglald le az ingyenes 20 perces beszélgetést</li>
-                    <li>Beszélgetünk — megismerem a helyzetedet</li>
-                    <li>Ha illenek egymáshoz, megkezdődik az átalakulásod</li>
-                </ol>
-            </div>
-            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin: 3rem 0;">
-                <a href="mailto:amylan@ik.me" class="cta-button">
-                    <span class="cta-glow"></span>
-                    <span class="cta-text">✉️ EMAILT ÍROK</span>
-                </a>
-                <a href="https://wa.me/4368120283291?text=Szia%20Amy%2C%20%C3%A9rdekel%20a%20Raw%20%26%20Real" class="cta-button">
-                    <span class="cta-glow"></span>
-                    <span class="cta-text">💬 WHATSAPP</span>
-                </a>
-            </div>
-            <p style="margin-top: 3rem; font-size: 1rem; color: #666; max-width: 700px; margin-left: auto; margin-right: auto;">
-                <strong style="background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-size: 1.1rem;">Megjegyzés:</strong>
-                Az ingyenes beszélgetésben közösen megvizsgáljuk, hogy a munkám alkalmas-e a helyzetedre. Nem mindenkit fogadok be — ez mindkét fél védelmét szolgálja és biztosítja a kísérésem minőségét.
-            </p>
-        </section>
-    </div>
-
-    <footer>
-        <p>
-            <a href="faq_coaching_hu.html">GYIK</a> |
-            <a href="erstgespraech_hu.html">Időpont foglalás</a> |
-            <a href="agb_coaching_hu.html">ÁSZF</a> |
-            <a href="datenschutz_hu.html">Adatvédelem</a> |
-            <a href="blog/index.html">Blog</a> |
-            <a href="food-diary.html">Food Diary</a>
-        </p>
-        <p style="margin-top: 1rem;">Amy Dorothy Ronja Lang — Holisztikus Gyógyító & Táplálkozási Szakértő | Raw & Real</p>
-        <p style="margin-top: 0.5rem; font-size: 0.85rem;">Alakuló vállalkozás | Magyarország</p>
-        <p style="margin-top: 0.5rem; font-size: 0.8rem; max-width: 800px; margin-left: auto; margin-right: auto; color: #666;">
-            <strong>Jogi nyilatkozat:</strong> A holisztikus gyógyítói és táplálkozási szakértői munkám spirituális, energetikai és táplálkozásalapú kísérés. Nem helyettesíti az orvosi diagnózist, a pszichoterápiás kezelést vagy az orvosi terápiát. Komolyabb egészségügyi panaszok esetén mindig fordulj orvoshoz is. Az egyéni eredmények eltérőek lehetnek.
-        </p>
-        <p style="margin-top: 1rem;">© 2025 Minden jog fenntartva</p>
-    </footer>
-
+<div class="container">
+<nav class="top-navigation">
+<div class="brand-mark">DIE <span>WANDLUNG</span> · RAW &amp; REAL</div>
+<div class="top-nav-links">
+<a class="blog-link" href="blog/index.html">Blog</a>
+<a href="http://gorawandreal.com">EN</a>
+<a href="http://die-wandlung.eu">DE</a>
+<a href="http://amyfabijenna.github.io/transzformacio/">HU</a>
+</div>
+</nav>
+<header>
+<p class="eyebrow">AMY DOROTHY RONJA LANG · HOLISZTIKUS ÉLETMÓDKÍSÉRÉS</p>
+<h1>A szépség már itt van.<br/><span class="gold-text">Az erő már itt van.</span></h1>
+<p class="wisdom-line">A természet minden bölcsességét eleve magában hordozza. Nem javításra vár, hanem arra, hogy kibontakozhassék.</p>
+<p class="header-subtitle">Három hónap, amely alatt a tested, az otthonod és az életed újra azt fejezi ki, ami valóban lenyűgöz.</p>
+<div class="badges">
+<span class="star-badge"><svg aria-hidden="true" class="gold-star" viewbox="0 0 24 24"><defs><lineargradient id="starMetal" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#8f6317"></stop><stop offset=".38" stop-color="#e6c76e"></stop><stop offset=".52" stop-color="#fff3c9"></stop><stop offset=".7" stop-color="#d3ab48"></stop><stop offset="1" stop-color="#8f6317"></stop></lineargradient></defs><path d="m12 1.8 2.82 6.25 6.78.73-5.03 4.58 1.42 6.66L12 16.6l-5.99 3.42 1.42-6.66L2.4 8.78l6.78-.73L12 1.8Z" fill="url(#starMetal)"></path></svg> Több mint 20 év megélt tapasztalat</span>
+<span class="star-badge">Élő táplálkozás</span>
+<span class="star-badge">Klasszikus feng shui</span>
+<span class="star-badge">Sámáni folyamatkísérés</span>
+<span class="star-badge">Numerológiai szimbólummunka</span>
+</div>
+<div class="cta-row">
+<a class="cta-button" href="#contact">Ingyenes ismerkedő beszélgetés</a>
+</div>
+</header>
+<section class="intro-section glass">
+<div class="intro-container">
+<div class="photo-container">
+<span class="photo-ring"><img alt="Amy Dorothy Ronja Lang" class="profile-photo" src="images/amy.jpg"/></span>
+<div class="photo-name">Amy Dorothy Ronja Lang</div>
+</div>
+<div class="intro-text">
+<p class="lead">Örülök, hogy itt vagy.</p>
+<p>Nem hiszek abban, hogy az embert előbb meg kellene javítani ahhoz, hogy az élete széppé válhasson. A szépség már itt van. Az erő már itt van. Legtöbbször nem több önfejlesztésre van szükség, hanem egy tiszta térre, amelyben az, ami valóban a tiéd, újra láthatóvá, érezhetővé és élhetővé válik.</p>
+<p>A kísérés, amelyet kínálok, összekapcsolja az élő táplálkozást, a természetközelséget, a tudatosan alakított tereket és a szimbolikus önreflexiót. Nem módszerek gyűjteményeként, hanem utakként egy olyan élet felé, amelyben több a varázs, a ragyogás, az eredetiség és a természetes vonzerő.</p>
+<div class="mini-stats">
+<div class="mini-stat">Személyes edukatív kísérés</div>
+<div class="mini-stat">Online</div>
+<div class="mini-stat">HU · DE · EN · NL</div>
+<div class="mini-stat">WhatsApp H–P</div>
+</div>
+<div class="cta-row" style="justify-content:flex-start">
+<a class="cta-button secondary" href="https://wa.me/4368120283291?text=Szia%20Amy%2C%20%C3%A9rdekel%20a%20k%C3%ADs%C3%A9r%C3%A9sed">WhatsApp</a>
+<a class="cta-button secondary" href="mailto:amylan@ik.me">E-mail</a>
+</div>
+</div>
+</div>
+</section>
+<section class="outcomes" id="ergebnis">
+<h2>Mi változik meg három hónap alatt</h2>
+<p class="section-intro">Nem azért, mert más ember leszel. Hanem azért, mert tisztábban előtűnik, ami régóta benned él – és a hétköznapjaid elkezdik követni ezt a belső igazságot.</p>
+<div class="outcome-grid">
+<article class="outcome-card featured">
+<strong>Felismered, mi az, ami valóban lenyűgöz.</strong>
+<p>A jövőképed nem kötelességekből épül fel, hanem abból, amitől elevennek érzed magad. Tisztábban látod, merre visz a saját belső vonzásod, és milyen helyet szeretnél elfoglalni a saját életedben.</p>
+</article>
+<article class="outcome-card">
+<strong>Test, amely elevenséget sugároz</strong>
+<p>Az élő táplálkozás, a természetes ritmusok és az egyszerű szokások táplálják az energiát, a tiszta fejet, az élvezetet – és annak a testnek a szépségét, amely mindent megkap, amire szüksége van.</p>
+</article>
+<article class="outcome-card">
+<strong>Irány, amely a te kézjegyedet viseli</strong>
+<p>Egyre világosabban megkülönbözteted azt, ami csupán észszerűen hangzik, attól, ami valóban hozzád tartozik. A döntéseid letisztulnak, mert a saját természetedből fakadnak.</p>
+</article>
+<article class="outcome-card">
+<strong>Otthon, amely láthatóvá teszi a világodat</strong>
+<p>A tereid nem egy idegen eszménykép szerint formálódnak. A te értékeidet, a te ízlésedet és annak az életnek a hangulatát hordozzák, amelyet élni szeretnél.</p>
+</article>
+<article class="outcome-card">
+<strong>Tehetségek, amelyek újra mozgásba jönnek</strong>
+<p>Ami megkülönböztet, az figyelmet, formát és helyet kap a mindennapjaidban. A képességeidnek nem kell tovább a háttérben várakozniuk: végre hatni kezdhetnek.</p>
+</article>
+<article class="outcome-card">
+<strong>Több varázs a napjaidban</strong>
+<p>A hétköznapjaid többé nem csak elintéznivalókból állnak. Újra színt, izgalmat és szépséget kapnak – olyan tevékenységek, emberek és élmények révén, amelyek valóban megérintenek.</p>
+</article>
+<article class="outcome-card">
+<strong>Jelenlét természetes vonzerővel</strong>
+<p>Amikor a tested, a tartásod, a tereid és a döntéseid összhangba kerülnek, kisugárzás születik. Nem megrendezett látványként, hanem az önmagaddal való csendes, látható egybecsengésként.</p>
+</article>
+</div>
+</section>
+<section class="services-section glass">
+<h2>A kísérés elemei</h2>
+<p class="section-intro">Minden terület ugyanazt a célt szolgálja: hogy a szépség, az elevenség és az irány ne maradjon puszta gondolat, hanem alakot öltsön a testedben, a tereidben és a mindennapjaidban.</p>
+<div class="services-grid">
+<article class="service-card">
+<span class="service-icon">✦</span>
+<h3>Élő táplálkozás</h3>
+<p>A természetes, növényi ételek frissességet, színt és azonnali elevenséget hoznak a hétköznapokba. A középpontban az élvezet, az egyszerűség és egy olyan testérzet áll, amely hordoz és megtart.</p>
+<ul class="gold-list">
+<li>Természetes táplálkozás és növényi bőség</li>
+<li>Ételtársítás és természetes napi ritmusok</li>
+<li>Hétköznapokban is élhető, élvezetes rutinok</li>
+<li>Nyerskoszttudás mint elmélyítő lehetőség</li>
+<li>Testi ragyogás mint megélt tapasztalat</li>
+</ul>
+</article>
+<article class="service-card">
+<span class="service-icon">✦</span>
+<h3>Sámáni folyamatkísérés</h3>
+<p>A természet képei, a rítusok, a történetek és a szimbólumok olyan rétegeket szólítanak meg, amelyeket az elemzés nem mindig ér el. Teret nyitnak az érzékelésnek, az átmenetnek és a belső iránynak.</p>
+<ul class="gold-list">
+<li>Természetközeli önreflexiós impulzusok</li>
+<li>Rítusok átmenetekhez és új életszakaszokhoz</li>
+<li>Képek és történetek mint tükrök</li>
+<li>A személyes életvízió elmélyítése</li>
+</ul>
+</article>
+<article class="service-card">
+<span class="service-icon">✦</span>
+<h3>Klasszikus feng shui</h3>
+<p>A tereink alakítják azt, amit nap mint nap látunk, érzünk és lehetségesnek tartunk. A klasszikus feng shui az iránytű-módszert olyan térformálással köti össze, amely támogatja a tájékozódást, a szépséget és a mozgást.</p>
+<ul class="gold-list">
+<li>Az iránytű-módszer alapjai</li>
+<li>Térhatás, rend és természetes anyagok</li>
+<li>Alakítási impulzusok otthonra és munkára</li>
+<li>Az otthon mint látható életirány</li>
+</ul>
+</article>
+<article class="service-card">
+<span class="service-icon">✦</span>
+<h3>Numerológiai szimbólummunka</h3>
+<p>A számokat szimbolikus nyelvként olvassuk. Nem merev identitást írnak elő, hanem új nézőpontokat nyitnak a tehetségekre, a kifejezésmódokra, a ritmusokra és az életképekre.</p>
+<ul class="gold-list">
+<li>Személyes számképek mint az önreflexió tere</li>
+<li>Impulzusok tehetségről és kifejezésről</li>
+<li>Éves ritmusok mint alkotó iránymutatás</li>
+<li>A saját jövőkép elmélyítése</li>
+</ul>
+</article>
+</div>
+</section>
+<section class="process-section glass">
+<h2>Így dolgozunk együtt</h2>
+<p class="section-intro">Személyesen, figyelmesen és sablonok nélkül. A kísérés nem merev programot követ, hanem azt, ami az életedben valóban formát szeretne ölteni.</p>
+<div class="process-steps">
+<article class="step">
+<div class="step-number">1</div>
+<h3>Ismerkedés</h3>
+<p>Húsz percben arról beszélgetünk, mi az, ami lenyűgöz, mi felé tartasz, és hogy az én kísérésem illik-e hozzád.</p>
+</article>
+<article class="step">
+<div class="step-number">2</div>
+<h3>Három hónap megtestesülés</h3>
+<p>Beszélgetések, tudásimpulzusok, önreflexiós kérdések és WhatsApp-kísérés kapcsolja össze a táplálkozást, a testet, a tereket, a hétköznapokat és az életvíziót.</p>
+</article>
+<article class="step">
+<div class="step-number">3</div>
+<h3>A saját formád</h3>
+<p>A végén nem egy idegen eszmény áll, hanem egy tisztább, elevenebb kép arról, hogyan szeretnél lakni, hatni, enni, dönteni és élni.</p>
+</article>
+</div>
+</section>
+<section class="testimonial-hero glass" id="nicole">
+<h2>Mire képes a megélt változás</h2>
+<div class="testimonial-content">
+<div class="testimonial-image">
+<span class="testimonial-frame"><img alt="Nicole Vogt" src="images/nicole.jpg"/></span>
+<div class="testimonial-name">Nicole Vogt</div>
+</div>
+<div class="testimonial-text">
+<p><strong>Korábban több átalakulási programot is kipróbáltam. Egyik sem arról szólt, amire valójában szükségem volt.</strong></p>
+<p>Három kisgyerekkel, akiknek külön főzök, miközben a saját utamat keresem – szétszakítva éreztem magam. Hogyan tiszteljem azt, amit a testem számára helyesnek ismerek fel, miközben a családom másképp él? Hogyan adjak újra teret a saját szükségleteimnek annyi év után, amikor mindent másoknak adtam?</p>
+<p><strong>Aztán megtaláltam Amyt.</strong></p>
+<p>Nem nyomott a kezembe egy mindenkire egyformán szabott tervet. Megmutatta, hogyan járhatom a saját utamat, miközben a családom a magáét járja – tisztán, konfliktusok nélkül, és anélkül, hogy családi projekt lett volna belőle.</p>
+<p>WhatsAppon (hétfőtől péntekig) mindig ott volt. Egyetlen részlet sem volt neki túl apró. Minden bizonytalanságomra, minden kérdésemre gyakorlati választ adott. Semmi elmélet. Valódi megoldások.</p>
+<p>Amikor nem tudtam, mit kezdjek a családi étkezésekkel – megmutatta, hogyan lehet.</p>
+<p>Amikor kételkedtem, hogy tényleg végig tudom-e csinálni – nekem adta a <strong>megingathatatlan hitét</strong>. Hogy működik. Hogy meg tudom csinálni. Hogy nem kell nehéznek lennie.</p>
+<p><strong>Három hónappal később:</strong></p>
+<p>Csúcsformában érzem magam. Tele vagyok energiával. A fejem tiszta. Kevesebb alvás is elég, több bennem az életerő, és újra önmagam vagyok – valóban önmagam, nem csupán „anya”.</p>
+<p><strong>És akkor jött a pillanat, amelyet soha nem felejtek el:</strong></p>
+<p>A családban mindenki elkapta az influenzát. Láz. Köhögés. A teljes műsor.</p>
+<p><strong>Egyedül én nem betegedtem meg.</strong></p>
+<p>A férjem – aki mindig úgy gondolta, hogy az én megközelítésem „egy kicsit sok” – rám nézett, és azt mondta: <strong>„Te mit csinálsz másképp? Én is ki akarom próbálni.”</strong></p>
+<p>Ma már kérdezi, mit eszem. Érdeklődik. Rajtam látja az eredményt.</p>
+<p>Nem azért, mert meggyőztem. Hanem mert látta, milyen jól vagyok. Hogy nézek ki. Hogy egészséges maradtam, miközben körülöttem mindenki megbetegedett.</p>
+<p><strong>Amy a saját hitét adja át neked. És egyszer csak már nem kételkedsz – egyszerűen tudod, hogy működik.</strong></p>
+</div>
+</div>
+</section>
+<section class="faq-wrap glass">
+<h2>Az első lépés előtt</h2>
+<div class="faq-item">
+<div class="faq-question">Kinek szól ez a kísérés?</div>
+<div class="faq-answer">Azoknak a nőknek, akik nem még több önoptimalizálást keresnek, hanem egy életet, amely szebbnek, elevenebbnek, tisztábbnak érződik – és összetéveszthetetlenül a sajátjuknak.</div>
+</div>
+<div class="faq-item">
+<div class="faq-question">Milyen szerepet játszik a táplálkozás?</div>
+<div class="faq-answer">A test nem mellékszereplő. Az élő táplálkozás teremti meg a frissesség, az energia, az élvezet és a ragyogás alapját, amelyen a többi változás is könnyebben ölt formát.</div>
+</div>
+<div class="faq-item">
+<div class="faq-question">Mit jelent az élő táplálkozás?</div>
+<div class="faq-answer">Természetes, növényi ételeket, színeket, frissességet, változatosságot és összhangban lévő ritmusokat. A nyerskoszt és az ételtársítás helyet kaphat benne anélkül, hogy merev rendszerré válna.</div>
+</div>
+<div class="faq-item">
+<div class="faq-question">Mit jelent a sámáni folyamatkísérés?</div>
+<div class="faq-answer">A természet képei, a rítusok, a történetek és a szimbólumok az érzékelés és a személyes önreflexió útjaiként szolgálnak. Új nézőpontokat nyitnak, anélkül hogy kész igazságot húznának rád.</div>
+</div>
+<div class="faq-item">
+<div class="faq-question">Jogilag hogyan sorolható be ez a szolgáltatás?</div>
+<div class="faq-answer">A szolgáltatás általános ismeretátadást, edukációs impulzusokat és személyes önreflexiót foglal magában. Az orvosi diagnosztika és terápia, a pszichoterápia, valamint a szabályozott dietetikai tanácsadás a törvény által erre feljogosított szakmák hatáskörébe tartozik.</div>
+</div>
+</section>
+<section class="final-cta glass" id="contact">
+<h2>A szépség már itt van. Adj neki teret.</h2>
+<p>Mesélj arról az életről, amely lenyűgöz – arról, ahogyan érezni, lakni, enni, hatni és a napjaidat tölteni szeretnéd. Az ismerkedő beszélgetésen kiderül, hogy az én kísérésem-e a megfelelő tér ehhez.</p>
+<div class="cta-row">
+<a class="cta-button" href="mailto:amylan@ik.me">E-mailt írok</a>
+<a class="cta-button" href="https://wa.me/4368120283291?text=Szia%20Amy%2C%20%C3%A9rdekel%20a%20Raw%20%26%20Real">WhatsApp-üzenetet küldök</a>
+</div>
+</section>
+<section class="blog-section glass">
+<h2>Gondolatok és impulzusok</h2>
+<p class="section-intro">Szépségről, elevenségről, természetközelségről – és arról a művészetről, hogyan adhat az ember összetéveszthetetlen formát a saját életének.</p>
+<div class="blog-grid">
+<a class="blog-card" href="blog/index.html"><h3>Élő táplálkozás</h3><p>Természetes ételek, növényi bőség, nyerskoszttudás és egy táplálkozás, amely frissességet sugároz.</p></a>
+<a class="blog-card" href="blog/index.html"><h3>Tér és irány</h3><p>Klasszikus feng shui, és a kérdés, hogyan teheti az otthon láthatóvá és érezhetővé az élet irányát.</p></a>
+<a class="blog-card" href="blog/index.html"><h3>Természet és szimbólum</h3><p>Sámáni ihletésű képek, rítusok és történetek mint az érzékelés és az átalakulás nyelve.</p></a>
+<a class="blog-card" href="blog/index.html"><h3>Varázs és kibontakozás</h3><p>Gondolatok szépségről, eredetiségről, tehetségről, ragyogásról és egy természetes vonzerejű életről.</p></a>
+</div>
+</section>
+<footer class="footer">
+<div class="footer-buttons">
+<a class="footer-button" href="erstgespraech.html">Időpontfoglalás</a>
+<a class="footer-button" href="faq_coaching.html">GYIK</a>
+<a class="footer-button" href="agb_coaching.html">ÁSZF</a>
+<a class="footer-button" href="datenschutz.html">Adatvédelem</a>
+</div>
+<div class="footer-grid">
+<div class="footer-panel">
+<h3>Kapcsolat és impresszum</h3>
+<p><strong>Amy Dorothy Ronja Lang</strong></p>
+<p>E-mail: <a href="mailto:amylan@ik.me">amylan@ik.me</a></p>
+<p>WhatsApp: <a href="https://wa.me/4368120283291">+43 681 202 832 91</a></p>
+<p>Ausztria</p>
+</div>
+<div class="footer-panel">
+<h3>A középpontban</h3>
+<ul class="gold-list">
+<li>Szépség, elevenség és természetes kibontakozás</li>
+<li>Élő táplálkozás és természetközelség</li>
+<li>Terek hangulattal és saját kézjeggyel</li>
+<li>Szimbólummunka, önreflexió és tiszta életirány</li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p class="legal-note">Ez a szolgáltatás általános ismeretátadást, edukációt és személyes önreflexiót szolgál. Az orvosi diagnosztikát és terápiát, a pszichoterápiát, valamint a szabályozott dietetikai tanácsadást a törvény által erre feljogosított szakmák nyújtják.</p>
+<p>© 2026 Amy Dorothy Ronja Lang — Die Wandlung · Raw &amp; Real. Minden jog fenntartva.</p>
+</div>
+</footer>
+</div>
 </body>
 </html>
