@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Receptek · Élő konyha | Die Wandlung · Raw &amp; Real</title>
+<meta content="Élő nyers receptek Amy Dorothy Ronja Langtól: levesek, saláták, mártogatósok, kekszek, pizza, quiche, desszertek, fermentált ételek és egy nagy gyűjtemény tízóraihoz útra és a munkahelyre." name="description"/>
+<meta content="nyers receptek, nyers vegán receptek, tízórai a munkahelyre, nyers étel útra, nyers meal prep, nyers quiche, energiagolyók, aszalt keksz, élő táplálkozás, olajmentes receptek" name="keywords"/>
+<meta content="Amy Dorothy Ronja Lang" name="author"/>
+<meta content="website" property="og:type"/>
+<meta content="Élő konyha · Amy receptjei" property="og:title"/>
+<meta content="Nyers receptek tele színnel és frissességgel — és több mint száz lehetőség, hogy a munkanapokon is élettel teli ételekkel táplálkozz." property="og:description"/>
+<link href="favicon.png" rel="icon" type="image/png"/>
+<style>
+  :root {
+    --ink:#26262c; --muted:#5b555f; --gold:#b8892c; --gold-deep:#8f6317; --gold-light:#ecd07e; --gold-shine:#fff3c9;
+    --quartz:#f0bcc6; --quartz-light:#fadde3; --quartz-shine:#fff3f5; --obsidian:#0d0d12; --pearl:#e7ebf3;
+    --paper:rgba(255,255,255,.68); --shadow:0 18px 55px rgba(38,38,52,.13); --radius:28px;
+    --metal-gold:linear-gradient(110deg,var(--gold-deep) 0%,#d9b355 30%,var(--gold-shine) 50%,#cfa440 68%,var(--gold-deep) 100%);
+    --metal-gold-soft:linear-gradient(135deg,#a97e22 0%,#e6c76e 40%,var(--gold-shine) 55%,#d3ab48 72%,#9a6f1c 100%);
+    --metal-gold-text:linear-gradient(110deg,#6e4c10 0%,#a1761c 32%,#c2952e 50%,#8d6316 70%,#6e4c10 100%);
+    --obsidian-glass:linear-gradient(150deg,#0a0a0f 0%,#17171e 34%,#33323e 48%,#14141a 60%,#060609 100%);
+    --metal-silver:linear-gradient(110deg,#99a2b2 0%,#dde3ed 34%,#ffffff 47%,#fff4d6 53%,#cdd4e0 66%,#8d95a5 100%);
+    --metal-quartz-ring:linear-gradient(135deg,#dd9dab 0%,var(--quartz-shine) 45%,#eeb3c0 60%,#cf8d9c 100%);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Avenir Next",Avenir,"Inter","Segoe UI",Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.72;
+    background:
+      radial-gradient(circle at 12% 8%,rgba(255,255,255,.85),transparent 22%),
+      radial-gradient(circle at 78% 18%,rgba(255,243,245,.75),transparent 26%),
+      radial-gradient(circle at 30% 62%,rgba(255,255,255,.5),transparent 24%),
+      radial-gradient(circle at 90% 78%,rgba(255,240,243,.6),transparent 28%),
+      linear-gradient(150deg,#eeb4c0 0%,#f8d7de 16%,var(--quartz-shine) 32%,#f1c0ca 50%,#fbe2e7 66%,#ecafbc 84%,#f7d3da 100%);
+    background-attachment:fixed;min-height:100vh}
+  a{color:inherit}
+  .container{width:min(1180px,calc(100% - 32px));margin:0 auto;padding:20px 0 56px}
+
+  .top-navigation{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:15px 20px;margin-bottom:22px;border-radius:22px;background:var(--obsidian-glass);border:1px solid rgba(222,184,88,.55);box-shadow:var(--shadow),inset 0 1px 0 rgba(255,244,214,.28),inset 0 0 22px rgba(230,199,110,.08);flex-wrap:wrap;position:relative;overflow:hidden}
+  .top-navigation::before{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 44%,rgba(255,255,255,.14) 50%,transparent 56%);pointer-events:none}
+  .brand-mark{position:relative;font-size:.88rem;font-weight:700;letter-spacing:.16em;background:var(--metal-silver);-webkit-background-clip:text;background-clip:text;color:transparent;text-decoration:none}
+  .brand-mark span{background:var(--metal-gold);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .top-nav-links{position:relative;display:flex;flex-wrap:wrap;gap:8px}
+  .top-nav-links a{text-decoration:none;padding:8px 13px;border-radius:999px;font-size:.88rem;font-weight:650;background:var(--metal-silver);-webkit-background-clip:text;background-clip:text;color:transparent;border:1px solid rgba(222,184,88,.35)}
+  .top-nav-links a:hover,.top-nav-links a.active{background:var(--metal-gold-soft);-webkit-background-clip:border-box;background-clip:border-box;-webkit-text-fill-color:#241d0e;color:#241d0e;box-shadow:inset 0 1px 0 rgba(255,255,255,.55);border-color:rgba(143,99,23,.5)}
+  .nav-sep{width:1px;background:rgba(222,184,88,.35);margin:4px 2px}
+
+  header,section,footer{margin-bottom:34px}
+  header,.glass{background:var(--paper);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.85);box-shadow:var(--shadow),inset 0 1px 0 rgba(255,255,255,.9),inset 0 -1px 0 rgba(240,188,198,.45);border-radius:var(--radius)}
+  header{text-align:center;padding:clamp(42px,7vw,76px) clamp(22px,6vw,72px);position:relative;overflow:hidden}
+  header::before{content:"";position:absolute;width:300px;height:300px;border-radius:50%;right:-140px;top:-170px;background:radial-gradient(circle at 35% 35%,rgba(255,243,201,.4),rgba(236,208,126,.12) 55%,transparent 75%)}
+  header::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 42%,rgba(255,255,255,.5) 50%,transparent 58%);pointer-events:none}
+  .eyebrow{position:relative;z-index:1;font-size:.8rem;text-transform:uppercase;letter-spacing:.2em;font-weight:750;color:#7d5f16;margin-bottom:18px}
+  h1{position:relative;z-index:1;font-size:clamp(2.45rem,7vw,5rem);line-height:1.03;letter-spacing:-.045em;font-weight:620;max-width:940px;margin:0 auto 22px}
+  .gold-text{background:var(--metal-gold-text);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 1px 0 rgba(96,66,12,.3))}
+  .wisdom-line{position:relative;z-index:1;font-size:clamp(1.12rem,2.5vw,1.55rem);line-height:1.45;max-width:820px;margin:0 auto 22px;font-weight:540}
+  .header-subtitle{position:relative;z-index:1;max-width:800px;margin:0 auto;font-size:clamp(1.02rem,2.1vw,1.2rem);color:#4a444e}
+  .badges{position:relative;z-index:1;display:flex;justify-content:center;flex-wrap:wrap;gap:5px 14px;margin:24px auto 0}
+  .star-badge{display:inline-flex;align-items:center;gap:8px;font-size:.92rem;font-weight:700;color:#6d5218}
+  .cta-row{position:relative;z-index:1;display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}
+  .cta-button{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:12px 24px;border-radius:999px;text-decoration:none;font-weight:780;letter-spacing:.02em;color:#241d0e;border:1px solid rgba(143,99,23,.45);background:var(--metal-gold-soft);box-shadow:0 12px 30px rgba(150,110,35,.28),inset 0 1px 0 rgba(255,255,255,.65),inset 0 -2px 4px rgba(120,84,15,.28);transition:transform .25s ease,box-shadow .25s ease;cursor:pointer;font-family:inherit;font-size:1rem}
+  .cta-button:hover{transform:translateY(-2px)}
+  .cta-button.secondary{background:linear-gradient(135deg,#ecb2be 0%,var(--quartz-shine) 45%,#f6ccd4 60%,#e19fae 100%);border:1px solid rgba(199,124,140,.55);box-shadow:0 8px 24px rgba(170,100,118,.2),inset 0 1px 0 rgba(255,255,255,.85),inset 0 -2px 4px rgba(180,105,122,.28)}
+
+  h2{text-align:center;font-size:clamp(1.9rem,5vw,3.1rem);line-height:1.12;letter-spacing:-.035em;font-weight:620;margin-bottom:16px}
+  .section-intro{max-width:800px;margin:0 auto 28px;text-align:center;font-size:1.06rem;color:#4d4752}
+  .pad{padding:clamp(26px,5vw,52px)}
+
+  /* Obsidian-Bühne für die Job-Kategorie */
+  .obsidian{padding:clamp(30px,6vw,64px);background:var(--obsidian-glass);border-radius:34px;border:1px solid rgba(222,184,88,.6);box-shadow:0 24px 70px rgba(10,10,18,.4),inset 0 1px 0 rgba(255,244,214,.3),inset 0 0 34px rgba(230,199,110,.07);overflow:hidden;position:relative}
+  .obsidian::before{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 38%,rgba(255,255,255,.09) 46%,rgba(255,255,255,.16) 49%,rgba(255,255,255,.05) 53%,transparent 62%),linear-gradient(115deg,transparent 68%,rgba(255,255,255,.06) 74%,transparent 80%);pointer-events:none}
+  .obsidian::after{content:"";position:absolute;inset:auto -110px -150px auto;width:330px;height:330px;border-radius:50%;background:radial-gradient(circle at 40% 40%,rgba(236,208,126,.22),transparent 70%);pointer-events:none}
+  .obsidian > *{position:relative;z-index:1}
+  .obsidian h2{background:var(--metal-gold-soft);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .obsidian .section-intro,.obsidian p{color:var(--pearl)}
+  .job-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:10px}
+  .job-card{padding:24px;border-radius:22px;background:linear-gradient(160deg,rgba(255,255,255,.1),rgba(255,255,255,.03));border:1px solid rgba(230,199,110,.4);box-shadow:inset 0 1px 0 rgba(255,244,214,.22)}
+  .job-card strong{display:block;font-size:1.18rem;line-height:1.3;margin-bottom:8px;background:linear-gradient(110deg,#dcb453,var(--gold-shine) 50%,#d3a63e);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .job-card p{font-size:.98rem}
+  .job-card.wide{grid-column:1/-1;background:linear-gradient(135deg,rgba(230,199,110,.2),rgba(255,255,255,.07) 55%,rgba(240,188,198,.13));border-color:rgba(230,199,110,.55)}
+  .week{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-top:14px}
+  .day{padding:12px;border-radius:14px;background:rgba(255,255,255,.06);border:1px solid rgba(230,199,110,.3);font-size:.9rem;color:var(--pearl)}
+  .day b{display:block;color:var(--gold-light);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
+
+  /* Baukasten */
+  .builder{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:20px}
+  .builder-col{padding:22px;border-radius:22px;background:rgba(255,255,255,.06);border:1px solid rgba(230,199,110,.4)}
+  .builder-col h3{font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-light);margin-bottom:10px}
+  .builder-col ul{list-style:none}
+  .builder-col li{color:var(--pearl);padding:4px 0 4px 22px;position:relative;font-size:.95rem}
+  .builder-col li::before{content:"✦";position:absolute;left:0;color:var(--gold-light)}
+  .combo{margin-top:22px;text-align:center}
+  .combo-result{margin:18px auto 0;max-width:820px;min-height:86px;padding:22px 26px;border-radius:22px;background:linear-gradient(135deg,rgba(230,199,110,.22),rgba(255,255,255,.08) 55%,rgba(240,188,198,.14));border:1px solid rgba(230,199,110,.55);font-size:clamp(1.05rem,2.3vw,1.3rem);color:var(--pearl);line-height:1.5}
+  .combo-result em{font-style:normal;background:linear-gradient(110deg,#dcb453,var(--gold-shine) 50%,#d3a63e);-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:750}
+
+  /* Filter */
+  .filter-wrap{position:sticky;top:10px;z-index:20;padding:16px 18px;margin-bottom:22px;background:linear-gradient(160deg,rgba(255,250,251,.97),rgba(252,236,240,.97)) !important}
+  .search{width:100%;padding:13px 18px;border-radius:999px;border:1px solid rgba(184,137,44,.35);background:rgba(255,255,255,.88);font:inherit;font-size:1rem;color:var(--ink);outline:none;box-shadow:inset 0 1px 3px rgba(60,40,50,.08)}
+  .search:focus{border-color:var(--gold)}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+  .chip{border:1px solid rgba(184,137,44,.32);background:linear-gradient(135deg,rgba(255,255,255,.92),rgba(250,221,227,.6));padding:7px 14px;border-radius:999px;font:inherit;font-size:.88rem;font-weight:680;color:#4a3d22;cursor:pointer;box-shadow:inset 0 1px 0 rgba(255,255,255,.9);transition:all .2s ease}
+  .chip:hover{border-color:rgba(143,99,23,.6)}
+  .chip.on{background:var(--metal-gold-soft);color:#241d0e;border-color:rgba(120,84,15,.55);box-shadow:0 6px 16px rgba(150,110,35,.25),inset 0 1px 0 rgba(255,255,255,.6)}
+  .chip.star{background:var(--obsidian-glass);color:var(--gold-light);border-color:rgba(222,184,88,.6)}
+  .chip.star.on{background:var(--metal-gold-soft);color:#241d0e}
+  .subchips{display:none;margin-top:10px;padding-top:10px;border-top:1px dashed rgba(184,137,44,.35)}
+  .subchips.show{display:flex}
+  .count{margin-top:10px;font-size:.86rem;color:var(--muted);font-weight:600}
+
+  /* Rezeptkarten */
+  .recipe-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:start}
+  .recipe{border-radius:24px;background:linear-gradient(160deg,rgba(255,255,255,.86),rgba(250,231,235,.6));border:1px solid rgba(184,137,44,.28);box-shadow:0 12px 34px rgba(45,45,60,.08),inset 0 1px 0 rgba(255,255,255,.95),inset 0 -1px 0 rgba(240,188,198,.4);overflow:hidden;transition:transform .25s ease,box-shadow .25s ease}
+  .recipe:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(150,110,35,.16),inset 0 1px 0 rgba(255,255,255,.95)}
+  .recipe-top{height:8px;background:var(--metal-gold-soft)}
+  .recipe.job .recipe-top{background:var(--obsidian-glass);border-bottom:1px solid rgba(222,184,88,.6)}
+  .recipe-body{padding:20px 22px 22px}
+  .r-cat{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:750;color:#7d5f16}
+  .recipe h3{font-size:1.22rem;line-height:1.28;margin:4px 0 8px;background:var(--metal-gold-text);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .r-desc{font-size:.94rem;color:#4d4752;margin-bottom:10px}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+  .tag{font-size:.74rem;font-weight:700;padding:3px 10px;border-radius:999px;background:rgba(255,255,255,.9);border:1px solid rgba(184,137,44,.3);color:#5d4a1c}
+  .tag.dark{background:#17171e;color:var(--gold-light);border-color:rgba(222,184,88,.5)}
+  details summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:999px;font-weight:750;font-size:.9rem;color:#241d0e;background:linear-gradient(135deg,#ecb2be 0%,var(--quartz-shine) 45%,#f6ccd4 60%,#e19fae 100%);border:1px solid rgba(199,124,140,.5);box-shadow:inset 0 1px 0 rgba(255,255,255,.85)}
+  details summary::-webkit-details-marker{display:none}
+  details[open] summary{background:var(--metal-gold-soft);border-color:rgba(143,99,23,.5)}
+  .r-inner{margin-top:16px}
+  .r-inner h4{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:#7d5f16;margin:12px 0 6px}
+  .gold-list{list-style:none}
+  .gold-list li{position:relative;padding-left:22px;margin:5px 0;font-size:.95rem}
+  .gold-list li::before{content:"✦";position:absolute;left:0;top:0;color:var(--gold-deep)}
+  ol.steps{padding-left:22px}
+  ol.steps li{margin:6px 0;font-size:.95rem}
+  ol.steps li::marker{color:var(--gold-deep);font-weight:800}
+  .tip{margin-top:12px;padding:12px 14px;border-radius:14px;background:rgba(255,243,201,.55);border:1px solid rgba(184,137,44,.3);font-size:.92rem}
+  .tip b{color:#7d5f16}
+  .tag.gold{background:var(--metal-gold-soft);color:#241d0e;border-color:rgba(120,84,15,.5)}
+  .gourmet{margin-top:14px;padding:14px 16px;border-radius:16px;background:linear-gradient(135deg,rgba(255,243,201,.7),rgba(250,221,227,.55));border:1px solid rgba(184,137,44,.35)}
+  .gourmet h4{margin-top:0 !important}
+  .g-note{font-size:.9rem;color:#5b4a22;margin-bottom:4px}
+  .principles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;text-align:left;margin-top:8px}
+  .principle{padding:22px;border-radius:22px;background:linear-gradient(160deg,rgba(255,255,255,.86),rgba(250,231,235,.6));border:1px solid rgba(184,137,44,.28);box-shadow:inset 0 1px 0 rgba(255,255,255,.95)}
+  .principle h3{font-size:1.1rem;margin-bottom:6px;background:var(--metal-gold-text);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .principle p{font-size:.95rem;color:#4d4752}
+  .principle.wide{grid-column:1/-1;background:linear-gradient(135deg,rgba(255,243,201,.75),rgba(255,255,255,.85) 55%,rgba(250,221,227,.7))}
+  @media (max-width:980px){.principles{grid-template-columns:1fr}}
+  .empty{text-align:center;padding:40px;color:var(--muted);display:none}
+
+  .footer{padding:30px;background:var(--obsidian-glass);border-radius:28px;border:1px solid rgba(222,184,88,.6);box-shadow:var(--shadow),inset 0 1px 0 rgba(255,244,214,.28);position:relative;overflow:hidden;text-align:center}
+  .footer::before{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 40%,rgba(255,255,255,.08) 49%,transparent 58%);pointer-events:none}
+  .footer > *{position:relative}
+  .footer p{color:#c9cfdb;font-size:.86rem;max-width:900px;margin:0 auto 10px}
+  .footer-buttons{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:22px}
+  .footer-button{text-decoration:none;border:1px solid rgba(230,199,110,.65);border-radius:999px;padding:9px 16px;font-size:.9rem;font-weight:650;color:var(--pearl);background:linear-gradient(160deg,rgba(255,255,255,.08),rgba(230,199,110,.06));transition:background .25s ease,color .25s ease}
+  .footer-button:hover{background:var(--metal-gold-soft);color:#241d0e}
+
+  @media (max-width:980px){.recipe-grid,.job-grid,.builder{grid-template-columns:repeat(2,minmax(0,1fr))}.week{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  @media (max-width:680px){.recipe-grid,.job-grid,.builder{grid-template-columns:1fr}.top-navigation{justify-content:center;text-align:center}.container{width:min(100% - 20px,1180px)}.filter-wrap{position:static}}
+</style>
+</head>
+<body>
+<div class="container">
+
+<nav class="top-navigation">
+  <a class="brand-mark" href="https://amyfabijenna.github.io/transzformacio/index.html">DIE <span>WANDLUNG</span> · RAW &amp; REAL</a>
+  <div class="top-nav-links">
+    <a href="https://amyfabijenna.github.io/transzformacio/index.html">Kezdőlap</a>
+    <a href="blog/index.html">Blog</a>
+    <a class="active" href="rezepte-hu.html">Receptek</a>
+    <span class="nav-sep"></span>
+    <a href="rezepte-en.html" lang="en">EN</a>
+    <a href="rezepte.html" lang="de">DE</a>
+    <a class="active" href="rezepte-hu.html" lang="hu">HU</a>
+  </div>
+</nav>
+
+<header>
+  <p class="eyebrow">ÉLŐ KONYHA · AMY RECEPTJEI</p>
+  <h1>Az étel, amely él,<br/><span class="gold-text">életet ad tovább.</span></h1>
+  <p class="wisdom-line">Szín, frissesség és a természet teljes bölcsessége — olyan egyszerűen elkészítve, hogy belefér a valódi hétköznapjaidba.</p>
+  <p class="header-subtitle">Itt találod a kedvenc nyers receptjeimet: a napfényes gazpachótól az aszalóban készült ropogós kekszeken át a krémes csokoládétortáig. Minden recept magában, enyhén is finom — ha erőteljesebb ízeket szeretnél, a sót, a fűszereket, a fokhagymát és a gyömbért mindig az ínyenc változatnál találod. És mivel oly sokan kérdezitek, hogyan lehet a munkanapokon is élő ételekkel táplálkozni, külön nagy gyűjtemény szól az útra és a munkahelyre.</p>
+  <div class="badges">
+    <span class="star-badge">✦ 100% növényi</span>
+    <span class="star-badge">✦ Nyers és élő</span>
+    <span class="star-badge">✦ Olaj és ecet nélkül</span>
+    <span class="star-badge">✦ Sütő nélkül</span>
+    <span class="star-badge">✦ A hétköznapokra szabva</span>
+  </div>
+  <div class="cta-row">
+    <a class="cta-button" href="#job">Útra és a munkahelyre</a>
+    <a class="cta-button secondary" href="#rezepte">Az összes recept</a>
+  </div>
+</header>
+
+<section class="obsidian" id="job">
+  <h2>Útra és a munkahelyre</h2>
+  <p class="section-intro">Aki egész nap a kasszánál ül, az üzletben áll, ingázik vagy egyik időpontról a másikra siet, nem ehet mindig csak gyümölcsöt — és nem is kell. Ez a gyűjtemény mindenkinek szól, aki egy rövid szünetben valami laktatóval, sóssal vagy édessel szeretne feltöltődni: ugyanolyan természetesen, mint egy zsömlével, csak élő formában.</p>
+
+  <div class="job-grid">
+    <article class="job-card wide">
+      <strong>Az elv: egyszer előkészíted, egész héten élvezed</strong>
+      <p>Az aszalógép a csendes segítőtársad. Hétvégén egész éjjel dolgozik, és hétfőn már sok napra elegendő kenyered, kekszed, sütid és chipsed van. Mellé két-három mártogatós csavaros üvegben, felvágott zöldség egy dobozban — és reggel már csak fogod és viszed.</p>
+      <div class="week">
+        <div class="day"><b>Szombat</b>Keksz, kenyér és banánrudacskák az aszalóba, kendermagkrém bekeverése</div>
+        <div class="day"><b>Vasárnap</b>Két mártogatós turmixolása, energiagolyók formázása, zöldség felvágása</div>
+        <div class="day"><b>H – Sze</b>Kenyér krémmel, zöldséghasábok mártogatóssal, egy kis édesség</div>
+        <div class="day"><b>Szerda</b>Friss utánpótlás: saláta üvegben vagy lasagne két napra</div>
+        <div class="day"><b>Cs – P</b>Kekszkészlet, fermentált ételek kenderszósszal, brownie</div>
+      </div>
+    </article>
+    <article class="job-card">
+      <strong>Hűtés nélkül</strong>
+      <p>Az aszalt kenyér, a keksz, a süti, az energiagolyó, a dió, a gyümölcsbőr és a chips egész nap elvan a táskában. Ezeken a recepteken a „hűtés nélkül” jelölés áll.</p>
+    </article>
+    <article class="job-card">
+      <strong>Hűtőtáskával vagy a munkahelyi hűtőben</strong>
+      <p>A mártogatósok, a lasagne, az üveges saláták, a fermentált és a krémes ételek hűvösben érzik a legjobban magukat. Egy kis hűtőakku általában ebédidőig kitart.</p>
+    </article>
+    <article class="job-card">
+      <strong>Egykezes falatok rövid szünetekre</strong>
+      <p>Ha csak öt perced van: golyók, szeletek, töltött datolya, noritekercsek és szendvicsek, amelyek nem morzsálódnak és nem csöpögnek.</p>
+    </article>
+  </div>
+
+  <h2 style="margin-top:48px">A tízórai-építőd</h2>
+  <p class="section-intro">Válassz egy alapot, valamit, amivel megkened vagy megtöltöd, és egy kis kiegészítőt. Már ebből a három oszlopból is több mint ötszáz kombináció születik — egyhamar nem fogod megismételni magad.</p>
+  <div class="builder">
+    <div class="builder-col"><h3>1 · Alap</h3><ul id="b1"></ul></div>
+    <div class="builder-col"><h3>2 · Krém és töltelék</h3><ul id="b2"></ul></div>
+    <div class="builder-col"><h3>3 · Kiegészítő és édesség</h3><ul id="b3"></ul></div>
+  </div>
+  <div class="combo">
+    <button class="cta-button" id="comboBtn" type="button">✦ Lepj meg egy tízóraival</button>
+    <div class="combo-result" id="combo">Nyomd meg a gombot, és összeállítok neked egy tízórait holnapra.</div>
+  </div>
+  <div class="cta-row">
+    <a class="cta-button secondary" href="#rezepte" onclick="setCat('job')">Az összes munkahelyi recept</a>
+  </div>
+</section>
+
+<section class="pad glass" id="rezepte">
+  <h2>Az összes recept</h2>
+  <p class="section-intro">Keress rá egy hozzávalóra, amely épp a konyhádban vár, vagy böngéssz a kategóriák között. A „Recept megnyitása” gombra kattintva megjelennek a hozzávalók és az elkészítés.</p>
+
+  <div class="filter-wrap glass">
+    <input class="search" id="search" placeholder="Keress receptre vagy hozzávalóra … pl. dió, cukkini, kakaó" type="search"/>
+    <div class="chips" id="chips"></div>
+    <div class="chips subchips" id="subchips">
+      <button class="chip on" data-sub="all" type="button">Minden munkahelyi recept</button>
+      <button class="chip" data-sub="o" type="button">Hűtés nélkül</button>
+      <button class="chip" data-sub="k" type="button">Hűtőtáskával</button>
+      <button class="chip" data-sub="h" type="button">Egykezes falat</button>
+    </div>
+    <div class="count" id="count"></div>
+  </div>
+
+  <div class="recipe-grid" id="grid"></div>
+  <p class="empty" id="empty">Erre a keresésre még nincs receptem — próbálj ki egy másik hozzávalót.</p>
+</section>
+
+<section class="pad glass" id="prinzipien">
+  <h2>Az élő konyhám alapjai</h2>
+  <p class="section-intro">Egyszerű, tiszta hozzávalók, amelyek magukért beszélhetnek. Így minden étel könnyen emészthető marad, és erős fűszerezés nélkül is finom.</p>
+  <div class="principles">
+    <article class="principle wide">
+      <h3>✦ Fermentált kendermagkrém — olaj, tejszín és sajt helyett</h3>
+      <p>A hántolt kendermagot <b>beáztatás nélkül</b> egy kevés vízzel turmixold sima, sűrű krémmé, töltsd tiszta üvegbe, és szobahőmérsékleten hagyd állni <b>kb. egy napig</b>. Enyhén savanykás, friss és finoman sajtos lesz — kerekebbé teszi az öntetet, krémessé a mártogatóst és selymessé a töltelékeket. <b>Alternatíva:</b> a 4 órán át áztatott és ugyanígy elkészített makadámdióból különösen lágy, vajas krém lesz.</p>
+    </article>
+    <article class="principle">
+      <h3>Olaj és ecet nélkül</h3>
+      <p>Olaj helyett kendermagkrémet, avokádót, tahinit vagy mandulakrémet használok. A savasságról a citrom, a lime vagy a narancs gondoskodik.</p>
+    </article>
+    <article class="principle">
+      <h3>Snidling fokhagyma helyett</h3>
+      <p>Nálam a snidling az alap, tavasszal a medvehagyma a csodás alternatíva. A friss zöldfűszerek, mint a bazsalikom, a petrezselyem, a kapor vagy a menta, mindig hozzátartoznak.</p>
+    </article>
+    <article class="principle">
+      <h3>Ínyenc változat</h3>
+      <p>A só, a fűszerek, a fokhagyma, a gyömbér, a fahéj, a kurkuma és a tamari minden receptnél választható ínyenc változatként szerepel. Ahol egy étel csak általuk nyeri el igazi jellegét, azt külön jelzem.</p>
+    </article>
+    <article class="principle">
+      <h3>Aszalás 42 °C-on</h3>
+      <p>Minden aszalási idő 42 °C-ra vonatkozik, hogy a hozzávalók élő ereje megmaradjon.</p>
+    </article>
+    <article class="principle">
+      <h3>Aktiválás és csíráztatás</h3>
+      <p>A diót és a magvakat 6–12 órán át áztasd, majd öblítsd le. A hajdinát 30 percig áztasd, öblítsd le, és 1–2 napig csíráztasd, amíg kis csírák nem jelennek meg.</p>
+    </article>
+    <article class="principle">
+      <h3>Mértékegységek</h3>
+      <p>Egy bögre kb. 240 ml, egy evőkanál (ek) kb. 15 ml, egy teáskanál (tk) kb. 5 ml.</p>
+    </article>
+  </div>
+</section>
+
+<section class="pad glass" style="text-align:center">
+  <h2>Kedvet kaptál többre, mint receptekre?</h2>
+  <p class="section-intro">A személyes táplálkozási tanácsadásomban együtt találjuk meg a saját utadat. Ha érzed, hogy az élő táplálkozás szilárd része lehet az életednek — olyan kísérettel, amely illik a hétköznapjaidhoz, a családodhoz és a munkádhoz —, akkor beszélgessünk.</p>
+  <div class="cta-row">
+    <a class="cta-button" href="https://amyfabijenna.github.io/transzformacio/index.html#contact">Ingyenes kezdő beszélgetés</a>
+    <a class="cta-button secondary" href="https://wa.me/4368120283291?text=Szia%20Amy%2C%20r%C3%A1tal%C3%A1ltam%20a%20receptjeidre">WhatsApp</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-buttons">
+    <a class="footer-button" href="https://amyfabijenna.github.io/transzformacio/index.html">Kezdőlap</a>
+    <a class="footer-button" href="erstgespraech.html">Beszélgetés foglalása</a>
+    <a class="footer-button" href="faq_coaching.html">GYIK</a>
+    <a class="footer-button" href="agb_coaching.html">ÁSZF</a>
+    <a class="footer-button" href="datenschutz.html">Adatvédelem</a>
+  </div>
+  <p>A receptek inspirációt adnak. A táplálkozási tanácsadásom egészséges embereknek szól, és magyarországi székhelyű egyéni vállalkozásom keretében történik. Tulajdonos: Lang Amy Dora, 8281 Szentbékkálla, Petőfi utca 19. Az orvosi diagnózist és kezelést, a betegségek diétás kezelését (dietetika) és a pszichoterápiát az erre törvényileg jogosult szakmák nyújtják.</p>
+  <p>© 2026 Amy Dorothy Ronja Lang — Die Wandlung · Raw &amp; Real. Minden jog fenntartva.</p>
+</footer>
+</div>
+
+<script>
+/* ---------- Kategorien ---------- */
+const CATS = [
+  ["job","★ Útra és a munkahelyre"],
+  ["suppe","Levesek"],["salat","Saláták"],["dip","Mártogatósok és krémek"],
+  ["wrap","Tacók és wrapek"],["brot","Kenyerek és kekszek"],["haupt","Pizza, quiche és főételek"],
+  ["snack","Nassolnivalók, kekszek és szeletek"],["torte","Torták és desszertek"],["kaese","Sajtok és fermentált ételek"],["morgen","Reggeli és smoothie"]
+];
+const CATNAME = Object.fromEntries(CATS);
+
+/* ---------- Receptek ---------- */
+const D = [];
+function r(c,t,desc,z,s,o){ o=o||{}; D.push(Object.assign({},o,{c,t,desc,z:z.split("|"),s:s.split("|"),gm:o.gm?o.gm.split("|"):[]})); }
+const HC="fermentált kendermagkrém (vagy makadámiakrém)";
+
+/* ===== ALAPRECEPT ===== */
+r("dip","Fermentált kendermagkrém (alaprecept)","A konyhám lelke: helyettesíti az olajat, a tejszínt és a sajtot, kerekebbé teszi az öntetet, krémessé a mártogatóst és selymessé a töltelékeket.",
+"1 bögre hántolt kendermag (nem kell beáztatni)|egy kevés víz, kb. ¼ bögre|Alternatíva: 1 bögre makadámdió, 4 órán át beáztatva és leöblítve",
+"A kendermagot beáztatás nélkül egy kevés vízzel sima, sűrű krémmé turmixold — annyi vízzel, amennyi feltétlenül szükséges.|Tiszta üvegbe töltsd, a fedőt csak lazán tedd rá.|Szobahőmérsékleten kb. egy napig állni hagyd. Közben enyhén savanykás, friss lesz, és finom, sajtos jelleget kap.|Utána zárd le, és hűtőben tárold.",
+{tip:"Hetente kétszer készíts belőle, így mindig lesz kéznél. Makadámdióval különösen lágy és vajas.",j:"k",d:"3–4 nap"});
+
+/* ===== ÚTRA ÉS A MUNKAHELYRE ===== */
+r("job","Aszalt kenyeres szendvics napraforgókrémmel","A klasszikus tízórais szendvics élő párja — laktató, sós, nem morzsálódik.",
+"2 szelet nyers fűszernövényes kenyér (lásd: Kenyerek és kekszek)|3 ek napraforgómag-krém|néhány uborkaszelet|1 marék csíra vagy rukkola|1 paradicsom (csak a szünetben tedd rá)",
+"A krémet vastagon kend mindkét kenyérszeletre — megvédi a kenyeret a nedvességtől.|Tedd közé az uborkát és a csírát, majd hajtsd össze.|Csomagold sütőpapírba, a paradicsomot külön kis dobozban vidd.",
+{gm:"egy csipet só|frissen őrölt bors",tip:"Készíts egyszerre kettőt — a második másnapig eláll a hűtőben.",j:"k",h:1,d:"1–2 nap"});
+r("job","Zöldséghasábos doboz három mártogatóssal","Ropogós, színes és gyorsan összekészíthető — a doboz, ami megmenti a délutánt.",
+"2 sárgarépa|1 darab uborka|1 piros kaliforniai paprika|3 szár szárzeller|néhány karalábéhasáb|3–3 ek cukkinis humusz, guacamole és kenderes tejföl",
+"A zöldségeket ujjnyi hasábokra vágd.|Állítsd őket egy magas dobozba vagy széles csavaros üvegbe.|A mártogatósokat kis üvegekbe töltsd, és tedd mellé.",
+{tip:"A répa- és zellerhasábok egy kis vízzel teli üvegben a hűtőben akár négy napig ropogósak maradnak.",j:"k",d:"3–4 nap"});
+r("job","Krémes kenderszósz","Friss, citromos és értékes fehérjében gazdag — a szósz minden fermentált ételhez, salátához és zöldséghasábhoz.",
+"½ bögre "+HC+"|½ citrom leve|3–4 ek víz|1 kis csokor snidling vagy friss kapor",
+"A kendermagkrémet keverd simára a citromlével és a vízzel, amíg önthető nem lesz.|A snidlinget vagy a kaprot vágd apróra, és keverd bele.",
+{gm:"1 kis gerezd fokhagyma vagy 3 levél medvehagyma|egy csipet só|bors",tip:"Levélsalátára vagy kenyérre kenve is csodás.",j:"k",d:"3 nap"});
+r("job","Savanyúkáposzta-tál kenderszósszal","Fermentált, ropogós és krémes egy dobozban — erőt ad és sokáig laktat.",
+"1 bögre savanyú káposzta (lásd: Sajtok és fermentált ételek)|1 sárgarépa, lereszelve|½ alma, kockázva|1 marék napraforgómag, aktiválva|3 ek krémes kenderszósz|1 marék bébispenót",
+"A spenótot terítsd a doboz aljára.|Egymás mellé rendezd el a káposztát, a répát és az almát.|A kenderszószt külön kis üvegben vidd, és a szünetben öntsd rá.|Szórd meg napraforgómaggal.",
+{gm:"néhány szem kömény",tip:"Az alma gyengéd édessége csodásan kikerekíti a savanyú káposztát.",j:"k",d:"2 nap"});
+r("job","Kimchis wrap kenderszósszal","Frissen savanykás, és kényelmesen egy kézben tartható.",
+"1 lenmagos tortilla|3 ek kimchi (lásd: Sajtok és fermentált ételek)|2 ek krémes kenderszósz|½ avokádó csíkokra vágva|uborkacsíkok|néhány salátalevél",
+"A tortillát kend meg kenderszósszal.|Tedd rá a salátát, a kimchit, az avokádót és az uborkát.|Tekerd fel szorosan, és csomagold sütőpapírba.",
+{tip:"Egy csepp citrom az avokádóra — így a szünetig szép zöld marad.",j:"k",h:1,d:"1 nap"});
+r("job","Aszalt banánrudacskák","Édes, mint a karamell, és kézre áll, mint egy csokiszelet.",
+"4 érett banán|½ citrom leve|tetszés szerint: egy kevés kakaópor",
+"A banánokat hosszában negyedeld.|Kend meg citromlével, és ha szeretnéd, szórd meg kakaóval.|42 °C-on 12–16 órán át aszald, amíg rágósan puha nem lesz.",
+{gm:"fahéj a meghintéshez",tip:"Üvegben tárolva hetekig eláll.",j:"o",h:1,d:"több hét"});
+r("job","Ropogós almachips","Ropogós nassolnivaló két feladat között.",
+"4 édes alma|½ citrom leve",
+"Az almákat mandolinnal gyalulj hajszálvékonyra.|Csepegtesd meg citromlével.|42 °C-on 10–14 órán át aszald, amíg ropogós nem lesz.",
+{gm:"1 tk fahéj",tip:"Légmentesen lezárva ropogós marad.",j:"o",h:1,d:"több hét"});
+r("job","Kelkáposzta-chips paprikakrémmel","Ropogós és tele zöld erővel — a zacskós chips élő változata.",
+"1 csokor fodros kel|½ bögre "+HC+"|1 piros kaliforniai paprika|½ citrom leve",
+"A kelt fosztd le a szárakról, és tépd falatnyi darabokra.|A kendermagkrémet, a paprikát és a citromot turmixold sűrű krémmé.|Masszírozd bele a levelekbe, és lazán terítsd az aszalórácsra.|42 °C-on 10–12 órán át aszald.",
+{gm:"½ tk só|1 tk füstölt pirospaprika|1 gerezd fokhagyma",tip:"Készíts dupla adagot — gyorsabban elfogy, mint gondolnád.",j:"o",h:1,d:"2 hét"});
+r("job","Fűszernövényes cukkinichips","Könnyű és csodásan ropogós.",
+"2 cukkini|½ citrom leve|friss kakukkfű vagy snidling, nagyon finomra vágva",
+"A cukkinit gyalulj hajszálvékonyra.|Óvatosan forgasd össze a citromlével és a fűszernövényekkel.|42 °C-on 10–12 órán át aszald.",
+{gm:"½ tk só|fokhagymapor|szárított olasz fűszerkeverék",g:1,j:"o",h:1,d:"2 hét"});
+r("job","Paradicsomchips bazsalikommal","Sűrített nyári íz nassoláshoz.",
+"6 kemény, érett paradicsom|1 marék friss bazsalikom, apróra vágva",
+"A paradicsomot vágd 5 mm vékony szeletekre.|Szórd meg bazsalikommal.|42 °C-on 12–18 órán át aszald, amíg ropogósan el nem törik.",
+{gm:"szárított oregánó|egy csipet só",j:"o",h:1,d:"2 hét"});
+r("job","Ropogós aszalt mandula","A diós pillanat, ami átsegít a délutánon.",
+"2 bögre mandula",
+"A mandulát 12 órán át áztasd, majd alaposan öblítsd le.|42 °C-on 12–24 órán át aszald, amíg teljesen ropogós nem lesz.",
+{gm:"2 ek tamari aszalás előtt belekeverve|½ tk füstölt pirospaprika",tip:"Az ínyenc változattal fűszeres tamarimandula lesz belőle. Egy maréknyi kis üvegben minden kabátzsebbe belefér.",j:"o",h:1,d:"4 hét"});
+r("job","Ropogós magvak","Ropogós és laktató.",
+"1 bögre tökmag|1 bögre napraforgómag|½ citrom leve",
+"A magokat 6 órán át áztasd, majd öblítsd le.|Keverd össze a citromlével.|42 °C-on 12–18 órán át aszald.",
+{gm:"1 ek tamari|1 tk curry|egy csipet chili",j:"o",h:1,d:"4 hét"});
+r("job","Élő diákcsemege","A színes keverék a kötényzsebbe.",
+"½ bögre aktivált mandula|½ bögre dió|¼ bögre tökmag|¼ bögre mazsola|¼ bögre eperfaszeder|2 ek kakaóbabtöret|2 ek kókuszchips",
+"Egy nagy tálban keverj össze mindent.|Adagold kis üvegekbe vagy vászonzacskókba.",
+{j:"o",h:1,d:"4 hét"});
+r("job","Nori-snacktekercsek avokádóval","Mini-sushi a kézbe — frissítő és laktató.",
+"2 nori lap|1 avokádó|½ uborka|1 sárgarépa|csíra|egy kis citromlé",
+"A nori lapokat negyedeld.|Az avokádót nyomd össze villával a citrommal, és kend minden negyedre.|Tedd rá a zöldséghasábokat és a csírát, majd tekerd tölcsérré vagy kis tekerccsé.",
+{gm:"néhány csepp tamari az avokádóba",tip:"Csak reggel tekerd fel, így a nori ropogós marad.",j:"k",h:1,d:"1 nap"});
+r("job","Sushi-tál üvegben","Minden, amit a sushiban szeretsz, csavaros üvegbe rétegezve.",
+"1 bögre karfiolrizs 1 tk citromlével|½ avokádó|uborkakockák|répacsíkok|1 ek szezámmag|1 nori lap, széttépve|Öntet: 1 ek "+HC+" és 1 tk limelé",
+"Az öntetet tedd az üveg aljára.|Rétegezd rá az uborkát és a répát, majd a karfiolrizst.|Legfelülre kerül az avokádó, a szezám és a nori.|A szünetben borítsd egy tálba, és keverd össze.",
+{gm:"1 ek tamari az öntetbe|1 tk frissen reszelt gyömbér",j:"k",d:"1 nap"});
+r("job","Saláta üvegben","Az öntet lent vár, a zöldek fent frissek maradnak — egészen az első falatig.",
+"3 ek krémes kenderszósz|uborka, paprika, sárgarépa, retek|koktélparadicsom|1 marék napraforgómag|fejes saláta vagy bébispenót",
+"A kenderszósz kerüljön az üveg legaljára.|Erre jönnek a kemény zöldségek, majd a paradicsom és a magok.|Legfelülre a zsenge levelek.|Zárd le jól, és állítva szállítsd.",
+{gm:"egy csipet só és bors az öntetbe",tip:"Egy literes üveg igazán jóllakat, és a hűtőben három napig eláll.",j:"k",d:"3 nap"});
+r("job","Cukkinispagetti üvegben marinarával","Tésztaélmény az ebédszünetre.",
+"1 nagy cukkini, spirálozva|½ bögre marinara szósz|½ bögre diós-gombás „darált hús”|friss bazsalikom|1 ek mandulamorzsa",
+"A szósz kerüljön az üveg aljára.|Erre a „darált hús”, majd a cukkinitészta.|Legfelülre a bazsalikom és a mandulamorzsa.|Evés előtt borítsd tálba, és keverd össze.",
+{gm:"szárított oregánó|egy csipet só a mandulamorzsára",j:"k",d:"2 nap"});
+r("job","Uborkacsónakok fűszeres krémsajttal","Hűs, krémes, frissítő.",
+"2 mini uborka|4 ek fűszernövényes krémsajt|zsázsa vagy snidling",
+"Az uborkákat hosszában vágd félbe, és egy teáskanállal kaparj ki a magházat.|Töltsd meg krémsajttal.|Szórd meg zsázsával vagy snidlinggel.",
+{gm:"pirospaprika a meghintéshez|egy csipet só",j:"k",h:1,d:"1–2 nap"});
+r("job","Paprikacsónakok diós töltelékkel","Sós, ropogós, és evőeszköz nélkül is ehető.",
+"2 hegyes paprika|1 bögre diós-gombás „darált hús”|2 ek guacamole|koriander vagy petrezselyem",
+"A paprikákat hosszában vágd félbe, és magozd ki.|Töltsd meg a diós töltelékkel.|Tegyél rá egy kanál guacamolét és friss zöldfűszert.",
+{j:"k",h:1,d:"2 nap"});
+r("job","Falafeles doboz tahinivel","Laktató golyók, friss zöldség és krémes mártogatós.",
+"6 nyers falafel|uborka- és paradicsomkockák|néhány salátalevél|3 ek tahini citromlével és vízzel simára keverve|petrezselyem",
+"A salátát tedd a dobozba.|Mellé rendezd a falafelt és a zöldséget.|A tahiniszószt külön vidd.|A szünetben a falafelt a zöldséggel együtt tekerd salátalevélbe.",
+{gm:"fokhagyma és egy csipet só a tahiniszószba",j:"k",h:1,d:"4 nap"});
+r("job","Humuszos wrap","Krémes, friss és kézre álló.",
+"1 lenmagos tortilla|3 ek cukkinis humusz|reszelt sárgarépa|vékonyra szelt lila káposzta|csíra|1 marék rukkola",
+"A tortillát vastagon kend meg humusszal.|Tedd rá a zöldségeket.|Tekerd fel szorosan, és vágd ferdén félbe.",
+{j:"k",h:1,d:"1 nap"});
+r("job","Pizzaszeletek útra","Egy szelet pizza a szünetre — sütő nélkül.",
+"1 nyers pizzaalap|4 ek marinara szósz|makadámia-krémsajt|napon szárított paradicsom (sózatlan), beáztatva|friss bazsalikom",
+"A pizzaalapot kend meg marinarával.|Tedd rá a krémsajtot és a paradicsomot.|42 °C-on még 2 órán át szárítsd, hogy a feltét megszilárduljon.|Vágd darabokra, tegyél rá bazsalikomot, és csomagold egyenként.",
+{gm:"fekete olajbogyó|szárított oregánó",tip:"A rövid utószárítás miatt semmi sem csöpög, és a darabok jól megfoghatók.",j:"k",h:1,d:"3 nap"});
+r("job","Mini quiche-tortácskák","A quiche kézre álló méretben — tökéletes a tízórais dobozba.",
+"A nyers quiche alapja és töltelékje (lásd: Pizza, quiche és főételek)|12 szilikon muffinforma",
+"Az alapmasszát nyomkodd a formákba, és alakíts ki kis peremet.|Töltsd bele a tölteléket.|42 °C-on 6–8 órán át szárítsd, amíg a teteje meg nem szilárdul.|Vedd ki a formákból, és tárold hűvös helyen.",
+{gm:"a quiche ínyenc fűszerei",j:"k",h:1,d:"4 nap"});
+r("job","Céklasaláta üvegben","Ragyogó, földízű és erőt adó.",
+"1 cékla, lereszelve|1 alma, lereszelve|2 ek dió|2 ek "+HC+"|½ citrom leve|snidling",
+"Keverd össze a céklát és az almát.|A kendermagkrémet keverd el a citrommal, és forgasd bele.|Töltsd üvegbe, a tetejére kerüljön a dió és a snidling.",
+{gm:"1 ek frissen reszelt torma|egy csipet só",tip:"Másnapra összeérve még finomabb.",j:"k",d:"3 nap"});
+r("job","Fermentált répahasábok","Ropogós, savanykás és tele élő kultúrákkal — sós lé nélkül.",
+"500 g sárgarépa|kb. 500 ml frissen préselt zellerlé (1 szárzellerből)|1 marék friss kapor",
+"A répát vágd hasábokra, és állítsd egy tiszta csatos üvegbe.|Dugd közé a kaprot, és öntsd fel zellerlével, amíg mindent el nem lep.|Egy kis pohárral nehezítsd le, és szobahőmérsékleten 3–5 napig erjeszd, majd tedd hűtőbe.",
+{gm:"klasszikus sós lé: 1 ek só 500 ml vízben zellerlé helyett|2 gerezd fokhagyma|1 szelet gyömbér",tip:"Krémes kenderszószba mártva álomszerű.",j:"k",h:1,d:"4 hét"});
+r("job","Kenderjoghurt üvegben","Krémesen friss, bogyós gyümölccsel és granolával rétegezve.",
+"½ bögre fermentált kendermagkrém|3–4 ek víz|egy kis citromlé|bogyós gyümölcs és nyers granola a rétegezéshez",
+"A kendermagkrémet keverd el a vízzel és a citrommal joghurtszerű állagúra.|Rétegezd az üvegbe a bogyós gyümölccsel.|A granolát csak reggel tedd a tetejére, hogy ropogós maradjon.",
+{gm:"egy kevés vanília",j:"k",d:"3 nap"});
+r("job","Nyers almapüré","Mint nagyi konyhájában — csak frissen turmixolva.",
+"3 alma|2 datolya|1 ek citromlé|egy kevés víz",
+"Az almákat magozd ki, és vágd durvára.|Minden hozzávalóval együtt turmixold pürévé.|Töltsd üvegbe.",
+{gm:"½ tk fahéj",j:"k",d:"2 nap"});
+r("job","Töltött datolya","A világ legkisebb étkezése — és az egyik legboldogabb.",
+"12 medjool datolya|4 ek mandulakrém|12 dióbél-fél|tetszés szerint: kakaóbabtöret",
+"A datolyákat hosszában vágd be, és magozd ki.|Töltsd meg mandulakrémmel, és nyomj bele egy diót.|Ha szeretnéd, koronázd meg kakaóbabtörettel.",
+{gm:"egy csipet tengeri sópehely",j:"o",h:1,d:"1 hét"});
+r("job","Hajdinás-diós szelet","Ropogós, laktató és könnyen csomagolható.",
+"1 bögre csíráztatott, aszalt hajdina|½ bögre mandula, aprítva|½ bögre datolya|2 ek mandulakrém|2 ek kókuszreszelék",
+"A datolyát a mandulakrémmel dolgozd pasztává.|Gyúrd bele a hajdinát, a mandulát és a kókuszt.|Nyomkodd formába, aszald 4 órán át vagy hűtsd le, majd vágd szeletekre.",
+{gm:"egy csipet só|vanília",tip:"Egyenként sütőpapírba csomagolva minden kézitáskát túlélnek.",j:"o",h:1,d:"2 hét"});
+r("job","Datolyás-kókuszos energiagolyók","Gyors energialöket a szünetre.",
+"1 bögre datolya|1 bögre kókuszreszelék|½ bögre makadámdió vagy mandula",
+"A diót aprítógépben aprítsd finomra.|Add hozzá a datolyát és a kókuszt, amíg a massza össze nem áll.|Formázz golyókat, és forgasd meg kókuszban.",
+{gm:"1 tk vanília|egy csipet só",j:"o",h:1,d:"2 hét"});
+r("job","Citromos-makadámiás golyók","Friss és napfényes — mint egy kis nyaralás.",
+"1 bögre makadámdió|½ bögre kókuszreszelék|6 datolya|1 bio citrom reszelt héja és leve",
+"Aprítógépben dolgozz össze mindent formázható masszává.|Formázz golyókat, és hűtsd le.",
+{gm:"egy csipet só",j:"o",h:1,d:"1 hét"});
+r("job","Répatorta-golyók","A répatorta falatnyi méretben.",
+"1 sárgarépa, finomra reszelve|½ bögre dió|½ bögre datolya|½ bögre kókuszreszelék|½ bio narancs reszelt héja",
+"A diót aprítsd finomra.|Dolgozd hozzá a datolyát és a narancshéjat.|Gyúrd bele a répát és a kókuszt, majd formázz golyókat.",
+{gm:"1 tk fahéj|½ tk gyömbér|egy csipet szerecsendió",g:1,j:"k",h:1,d:"4 nap"});
+r("job","Csokis-narancsos golyók","Gyümölcsös, csokoládés, vigasztaló.",
+"1 bögre mogyoró|½ bögre datolya|3 ek kakaópor|1 bio narancs reszelt héja|2 ek narancslé",
+"A mogyorót aprítsd finomra.|Add hozzá a többi hozzávalót, és dolgozd össze.|Formázz golyókat, és forgasd meg kakaóban.",
+{gm:"egy csipet fahéj|egy leheletnyi vanília",j:"o",h:1,d:"1 hét"});
+r("job","Mangós gyümölcsbőr","Mint a gumicukor, csak tiszta gyümölcsből.",
+"2 érett mangó|1 banán|½ lime leve",
+"Mindent turmixolj simára.|3–4 mm vastagon kend az aszalófóliára.|42 °C-on 8–12 órán át aszald.|A fóliával együtt vágd csíkokra, és tekerd fel.",
+{tip:"Eperrel, málnával vagy almával ugyanígy működik.",j:"o",h:1,d:"4 hét"});
+r("job","Aszalt mangócsíkok","Édes, rágós, napfényes.",
+"3 érett mangó",
+"A mangókat hámozd meg, és vágd 5 mm vastag csíkokra.|42 °C-on 12–16 órán át aszald.",
+{j:"o",h:1,d:"több hét"});
+r("job","Ropogós müzliszelet almával","Gyümölcsös-diós és kellemesen ropogós.",
+"1 bögre nyers granola|½ bögre aszalt almadarab|½ bögre datolya|2 ek mandulakrém",
+"A datolyát a mandulakrémmel dolgozd pasztává.|Gyúrd bele a granolát és az almadarabokat.|Nyomkodd laposra, aszald 8 órán át, és vágd szeletekre.",
+{gm:"1 tk fahéj",j:"o",h:1,d:"2 hét"});
+r("job","Ropogós kenyérszendvics mandulás krémsajttal","Mediterrán és ropogós.",
+"4 olaszos fűszernövényes keksz|3 ek mandulás krémsajt|paradicsomszeletek|uborka|friss bazsalikom",
+"A krémsajtot és a zöldséget külön csomagold.|A szünetben kend meg és rakd meg a kekszeket — így ropogósak maradnak.",
+{gm:"fekete olajbogyó|egy csipet só és oregánó",j:"k",h:1,d:"3 nap"});
+
+/* ===== Tacók és wrapek ===== */
+r("wrap","Ropogós tacohéjak","Kívül ropogós, mégis elég hajlékony a töltéshez.",
+"2 bögre aranylenmag, őrölve|1 bögre kukoricadara, egy éjszakán át áztatva|1 bögre víz|1 ek snidling, apróra vágva",
+"A lenmagot keverd össze a kukoricadarával.|Add hozzá a vizet és a snidlinget, és hagyd 10 percig duzzadni.|2 mm vékonyan, 15 cm-es körökben kend az aszalófóliára.|42 °C-on 4–5 órán át aszald, fordítsd meg, még 2–3 óra.|Terítsd egy rácsra vagy egy felfordított muffinformára, és aszald még 2 órán át.",
+{gm:"1 tk római kömény|1 tk pirospaprika|½ tk só|1 gerezd fokhagyma",tip:"Ne szárítsd ki teljesen — a héjaknak még kissé hajlékonynak kell maradniuk."});
+r("wrap","Diós-gombás „darált hús”","A sós töltelék tacóhoz, pizzához és wraphez.",
+"2 bögre dió, aktiválva|1 bögre gomba, apró kockákra vágva|2 ek napon szárított paradicsom (sózatlan), beáztatva|1 ek citromlé|petrezselyem vagy snidling",
+"A diót aprítógépben aprítsd durvára.|A paradicsomot vágd nagyon apróra, a gombát kockázd fel finomra.|Gyúrj össze mindent alaposan.|Legalább 30 percig hagyd összeérni, akár egy éjszakán át.",
+{gm:"2 ek tamari|1 tk római kömény|1 tk füstölt pirospaprika|½ tk chilipehely|1 gerezd fokhagyma",g:1,tip:"A hűtőben 5 napig eláll.",j:"k",d:"5 nap"});
+r("wrap","Napraforgós taco-töltelék","Olcsóbb a diós változatnál, és ugyanolyan finom.",
+"2 bögre napraforgómag, aktiválva|½ bögre napon szárított paradicsom (sózatlan), beáztatva|1 kis hagyma|friss koriander vagy petrezselyem",
+"A magot és a paradicsomot aprítsd durvára.|A hagymát kockázd fel finomra, és forgasd bele.|Add hozzá a zöldfűszert, és hagyd 30 percig összeérni.",
+{gm:"2 ek tamari|1 tk római kömény|1 tk őrölt koriander|1 tk pirospaprika|½ tk cayenne-i bors",g:1,j:"k",d:"4 nap"});
+r("wrap","Levélwrapek","Nagy káposzta- vagy mángoldlevelek ropogós burokként.",
+"Nagy káposzta- vagy mángoldlevelek|diós-gombás „darált hús”|guacamole|salsa|reszelt lila káposzta|csíra",
+"A vastag levélér laposra vágd.|Terítsd ki a levelet, és a közepére tedd a tölteléket.|Hajtsd be az oldalait, és tekerd fel, mint egy tavaszi tekercset.",
+{tip:"Útra sütőpapírba csomagold.",j:"k",h:1,d:"1 nap"});
+r("wrap","Lenmagos tortilla","A hajlékony alap minden wraphez.",
+"2 bögre aranylenmag, őrölve|1 bögre víz|friss zöldfűszer, apróra vágva",
+"Keverj össze mindent, és hagyd 15 percig duzzadni.|20 cm-es körökben kend vékonyra.|42 °C-on 4 órán át aszald, fordítsd meg, még 2 óra.",
+{gm:"½ tk só|½ tk fokhagymapor",tip:"Feltekerve jól tárolható.",j:"o",d:"1 hét"});
+r("wrap","Paprikás-kukoricás töltelék","Színes és friss.",
+"2 piros kaliforniai paprika|1 sárga kaliforniai paprika|½ bögre csöves kukorica szemei|1 avokádó|1 lime leve|koriander vagy snidling",
+"A paprikát kockázd fel finomra, és keverd össze a kukoricával.|Forgasd bele a limelevet és a zöldfűszert.|Óvatosan keverd hozzá az avokádót.",
+{gm:"1 tk római kömény|chili|egy csipet só"});
+r("wrap","Cukkiniwrapek","Hajszálvékony cukkinicsíkok friss wrapként.",
+"2 nagy cukkini|½ citrom leve",
+"A cukkinit hosszában gyalulj vékonyra.|Csepegtesd meg citromlével, és hagyd 15 percig állni, így hajlékony lesz.|Itasd le, és töltsd meg.",
+{gm:"egy csipet só a puhításhoz",tip:"Frissen használd, ne aszald."});
+r("wrap","Kókuszos-curry töltelék","Egzotikus és krémes.",
+"1 bögre fiatal kókusz húsa|1 sárgarépa, lereszelve|1 cukkini vékony csíkokra vágva|½ bögre lila káposzta|2 ek mandulakrém|1 ek limelé",
+"A kókuszhúst vágd csíkokra, és keverd össze a zöldséggel.|A mandulakrémet keverd el a limelével és egy kevés vízzel.|Keverd bele a szószt.",
+{gm:"1 tk curry|1 tk friss gyömbér|1 ek tamari",g:1,j:"k",d:"2 nap"});
+r("wrap","Mangós-avokádós taco-töltelék","Édes és friss — igazi fénypont.",
+"1 érett mangó|1 avokádó|½ lilahagyma|1 lime leve|koriander",
+"A mangót és az avokádót kockázd fel.|Keverd össze a finomra kockázott hagymával.|Forgasd bele a limelevet és a koriandert.",
+{gm:"1 jalapeño|egy csipet só"});
+
+/* ===== Mártogatósok és krémek ===== */
+r("dip","Guacamole","A klasszikus, krémes és friss.",
+"3 érett avokádó|1 lime leve|1 kis lilahagyma|1 paradicsom, kimagozva|koriander vagy snidling",
+"Az avokádót nyomd össze villával.|Azonnal keverd bele a limelevet.|A többi hozzávalót kockázd fel finomra, és forgasd bele.",
+{gm:"½ jalapeño|1 gerezd fokhagyma|só és bors",tip:"A fóliát közvetlenül a felszínére simítsd — így egy napig eláll.",j:"k",d:"1 nap"});
+r("dip","Kenderes tejföl","Savanykásan krémes, mindenhez illik.",
+"½ bögre "+HC+"|½ citrom leve|2 ek víz|snidling, apróra vágva",
+"A kendermagkrémet keverd simára a citrommal és a vízzel.|Forgasd bele a snidlinget.",
+{gm:"egy csipet só",tip:"Napról napra egy kicsit zamatosabb.",j:"k",d:"3 nap"});
+r("dip","Nyers salsa","Napérlelte paradicsom, frissen és gyümölcsösen.",
+"4 érett paradicsom|1 lilahagyma|1 lime leve|koriander vagy petrezselyem",
+"Mindent kockázz fel finomra, és keverd össze.|30 percig hűtőben hagyd összeérni.",
+{gm:"1 jalapeño|1 gerezd fokhagyma|só",j:"k",d:"2 nap"});
+r("dip","Cukkinis humusz","Csicseriborsó helyett cukkini — ugyanolyan krémes, de nyers.",
+"1 bögre cukkini, meghámozva|½ bögre tahini|1–2 citrom leve|1 marék medvehagyma vagy snidling|petrezselyem a díszítéshez",
+"Mindent turmixolj krémesre.|Citrommal ízesítsd.|Petrezselyemmel díszítsd.",
+{gm:"2 gerezd fokhagyma a medvehagyma helyett|1 tk római kömény|só|pirospaprika a meghintéshez",j:"k",d:"4 nap"});
+r("dip","Paprikás-diós krém","Mélyvörös, diós és enyhén édes.",
+"2 piros kaliforniai paprika|1 bögre dió|3 napon szárított paradicsom (sózatlan), beáztatva|½ citrom leve|1 datolya",
+"Mindent turmixolj durva krémmé.|30 percig hagyd összeérni.",
+{gm:"1 tk római kömény|egy csipet chili|só",j:"k",d:"4 nap"});
+r("dip","Napraforgómag-krém","A mindennapok egyszerű kenőkrémje.",
+"1 bögre napraforgómag, beáztatva|2 ek citromlé|2–3 ek víz|friss zöldfűszer, legszívesebben snidling",
+"A magokat a citrommal és a vízzel turmixold krémesre.|Forgasd bele a zöldfűszert.",
+{gm:"1 tk tamari|1 gerezd fokhagyma|egy csipet só",j:"k",d:"5 nap"});
+
+/* ===== Kenyerek és kekszek ===== */
+r("brot","Hajdinás alapkeksz","Az alaprecept számtalan változathoz.",
+"2 bögre csíráztatott hajdina|½ bögre aranylenmag, őrölve|½ bögre napraforgómag|1 sárgarépa, lereszelve|2 ek snidling|½ bögre víz",
+"A hajdinát aprítsd durvára.|Keverj össze mindent, és hagyd 15 percig duzzadni.|3 mm vékonyan kend ki.|42 °C-on 4 órán át aszald, fordítsd meg, törd darabokra, és aszald még 6–8 órán át.",
+{gm:"1 tk só|1 tk fokhagymapor",j:"o",h:1,d:"4 hét"});
+r("brot","Olaszos fűszernövényes keksz","Mediterrán illatú.",
+"2 bögre csíráztatott hajdina|½ bögre lenmag, őrölve|1 marék friss bazsalikom|1 ek friss rozmaring és kakukkfű|2 napon szárított paradicsom (sózatlan)|½ bögre víz",
+"A hajdinát aprítsd durvára, a zöldfűszert és a paradicsomot vágd apróra, majd keverj össze mindent.|Kend ki vékonyan.|Aszald 10–12 órán át, 4 óra után fordítsd meg.",
+{gm:"2 ek szárított olasz fűszerkeverék|1 tk só|1 tk fokhagymapor|bors",j:"o",h:1,d:"4 hét"});
+r("brot","Hagymás keksz","Olyan, mint a pirított hagyma — csak nyersen.",
+"2 nagy vöröshagyma|1 bögre lenmag, őrölve|½ bögre napraforgómag, őrölve",
+"A hagymát pürésítsd.|Keverd össze a többi hozzávalóval.|Kend ki vékonyan, és aszald 10–12 órán át.",
+{gm:"2 ek tamari|egy csipet só",j:"o",h:1,d:"4 hét"});
+r("brot","Paradicsomos-bazsalikomos keksz","A nyár keksz formájában.",
+"1 bögre friss paradicsom|1 bögre napon szárított paradicsom (sózatlan), beáztatva|1 bögre lenmag, őrölve|½ bögre bazsalikom",
+"A paradicsomot turmixold össze a bazsalikommal.|Keverd bele a lenmagot.|Kend ki vékonyan, és aszald 10–12 órán át.",
+{gm:"1 gerezd fokhagyma|1 tk oregánó|1 tk só",j:"o",h:1,d:"4 hét"});
+r("brot","Répás keksz","Ragyogó narancssárga és finoman édeskés.",
+"2 nagy sárgarépa, lereszelve|1 bögre lenmag, őrölve|½ bögre napraforgómag|½ bögre víz",
+"Keverj össze mindent, és hagyd 15 percig duzzadni.|Kend ki vékonyan, és aszald 10–12 órán át.",
+{gm:"1 tk kurkuma az aranyszínért|½ tk gyömbér|1 tk só",j:"o",h:1,d:"4 hét"});
+r("brot","Mákos keksz","Tökéletes mártogatósokhoz.",
+"1 bögre csíráztatott hajdina|½ bögre lenmag, őrölve|3 ek kék mák|½ bögre víz",
+"A hajdinát aprítsd durvára, és keverj össze mindent.|Kend ki vékonyan, és aszald 10–12 órán át.",
+{gm:"1 tk só|½ tk hagymapor",j:"o",h:1,d:"4 hét"});
+r("brot","Céklás keksz","Gyönyörű rózsaszínben.",
+"1 cékla, lereszelve|1 bögre lenmag, őrölve|½ bögre dió, aprítva|½ bögre víz",
+"Keverj össze mindent.|Kend ki vékonyan, és aszald 10–12 órán át.",
+{gm:"1 tk só|½ tk kömény",j:"o",h:1,d:"4 hét"});
+r("brot","Nyers fűszernövényes kenyér","Igazi kenyérállag: kívül ropogós, belül puha.",
+"1 bögre csíráztatott hajdina|1 bögre napraforgómag, aktiválva|¾ bögre lenmag, őrölve|¼ bögre chiamag|1 cukkini, lereszelve|2 ek fermentált kendermagkrém|2 ek friss rozmaring és kakukkfű|1 bögre víz",
+"A hajdinát és a magokat aprítsd durvára.|Keverd hozzá a cukkinit, a lenmagot, a chiát, a kendermagkrémet és a zöldfűszert.|Öntsd hozzá a vizet, és hagyd 30 percig duzzadni.|Formázz belőle 2 cm vastag cipót, és előre vágd szeletekre.|42 °C-on 12 órán át aszald, fordítsd meg, még 10–12 óra.",
+{gm:"1 tk só",tip:"Minden munkahelyi szendvics alapja.",j:"o",h:1,d:"1 hét"});
+r("brot","Mandulás-lenmagos keksz","Finom, gyengéd és diós.",
+"1 bögre aktivált mandula, őrölve|1 bögre aranylenmag, őrölve|1 tk friss rozmaring|½ bögre víz",
+"Keverj össze mindent, és hagyd duzzadni.|Kend ki vékonyan, és aszald 10–12 órán át.",
+{gm:"½ tk só",j:"o",h:1,d:"4 hét"});
+r("brot","Ropogós grissini","Nagyszerű nassolnivaló vagy leveshez.",
+"1 bögre csíráztatott hajdina|½ bögre lenmag, őrölve|2 ek fermentált kendermagkrém|1 tk friss rozmaring|½ bögre víz",
+"Gyúrj belőle kemény tésztát.|Sodorj 1 cm vastag rudakat.|Aszald 12–14 órán át.",
+{gm:"1 tk só|½ tk fokhagymapor",j:"o",h:1,d:"4 hét"});
+r("brot","Spenótos keksz","Intenzíven zöld és tele erővel.",
+"2 bögre spenót|1 bögre lenmag, őrölve|½ bögre napraforgómag|1 marék medvehagyma vagy snidling|½ citrom leve",
+"A spenótot turmixold össze a medvehagymával és a citrommal.|Keverd bele a lenmagot és a napraforgót.|Kend ki vékonyan, és aszald 10–12 órán át.",
+{gm:"1 gerezd fokhagyma|1 tk só",j:"o",h:1,d:"4 hét"});
+r("brot","Szezámos keksz","Ropogós és diós ízű.",
+"1 bögre szezámmag, fehér és fekete|½ bögre lenmag, őrölve|½ bögre víz",
+"A szezámot röviden törd meg a turmixban.|Keverd össze a lenmaggal és a vízzel.|Kend ki nagyon vékonyan, és aszald 8–10 órán át.",
+{gm:"1 tk só",j:"o",h:1,d:"4 hét"});
+r("brot","Diós-rozmaringos keksz","Mediterrán és zamatos.",
+"1 bögre dió, őrölve|1 bögre lenmag, őrölve|2 ek friss rozmaring|2 napon szárított paradicsom (sózatlan), aprítva|½ bögre víz",
+"Keverj össze mindent.|Kend ki vékonyan, és aszald 10–12 órán át.",
+{gm:"½ bögre fekete olajbogyó, aprítva|egy csipet só",j:"o",h:1,d:"4 hét"});
+r("brot","Kókuszos keksz","Édes krémekhez vagy magában.",
+"1 bögre kókuszreszelék|1 bögre lenmag, őrölve|2 ek datolyakrém|½ bögre kókusztej fiatal kókuszhúsból",
+"Keverj össze mindent, és hagyd 15 percig duzzadni.|Kend ki vékonyan, és aszald 10 órán át.",
+{gm:"½ tk fahéj|egy csipet só",j:"o",h:1,d:"3 hét"});
+r("brot","Pizzakeksz","Olyan, mint a pizzás chips.",
+"1 bögre lenmag, őrölve|½ bögre napon szárított paradicsom (sózatlan), pürésítve|1 marék friss bazsalikom|½ bögre víz",
+"Keverj össze mindent.|Kend ki vékonyan, és aszald 10–12 órán át.",
+{gm:"1 tk oregánó|½ tk fokhagymapor|1 tk só",g:1,j:"o",h:1,d:"4 hét"});
+
+/* ===== Pizza, quiche és főételek ===== */
+r("haupt","Nyers quiche spenóttal és gombával","Diós alap, aranyló töltelék — ünnepi étel, amely másnap a tízórais dobozban is ragyog.",
+"Alap: 1 bögre dió|½ bögre napraforgómag, aktiválva|½ bögre aranylenmag, őrölve|1 tk friss kakukkfű|2–3 ek víz|Töltelék: 1½ bögre "+HC+"|1 kis cukkini|½ citrom leve|3 ek snidling|Betét: 1 bögre felszeletelt gomba, 30 percig citromlében pácolva|2 marék bébispenót, vékonyra szelve|3 újhagyma|koktélparadicsom a tetejére",
+"Az alaphoz a diót és a magokat aprítógépben morzsásra aprítsd, add hozzá a lenmagot, a kakukkfüvet és a vizet, amíg a massza össze nem áll.|Nyomkodd egy kb. 22 cm-es piteformába, és alakíts ki peremet. 42 °C-on 4 órán át előszárítsd.|A töltelékhez a kendermagkrémet, a cukkinit és a citromot turmixold selymesre, és forgasd bele a snidlinget.|A gombát csepegtesd le, és a spenóttal meg az újhagymával együtt forgasd a krémbe.|A tölteléket kend az alapra, és nyomj bele félbevágott koktélparadicsomokat.|42 °C-on még 6–8 órán át szárítsd, amíg a teteje meg nem szilárdul és enyhén aranyszínű nem lesz.|Szeletelés előtt 1 órán át hűtsd.",
+{gm:"½ tk kala namak (fekete só) a jellegzetes quiche-ízért|½ tk kurkuma az aranyszínért|egy csipet szerecsendió|1 gerezd fokhagyma|1 ek tamari a gombához",tip:"Langyosan, egyenesen az aszalóból maga a költészet. A hűtőben 4 napig eláll — egy szelet a tízórais dobozban minden szünetet ünneppé tesz.",j:"k",d:"4 nap"});
+r("haupt","Nyers pizzaalap","Jól előkészíthető és fagyasztható.",
+"1 bögre csíráztatott hajdina|½ bögre lenmag, őrölve|½ bögre napraforgómag|1 cukkini, lereszelve és kinyomkodva|1 marék friss bazsalikom|½ bögre víz",
+"A hajdinát és a magokat aprítsd fel.|Keverd hozzá a cukkinit, a bazsalikomot, a lenmagot és a vizet.|25 cm-es kör alakban terítsd az aszalófóliára.|4 órán át aszald, fordítsd meg, még 4–6 óra.",
+{gm:"1 tk só|1 tk oregánó",j:"o",d:"1 hét"});
+r("haupt","Marinara szósz","Frissen a legjobb, de 4 napig eláll.",
+"2 bögre friss paradicsom|½ bögre napon szárított paradicsom (sózatlan), beáztatva|1 marék friss bazsalikom|1 datolya",
+"Mindent turmixolj össze — egy kis textúra maradhat.",
+{gm:"1 gerezd fokhagyma|1 tk oregánó|só",j:"k",d:"4 nap"});
+r("haupt","Makadámia-krémsajt","Lágy, vajas és kenhető — az élő konyha pizzasajtja.",
+"1 bögre makadámdió, 4 órán át áztatva|3–4 ek víz|1 ek citromlé",
+"A makadámdiót a vízzel és a citrommal turmixold nagyon krémesre.|Töltsd tiszta üvegbe, és a kendermagkrémhez hasonlóan kb. egy napig hagyd szobahőmérsékleten.|Tedd hűtőbe, ott megszilárdul.",
+{gm:"egy csipet só|1 gerezd fokhagyma",j:"k",d:"4 nap"});
+r("haupt","Klasszikus nyers pizza","A nyers konyha királynője.",
+"1 pizzaalap|½ bögre marinara|makadámia-krémsajt|paradicsom|gomba|bazsalikom|rukkola",
+"Az alapot kend meg marinarával.|Rakd meg krémsajttal, paradicsommal és gombával.|Bazsalikommal és rukkolával tedd teljessé.",
+{gm:"fekete olajbogyó|szárított oregánó"});
+r("haupt","Cukkinitészta avokádós pestóval","Krémes, zöld és villámgyors.",
+"3 cukkini|2 avokádó|1 bögre bazsalikom|½ bögre fenyőmag|1 marék medvehagyma vagy snidling|1 citrom leve|koktélparadicsom",
+"A cukkinit spirálozd fel.|Az avokádót, a bazsalikomot, a fenyőmagot, a medvehagymát és a citromot turmixold krémesre.|Forgasd össze a tésztával, és díszítsd paradicsommal.",
+{gm:"2 gerezd fokhagyma|só|bors",j:"k",d:"1 nap"});
+r("haupt","Répatészta tahiniszósszal","Édes, diós és napfényes narancssárga.",
+"4 nagy sárgarépa|3 ek tahini|2 ek citromlé|2–3 ek víz|1 datolya|szezámmag",
+"A répából készíts tésztát.|A tahinit, a citromot, a vizet és a datolyát turmixold krémesre.|Forgasd össze, és szórd meg szezámmal.",
+{gm:"1 gerezd fokhagyma|1 tk tamari|½ tk friss gyömbér",j:"k",d:"2 nap"});
+r("haupt","Töltött paprika","Színes és sós.",
+"4 nagy kaliforniai paprika|1 bögre diós-gombás „darált hús”|1 paradicsom|½ avokádó|koriander vagy petrezselyem|kenderes tejföl",
+"A paprikákat vágd félbe, és magozd ki.|A „darált húst” keverd össze a kockázott paradicsommal és a zöldfűszerrel, majd töltsd bele.|Tegyél rá avokádót és tejfölt.",
+{j:"k",h:1,d:"2 nap"});
+r("haupt","Nyers lasagne","Rétegről rétegre élvezet — egy éjszaka után még finomabb.",
+"2 nagy cukkini|marinara szósz|Ricotta: 1 bögre "+HC+", 2 ek citromlé, 2 ek snidling|2 bögre spenót, egy kis citromlével pácolva|friss bazsalikom",
+"A cukkinit hosszában gyalulj vékonyra.|A ricotta hozzávalóit keverd össze.|Rétegezd: cukkini, marinara, ricotta, spenót — majd ismételd.|Tegyél a tetejére bazsalikomot, és legalább 1 órán át hagyd összeérni.",
+{gm:"só a cukkini puhításához|1 gerezd fokhagyma a ricottába|oregánó a marinarába",tip:"Adagokra vágva tökéletesen belefér a tízórais dobozba.",j:"k",d:"3 nap"});
+r("haupt","Karfiolrizs","Sokoldalú alap rizs helyett.",
+"1 karfiol|egy kis citromlé|friss zöldfűszer",
+"A rózsákat aprítógépben aprítsd rizsszerűre.|Keverd össze a citrommal és a zöldfűszerrel.",
+{gm:"egy csipet só|½ tk kurkuma az aranyszínű rizshez",j:"k",d:"3 nap"});
+r("haupt","Zöldségcurry karfiolrizzsel","Krémes és melengető.",
+"karfiolrizs|1 kaliforniai paprika|1 sárgarépa|1 cukkini|½ bögre friss zöldborsó|Szósz: ½ bögre "+HC+", 1 paradicsom, ½ bögre fiatal kókusz húsa, ½ bögre víz|koriander",
+"A szószt turmixold krémesre.|A zöldséget vágd apróra, és keverd össze a szósszal.|Karfiolrizzsel tálald, és szórd meg korianderrel.",
+{gm:"1 ek curry|1 tk kurkuma|1 tk friss gyömbér|1 gerezd fokhagyma|só",g:1,j:"k",d:"2 nap"});
+r("haupt","Gombás stroganoff","Bársonyos és sós.",
+"2 bögre gomba, citromlében pácolva|Szósz: ½ bögre "+HC+", ½ piros kaliforniai paprika, 3 ek víz|cukkinitészta|petrezselyem",
+"A gombát 30 percig pácold.|A szószt turmixold krémesre, és keverd össze.|Cukkinitésztával tálald.",
+{gm:"2 ek tamari a gombához|1 tk pirospaprika|1 gerezd fokhagyma",g:1});
+r("haupt","Sushitekercsek","Egy kis ünnep.",
+"nori lapok|karfiolrizs 1 ek citromlével és 1 ek "+HC+"|avokádó, uborka, sárgarépa, paprika csíkokra vágva",
+"A norit tedd a gyékényre, és kend meg vékonyan rizzsel.|A zöldséget tedd a közepére.|Tekerd fel szorosan, és szeleteld fel.",
+{gm:"tamari a mártogatáshoz|friss gyömbér|wasabi",j:"k",h:1,d:"1 nap"});
+r("haupt","Mediterrán Buddha-tál","Minden jó egy tálban.",
+"karfiolrizs|nyers falafel|cukkinis humusz|tabbouleh|uborka|paradicsom|tahini citrommal",
+"A rizst tedd alapnak a tálba.|Körben rendezd el a többi összetevőt.|Csorgass rá tahinit.",
+{gm:"fekete olajbogyó",j:"k",d:"2 nap"});
+r("haupt","Nyers falafel","Kívül ropogós, belül szaftos.",
+"1 bögre napraforgómag, aktiválva|½ bögre dió|½ bögre petrezselyem|½ bögre koriander|1 marék medvehagyma vagy snidling|½ citrom leve",
+"Mindent dolgozz össze formázható masszává.|Formázz golyókat.|Aszald 6–8 órán át.",
+{gm:"1 tk római kömény|1 tk őrölt koriander|2 gerezd fokhagyma|só",g:1,j:"k",h:1,d:"5 nap"});
+r("haupt","Pad thai","Diós, friss és egzotikus.",
+"2 cukkiniből készült tészta|1 sárgarépa|1 kaliforniai paprika|½ bögre lila káposzta|Szósz: 3 ek mandulakrém, 1 ek limelé, 1 datolya, 2–3 ek víz|koriander és aprított mandula",
+"A szószt turmixold krémesre.|Forgasd össze a zöldséget és a tésztát.|Öntsd rá a szószt, és szórd meg a feltéttel.",
+{gm:"2 ek tamari|1 tk friss gyömbér|1 gerezd fokhagyma|chili",g:1,j:"k",d:"1 nap"});
+r("haupt","Nyers burgerpogácsák","Nagy salátalevélben burgerként.",
+"1 bögre napraforgómag, aktiválva|½ bögre dió|1 sárgarépa, lereszelve|½ vöröshagyma|friss petrezselyem",
+"A magokat és a diót aprítsd durvára.|Keverd össze a zöldséggel és a zöldfűszerrel, és formázz pogácsákat.|Oldalanként 4–6 órán át aszald.",
+{gm:"1 ek tamari|1 tk pirospaprika|½ tk római kömény|só",j:"k",h:1,d:"4 nap"});
+r("haupt","Gombás-diós bolognai","Kiadós és zamatos.",
+"2 bögre gomba|1 bögre dió|1 bögre napon szárított paradicsom (sózatlan), beáztatva|2 paradicsom|1 sárgarépa|1 szár zeller|friss bazsalikom",
+"A paradicsomot turmixold össze.|A gombát, a diót, a répát és a zellert aprítsd durvára.|Keverj össze mindent, és 30 percig hagyd összeérni.|Cukkinitésztával tálald.",
+{gm:"2 gerezd fokhagyma|oregánó|só",j:"k",d:"3 nap"});
+r("haupt","Tavaszi tekercs salátalevélben","Friss, ropogós, zöldfűszer-illatú.",
+"nagy salátalevelek|sárgarépa, uborka, avokádó, mangó csíkokra vágva|menta|koriander|Mártogatós: 2 ek mandulakrém, 1 ek limelé, 2 ek víz",
+"A zöldséget és a zöldfűszert tedd a levélre.|Hajtsd be az oldalait, és tekerd fel szorosan.|A mártogatóssal tálald.",
+{gm:"tamari és friss gyömbér a mártogatósba",j:"k",h:1,d:"1 nap"});
+
+/* ===== Levesek ===== */
+r("suppe","Gazpacho","A spanyol nyári klasszikus.",
+"4 érett paradicsom|1 uborka|1 piros kaliforniai paprika|1 kis lilahagyma|½ citrom leve|2 ek "+HC+"|bazsalikom",
+"A zöldséget vágd durvára, és ne túl simára turmixold.|Turmixold bele a citromot és a kendermagkrémet, majd 2 órán át hűtsd.|Bazsalikommal tálald.",
+{gm:"2 gerezd fokhagyma|só és bors",tip:"Termoszban a szünetben ihatós levessé válik.",j:"k",d:"2 nap"});
+r("suppe","Répás-avokádós krémleves","Bársonyos és aranyszínű.",
+"4 nagy sárgarépa|1 avokádó|2 bögre víz|½ narancs leve|snidling|tökmag",
+"A snidling és a tökmag kivételével mindent turmixolj krémesre.|Hidegen vagy langyosan (42 °C alatt) tálald.|Snidlinggel és tökmaggal díszítsd.",
+{gm:"2 tk friss gyömbér|1 tk kurkuma|só",j:"k",d:"1 nap"});
+r("suppe","Thai kókuszleves","Enyhén felmelegítve még zamatosabb.",
+"1 bögre kókusztej fiatal kókuszhúsból|1 bögre víz|1 sárgarépa|1 cukkini|½ bögre gomba|1 lime leve|koriander",
+"A kókusztejet turmixold össze a vízzel és a limelével.|A zöldséget szeleteld vékonyra, és tedd bele.|Korianderrel díszítsd.",
+{gm:"2 ek tamari|1 tk friss gyömbér|1 tk nyers currypaszta|chili",g:1});
+
+/* ===== Saláták ===== */
+r("salat","Tabbouleh","Zöldfűszeresen friss és citromos.",
+"1 bögre karfiolrizs|1 bögre petrezselyem|½ bögre menta|2 paradicsom|1 uborka|3 újhagyma|1 citrom leve|2 ek "+HC,
+"A zöldfűszert és a zöldséget vágd apróra.|A citromot keverd el a kendermagkrémmel, és keverj össze mindent.|30 percig hagyd összeérni.",
+{gm:"só|bors",j:"k",d:"3 nap"});
+r("salat","Cézársaláta","Krémes, ropogós, friss.",
+"1 római saláta|Öntet: ½ bögre "+HC+", 2 ek citromlé, 3 ek víz, 2 ek snidling|Mandulamorzsa: turmixban durvára őrölt mandula",
+"Az öntetet keverd simára.|Forgasd össze vele a salátát.|Szórd meg mandulamorzsával.",
+{gm:"1 gerezd fokhagyma az öntetbe|só és bors|egy csipet só a mandulamorzsába"});
+r("salat","Thai saláta mangóval","Ropogós káposzta trópusi édességgel.",
+"4 bögre fehér és lila káposzta|1 mangó|1 kaliforniai paprika|½ bögre koriander|¼ bögre menta|Öntet: 2 ek mandulakrém, 2 ek limelé, 1 datolya, 2 ek víz|aprított mandula",
+"A káposztát szeleteld vékonyra, és keverd össze a mangóval, a paprikával és a zöldfűszerrel.|Az öntetet turmixold össze, és forgasd bele.|Szórd meg mandulával.",
+{gm:"1 ek tamari|1 tk friss gyömbér|chili",tip:"A káposztasaláták a dobozban idővel csak finomabbak lesznek.",j:"k",d:"3 nap"});
+r("salat","Spenótos-epres saláta","Nyárian édes és diós.",
+"4 bögre bébispenót|1 bögre eper|½ bögre dió|¼ lilahagyma|Öntet: 4 szem eper, 2 ek "+HC+", 1 ek citromlé",
+"A salátát, az epret, a diót és a hagymát tedd egy tálba.|Az öntet hozzávalóit turmixold össze, és közvetlenül tálalás előtt forgasd bele.",
+{gm:"frissen őrölt bors"});
+r("salat","Kapros uborkasaláta","Krémes és frissítő.",
+"2 uborka|½ lilahagyma|3 ek kapor|3 ek kenderes tejföl|1 ek citromlé",
+"Az uborkát és a hagymát szeleteld vékonyra.|A tejfölt keverd el a citrommal és a kaporral, és forgasd bele.",
+{gm:"só és bors"});
+r("salat","Avokádós-paradicsomos saláta","Egyszerű és tökéletes.",
+"2 avokádó|4 paradicsom|½ lilahagyma|koriander vagy bazsalikom|1 ek limelé",
+"Az avokádót és a paradicsomot kockázd fel, és keverd össze.|Forgasd bele a hagymát és a zöldfűszert.|Csepegtesd meg limelével.",
+{gm:"só és bors"});
+r("salat","Coleslaw káposztasaláta","Krémesen ropogós, ideális előre elkészíteni.",
+"3 bögre fehér káposzta|1 sárgarépa|2 újhagyma|Öntet: ½ bögre "+HC+", 2 ek citromlé, 1 datolya, 2 ek víz",
+"A zöldséget szeleteld vékonyra.|Az öntetet turmixold krémesre, és keverd bele.|30 percig hagyd összeérni.",
+{gm:"só|bors|kömény",j:"k",d:"4 nap"});
+
+/* ===== Nassolnivalók, kekszek és szeletek ===== */
+r("snack","Csokis-datolyás keksz","Kívül ropogós, belül puha — mint az igazi cookie.",
+"1 bögre aktivált mandula|1 bögre medjool datolya|3 ek kakaópor|tetszés szerint: kakaóbabtöret",
+"A mandulát őröld finomra, és dolgozd hozzá a datolyát.|Keverd bele a kakaót.|Formázz kekszeket, és aszald 8–10 órán át.",
+{gm:"egy csipet só",j:"o",h:1,d:"2 hét"});
+r("snack","Kókuszcsók","Gyengéd és illatos.",
+"2 bögre kókuszreszelék|½ bögre datolyakrém|2 ek mandulakrém",
+"Keverj össze mindent, és formázz kis kupacokat.|Aszald 10–12 órán át.",
+{gm:"1 tk vanília|egy csipet só",j:"o",h:1,d:"2 hét"});
+r("snack","Hajdinás-mazsolás keksz","Mint a zabpelyhes keksz, csak élő.",
+"1 bögre csíráztatott hajdina|½ bögre mazsola|½ bögre dió|3 ek datolyakrém",
+"A hajdinát aprítsd durvára, és keverj össze mindent.|Formázz lapos kekszeket, és aszald 8–10 órán át.",
+{gm:"1 tk fahéj|½ tk vanília",j:"o",h:1,d:"2 hét"});
+r("snack","Mandulakrémes keksz","Villamintával, mint régen.",
+"1 bögre mandulakrém|½ bögre datolyakrém|½ bögre csíráztatott hajdina, őrölve",
+"A mandulakrémet keverd krémesre a datolyakrémmel.|Keverd bele a hajdinalisztet.|Formázz kekszeket, nyomd meg villával, és aszald 8–10 órán át.",
+{gm:"1 tk vanília|egy csipet só",j:"o",h:1,d:"2 hét"});
+r("snack","Citromos-mákos keksz","Friss és finom.",
+"1 bögre mandula, őrölve|3 ek kék mák|3 ek datolyakrém|1 bio citrom reszelt héja|1 ek citromlé|1 ek mandulakrém",
+"Gyúrj össze mindent.|Formázz kekszeket, és aszald 8–10 órán át.",
+{j:"o",h:1,d:"2 hét"});
+r("snack","Banános-diós keksz","Csak néhány hozzávaló — szuper egyszerű.",
+"2 érett banán|1 bögre dió|½ bögre kókuszreszelék|tetszés szerint: mazsola",
+"A banánt nyomd össze villával, és keverj össze mindent.|Formázz kis kupacokat, és aszald 10–12 órán át.",
+{gm:"½ tk fahéj",j:"o",h:1,d:"1 hét"});
+r("snack","Nyers brownie","Aszalás nélkül — azonnal fogyasztható.",
+"1 bögre dió|1 bögre medjool datolya|4 ek kakaópor|tetszés szerint: kakaóbabtöret",
+"A diót aprítsd finomra, és dolgozd hozzá a datolyát.|Keverd bele a kakaót.|2 cm vastagon nyomkodd formába, 1 órán át hűtsd, és vágd kockákra.",
+{gm:"egy csipet tengeri só|vanília",tip:"Egy brownie a tízórais dobozban a legszebb ígéret a délutáni szünetre.",j:"o",h:1,d:"1 hét"});
+r("snack","Hajdinás energiaszelet","Tökéletes útra.",
+"1 bögre csíráztatott, aszalt hajdina|½ bögre datolya|½ bögre mandula|2 ek kakaópor|1 ek mandulakrém",
+"A mandulát és a hajdinát aprítsd durvára.|A datolyát, a kakaót és a mandulakrémet dolgozd krémesre.|Mindent dolgozz össze, préseld szelet formájúra, és hűtsd le.",
+{gm:"egy csipet só",j:"o",h:1,d:"2 hét"});
+r("snack","Fahéjas csiga","Egy csipetnyi pékség.",
+"Tészta: 1 bögre csíráztatott hajdina, ½ bögre datolya, 1 ek mandulakrém|Töltelék: 3 ek mandulakrém, 2 ek datolyakrém, mazsola",
+"A tésztát dolgozd össze, és nyújtsd ki két sütőpapír között.|Kend rá a tölteléket, tekerd fel, és vágd szeletekre.|Aszald 4–6 órán át.",
+{gm:"1–2 tk fahéj a töltelékbe|vanília a tésztába",g:1,j:"o",h:1,d:"1 hét"});
+r("snack","Mandulás-datolyás szelet","Tiszta és őszinte.",
+"1 bögre aktivált mandula|1 bögre medjool datolya|½ bögre kókuszreszelék",
+"A mandulát aprítsd durvára, a datolyát pürésítsd.|Gyúrj össze mindent, nyomkodd formába, hűtsd le, és szeleteld fel.",
+{gm:"1 tk vanília|egy csipet só",j:"o",h:1,d:"2 hét"});
+r("snack","Kenderes-kakaós golyók","Kicsi, erős, finom.",
+"½ bögre datolya|½ bögre mandula|3 ek hántolt kendermag|2 ek chiamag|2 ek kakaópor",
+"Mindent dolgozz össze aprítógépben.|Formázz golyókat, és forgasd meg kókuszban, kakaóban vagy kendermagban.",
+{gm:"vanília|egy csipet só",j:"o",h:1,d:"2 hét"});
+r("snack","Almás-mazsolás keksz","Őszies és gyümölcsös.",
+"1 bögre aszalt almakarika, beáztatva|1 bögre aktivált mandula|½ bögre mazsola|1 ek mandulakrém",
+"A mandulát őröld meg, az almát és a mazsolát aprítsd fel.|Gyúrj össze mindent, formázz kekszeket, és aszald 8–10 órán át.",
+{gm:"1 tk fahéj|¼ tk szerecsendió",j:"o",h:1,d:"2 hét"});
+r("snack","Mogyorós-csokis golyók","Mint a praliné — csak nyersen.",
+"1 bögre mogyoró, aktiválva|½ bögre datolya|3 ek kakaópor|1 ek mogyorókrém|kakaó a forgatáshoz",
+"A mogyorót aprítsd finomra.|Dolgozd hozzá a többi hozzávalót.|Formázz golyókat, és forgasd meg kakaóban.",
+{gm:"egy csipet só",j:"o",h:1,d:"2 hét"});
+r("snack","Gyömbéres keksz","Ünnepi és fűszeres.",
+"1 bögre mandula, őrölve|½ bögre datolya|½ bio narancs reszelt héja",
+"Dolgozz össze mindent.|Formázz kekszeket, és aszald 8–10 órán át.",
+{gm:"2 tk friss gyömbér|1 tk fahéj|½ tk szerecsendió|¼ tk szegfűszeg",g:1,j:"o",h:1,d:"2 hét"});
+r("snack","Kókuszos-datolyás bonbon","Apró boldog pillanatok.",
+"1 bögre kókuszreszelék|½ bögre datolya|1 ek mandulakrém|kakaópor a meghintéshez",
+"A datolyát pürésítsd, és gyúrd össze a kókusszal és a mandulakrémmel.|Formázz darabokat, hintsd meg kakaóval, és hűtsd le.",
+{gm:"1 tk vanília|egy csipet só",j:"o",h:1,d:"2 hét"});
+
+/* ===== Torták és desszertek ===== */
+r("torte","Csokoládés avokádóhab","Olyan krémes, hogy senki sem érzi az avokádót.",
+"2 érett avokádó|4 ek kakaópor|4 medjool datolya|bogyós gyümölcs",
+"A datolyát egy kevés vízzel pürésítsd.|Mindent turmixolj krémesre, és 1 órán át hűtsd.|Pohárban, bogyós gyümölccsel tálald.",
+{gm:"1 tk vanília|egy csipet só",tip:"Csavaros üvegben csodás munkahelyi desszert is.",j:"k",d:"2 nap"});
+r("torte","Banánfagyi (nice cream)","A világ legegyszerűbb fagylaltja.",
+"4 fagyasztott banán|tetszés szerint: 2 ek kakaó, 1 bögre fagyasztott bogyós gyümölcs vagy 2 ek mandulakrém",
+"A banánt turmixold krémesre.|Tetszés szerint variáld, és azonnal fogyaszd.",
+{gm:"vanília|egy csipet fahéj"});
+r("torte","Tortaalap (alaprecept)","Minden torta alapja.",
+"1 bögre dió vagy mandula|1 bögre medjool datolya|2 ek kakaópor (tetszés szerint)",
+"A diót aprítsd finomra.|Dolgozd hozzá a datolyát, amíg a massza össze nem áll.|Nyomkodd egy 20–22 cm-es kapcsos tortaformába, és hűtsd le.",
+{gm:"egy csipet só"});
+r("torte","Bogyós-makadámiás torta","Mint a sajttorta — teljesen nyersen.",
+"tortaalap kakaó nélkül|2 bögre makadámdió, beáztatva|½ bögre kókusztej fiatal kókuszhúsból|¼ bögre datolyakrém|2 bögre vegyes bogyós gyümölcs|½ citrom leve|friss bogyós gyümölcs",
+"A makadámdiót, a kókusztejet, a datolyakrémet és a citromot turmixold krémesre, majd turmixold bele a bogyós gyümölcsöt.|Öntsd az alapra, és legalább 4 órára tedd a fagyasztóba.|Tálalás előtt 30 perccel vedd ki, és díszítsd.",
+{gm:"1 tk vanília"});
+r("torte","Csokoládétorta","Mély, sötét, csábító.",
+"kakaós tortaalap|2 bögre makadámdió, beáztatva|½ bögre kókusztej fiatal kókuszhúsból|½ bögre datolyakrém|4 ek kakaó|kakaóbabtöret és málna",
+"A tölteléket turmixold krémesre.|Öntsd az alapra, és 4 órára tedd a fagyasztóba.|Díszítsd kakaóbabtörettel és málnával.",
+{gm:"1 tk vanília|egy csipet só"});
+r("torte","Mangós-kókuszos torta","Trópusi és frissítő.",
+"Alap: 1 bögre makadámdió, 1 bögre kókuszreszelék, ½ bögre datolya|2 mangó|1 bögre fiatal kókusz húsa|2 ek datolyakrém|½ lime leve",
+"Az alapot nyomkodd a formába.|A tölteléket turmixold krémesre, és öntsd rá.|4 órára tedd a fagyasztóba, és díszítsd mangóval.",
+{gm:"vanília"});
+r("torte","Tiramisu","Olasz álom, élő változatban.",
+"mandulás-datolyás szelet darabokban|Áztatólé: 4 datolya és 1 ek kakaó 1 bögre vízzel turmixolva|Krém: 2 bögre makadámdió, beáztatva, ½ bögre kókusztej fiatal kókuszhúsból, 3 ek datolyakrém|kakaópor",
+"A szeletdarabokat röviden mártsd az áztatólébe.|A krémet turmixold krémesre.|Rétegezd, és 4 órán át hűtsd.|Bőségesen szórd meg kakaóval.",
+{gm:"2 tk vanília a krémbe"});
+r("torte","Banános-karamellás torta","Karamellásan édes, olvadó banánnal.",
+"tortaalap|Karamell: 1 bögre medjool datolya, 3 ek mandulakrém, 3 ek víz|3 banán|kakaópor",
+"A karamellt turmixold krémesre, és kend az alapra.|Tedd rá a banánkarikákat, és szórd meg kakaóval.|2 órán át hűtsd.",
+{gm:"1 tk vanília|egy csipet só a karamellbe"});
+r("torte","Nyers almás pite","Ropogós morzsával.",
+"Alap: 1 bögre mandula, 1 bögre datolya|4 alma|2 ek citromlé|2 ek datolyakrém|Morzsa: ½ bögre mandula, 2 datolya, 1 ek mandulakrém",
+"Az alapot nyomkodd a formába.|Az almát szeleteld vékonyra, és pácold a citrommal és a datolyakrémmel.|Legyezőszerűen rakd az alapra, és szórd meg a morzsával.|2 órán át hagyd összeérni.",
+{gm:"1 tk fahéj|½ tk szerecsendió|¼ tk gyömbér"});
+r("torte","Chiapuding","Éjszaka megduzzad, reggel megkoronázod.",
+"½ bögre chiamag|2 bögre mandula- vagy kendertej|2 ek datolyakrém|gyümölcs, dió, kókusz",
+"Keverj össze mindent, és többször keverd meg.|Egy éjszakán át hagyd duzzadni.|Feltétekkel tálald.",
+{gm:"1 tk vanília",j:"k",d:"3 nap"});
+r("torte","Kókuszkrém bogyós gyümölccsel","Gyengéd és selymes.",
+"1 bögre fiatal kókusz húsa|½ bögre makadámdió, beáztatva|3 ek datolyakrém|bogyós gyümölcs",
+"A kókuszhúst, a makadámdiót és a datolyakrémet turmixold nagyon krémesre.|Töltsd poharakba, és 2 órán át hűtsd.|Bogyós gyümölccsel tálald.",
+{gm:"1 tk vanília",j:"k",d:"2 nap"});
+r("torte","Málnás tortácskák","Kis rózsaszín műalkotások.",
+"Alap tortácskánként: ½ bögre mandula, ¼ bögre kókusz, 3 datolya|1 bögre makadámdió, beáztatva|½ bögre málna|2 ek datolyakrém",
+"Az alapokat nyomkodd a formákba.|A tölteléket turmixold össze, és oszd el.|2 órára tedd a fagyasztóba, és díszítsd málnával.",
+{j:"k",h:1,d:"3 nap"});
+r("torte","Citromtorta","Frissítően édes-savanyú.",
+"Alap: 1 bögre mandula, ½ bögre kókusz, ½ bögre datolya|1 bögre makadámdió, beáztatva|½ bögre citromlé|2 bio citrom reszelt héja|¼ bögre datolyakrém|½ bögre fiatal kókusz húsa",
+"Az alapot nyomkodd a piteformába.|A tölteléket turmixold krémesre, és öntsd rá.|4 órára tedd a fagyasztóba.",
+{gm:"¼ tk kurkuma a napsárga színért"});
+r("torte","Epertorta","Rózsaszín, gyümölcsös, ünnepi.",
+"tortaalap|2 bögre makadámdió, beáztatva|1 bögre eper|3 ek datolyakrém|½ bögre fiatal kókusz húsa|eperfelek",
+"A tölteléket turmixold krémesre, és öntsd az alapra.|4 órára tedd a fagyasztóba, majd díszítsd.",
+{gm:"1 tk vanília"});
+r("torte","Csokoládékockák","Csokoládés és olvadós — kakaóvaj nélkül.",
+"½ bögre mandulakrém|4 ek kakaópor|4 ek datolyakrém|tetszés szerint: dió, aszalt gyümölcs",
+"Keverj össze mindent simára.|Kb. 1 cm vastagon kend egy sütőpapírral bélelt formába, és szórd meg tetszés szerint.|Legalább 2 órára tedd a fagyasztóba, majd törd darabokra.",
+{gm:"vanília|tengeri sópehely a tetejére",tip:"Egyenesen a fagyasztóból a legropogósabb."});
+
+/* ===== Sajtok és fermentált ételek ===== */
+r("kaese","Fűszernövényes krémsajt","A kenhető krém az aszalt kenyérre.",
+"1 bögre "+HC+"|3 ek snidling, kapor és petrezselyem|egy kis citromlé",
+"A zöldfűszert vágd apróra.|Keverd el a kendermagkrémmel és a citrommal.",
+{gm:"1 gerezd fokhagyma vagy medvehagyma|egy csipet só|½ tk hagymapor",j:"k",d:"3 nap"});
+r("kaese","Mandulás krémsajt","Fehér, lágy és szeletelhető — csodás paradicsommal.",
+"1 bögre hámozott mandula, 8 órán át áztatva|¼ bögre víz|2 ek citromlé",
+"A mandulát a vízzel és a citrommal turmixold nagyon krémesre.|Töltsd tiszta üvegbe, és egy napig szobahőmérsékleten hagyd erjedni.|Nyomkodd egy kis formába, és 4 órán át hűtsd.",
+{gm:"1 tk só a feta jellegért|½ tk oregánó",j:"k",d:"4 nap"});
+r("kaese","Makadámiás sajtkorong","Belül krémes, kívül finom kéreggel.",
+"1 bögre makadámdió, beáztatva|3 ek víz|1 ek citromlé|friss zöldfűszer a forgatáshoz",
+"A makadámdiót a vízzel és a citrommal turmixold krémesre.|Tiszta üvegben 1–2 napig szobahőmérsékleten hagyd erjedni.|Formázz korongot, forgasd meg zöldfűszerben, és 42 °C-on 6 órán át szárítsd, amíg kéreg nem képződik.|Hűtőben érleld tovább.",
+{gm:"egy csipet só|frissen őrölt bors",j:"k",d:"1 hét"});
+r("kaese","Savanyú káposzta","Tele élő kultúrákkal — ha szeretnéd, só nélkül.",
+"1 fej fehér káposzta|1 bögre frissen préselt zellerlé",
+"A káposztát gyalulj vékonyra, és erőteljesen gyúrd, amíg levet nem ereszt.|Nyomkodd szorosan egy csatos üvegbe, és öntsd fel zellerlével, amíg mindent el nem lep.|Nehezítsd le, és 5–7 napig erjeszd, naponta röviden nyisd ki.|Hűtőben tárold.",
+{gm:"klasszikusan: 1 ek sót gyúrj bele zellerlé helyett|kömény|boróka",tip:"Krémes kenderszósszal laktató tízórai lesz belőle.",j:"k",d:"több hét"});
+r("kaese","Egyszerű kimchi","Savanykás és élénkítő.",
+"1 kínai kel|1 sárgarépa|1 csokor újhagyma|1 körte|1 bögre frissen préselt zellerlé",
+"A kelt vágd darabokra, és erőteljesen gyúrd meg.|A répát vágd csíkokra, az újhagymát karikákra, a körtét pürésítsd.|Keverj össze mindent, nyomkodd szorosan üvegbe, és öntsd fel zellerlével.|3–5 napig erjeszd, majd tedd hűtőbe.",
+{gm:"2 ek só a kel besózásához|3 gerezd fokhagyma|2 tk gyömbér|2 ek gochugaru (koreai chili)",g:1,j:"k",d:"több hét"});
+
+/* ===== Reggeli és smoothie ===== */
+r("morgen","Kendertej","Egy perc alatt kész, szűrés nélkül.",
+"3 ek hántolt kendermag|1 bögre víz|1 datolya",
+"Mindent turmixolj 30 másodpercig.|Azonnal fogyaszd, vagy tárold hűtőben.",
+{gm:"vanília",tip:"Mandulatejhez 1 bögre beáztatott mandulát turmixolj 3 bögre vízzel, és szűrd át egy kendőn.",j:"k",d:"2 nap"});
+r("morgen","Hajdinakása","Krémes, mégis harapható.",
+"1 bögre csíráztatott hajdina|1 banán|½ bögre kendertej|bogyós gyümölcs, dió, magvak",
+"Durvára turmixold, hogy maradjon textúrája.|Feltétekkel tálald.",
+{gm:"1 tk fahéj",j:"k",d:"1 nap"});
+r("morgen","Éjszakai chia","A reggeli, amely éjszaka magától elkészül.",
+"3 ek chiamag|1 bögre kender- vagy mandulatej|1 ek datolyakrém|feltétek",
+"Keverj össze mindent.|Egy éjszakán át hagyd duzzadni.|Reggel tedd rá a feltéteket.",
+{gm:"½ tk vanília",tip:"Egyenesen csavaros üvegben elkészítve átöntés nélkül mehet a táskába.",j:"k",d:"2 nap"});
+r("morgen","Zöld erőturmix","Zöld erő egy pohárban.",
+"2 marék spenót|1 fagyasztott banán|1 bögre kendertej|1 ek mandulakrém|1 datolya",
+"Mindent turmixolj krémesre.",
+{tip:"Termoszban délig friss marad.",j:"k",d:"1 nap"});
+r("morgen","Bogyós smoothie-tál","Színes, mint egy nyári reggel.",
+"1 bögre fagyasztott bogyós gyümölcs|1 fagyasztott banán|½ bögre kendertej|bogyós gyümölcs, granola, kókusz, chia",
+"Turmixold sűrűre.|Tedd egy tálba, és díszítsd.");
+r("morgen","Trópusi smoothie","Nyaralás egy pohárban.",
+"1 bögre fagyasztott mangó|½ bögre ananász|1 banán|1 bögre kókusztej fiatal kókuszhúsból",
+"Mindent turmixolj krémesre, és azonnal fogyaszd.",
+{gm:"1 tk kurkuma|egy darab friss gyömbér"});
+r("morgen","Nyers granola","Kihűlve még ropogósabb lesz.",
+"1 bögre csíráztatott hajdina|½ bögre kókuszreszelék|½ bögre mandula|¼ bögre tökmag|¼ bögre napraforgómag|3 ek datolyakrém|1 ek mandulakrém",
+"A száraz hozzávalókat keverd össze.|A datolyakrémet és a mandulakrémet keverd össze, és forgasd bele.|12–16 órán át aszald, közben többször forgasd meg.",
+{gm:"1 tk fahéj|½ tk vanília|egy csipet só",j:"o",h:1,d:"4 hét"});
+
+/* ---------- Baukasten ---------- */
+const B1=["Nyers fűszernövényes kenyér","Hagymás keksz","Lenmagos tortilla","Olaszos fűszernövényes keksz","Mángold- vagy káposztalevél","Nori lap","Zöldséghasábok","Cukkinitészta üvegben"];
+const B2=["Napraforgómag-krém","Cukkinis humusz","Fűszernövényes krémsajt","Guacamole","Kendermagkrém snidlinggel","Diós-gombás „darált hús”","Mandulás krémsajt paradicsommal","Savanyú káposzta kenderszósszal","Kimchi avokádóval"];
+const B3=["Nyers brownie","Aszalt banánrudacskák","Datolyás-kókuszos energiagolyók","Ropogós aszalt mandula","Ropogós almachips","Töltött datolya","Mangós gyümölcsbőr","Kelkáposzta-chips"];
+const fill=(id,a)=>document.getElementById(id).innerHTML=a.map(x=>"<li>"+x+"</li>").join("");
+fill("b1",B1);fill("b2",B2);fill("b3",B3);
+const pick=a=>a[Math.floor(Math.random()*a.length)];
+document.getElementById("comboBtn").onclick=()=>{
+  document.getElementById("combo").innerHTML="Holnap ezzel kényeztesd magad: <em>"+pick(B1)+"</em> + <em>"+pick(B2)+"</em> — az édes szünetre pedig: <em>"+pick(B3)+"</em>. ✦";
+};
+
+/* ---------- Rendern ---------- */
+let cat="all", sub="all", q="";
+const chips=document.getElementById("chips");
+chips.innerHTML='<button class="chip on" data-cat="all" type="button">Összes</button>'+
+  CATS.map(([k,v])=>'<button class="chip'+(k==="job"?" star":"")+'" data-cat="'+k+'" type="button">'+v+'</button>').join("");
+chips.onclick=e=>{const b=e.target.closest("[data-cat]");if(b)setCat(b.dataset.cat);};
+document.getElementById("subchips").onclick=e=>{const b=e.target.closest("[data-sub]");if(!b)return;sub=b.dataset.sub;
+  document.querySelectorAll("[data-sub]").forEach(x=>x.classList.toggle("on",x===b));render();};
+document.getElementById("search").oninput=e=>{q=e.target.value.toLowerCase().trim();render();};
+
+function setCat(c){cat=c;sub="all";
+  document.querySelectorAll("[data-cat]").forEach(x=>x.classList.toggle("on",x.dataset.cat===c));
+  document.querySelectorAll("[data-sub]").forEach(x=>x.classList.toggle("on",x.dataset.sub==="all"));
+  document.getElementById("subchips").classList.toggle("show",c==="job");render();}
+
+function isJob(x){return x.c==="job"||!!x.j;}
+function render(){
+  let list=D.filter(x=>{
+    if(cat==="job"){ if(!isJob(x))return false;
+      if(sub==="o"&&x.j!=="o")return false; if(sub==="k"&&x.j!=="k")return false; if(sub==="h"&&!x.h)return false; }
+    else if(cat!=="all"&&x.c!==cat) return false;
+    if(q){const hay=(x.t+" "+x.desc+" "+x.z.join(" ")+" "+x.gm.join(" ")).toLowerCase(); if(!hay.includes(q))return false;}
+    return true;});
+  if(cat==="job") list.sort((a,b)=>(b.c==="job")-(a.c==="job"));
+  document.getElementById("grid").innerHTML=list.map(card).join("");
+  document.getElementById("empty").style.display=list.length?"none":"block";
+  const label=cat==="all"?"recept":(CATNAME[cat]||"").replace("★ ","");
+  document.getElementById("count").textContent=list.length+" "+"recept"+(cat!=="all"?" · "+label:"");
+}
+function gour(x){
+  if(!x.gm.length) return "";
+  return '<div class="gourmet"><h4>✦ Ínyenc változat</h4>'+
+    (x.g?'<p class="g-note">Ennél az ételnél az ínyenc változatot ajánlom — csak ezekkel az ízekkel bontakozik ki igazi jellege.</p>':'<p class="g-note">Magában is finom. Az ínyenc konyhához tetszés szerint add hozzá:</p>')+
+    '<ul class="gold-list">'+x.gm.map(i=>"<li>"+i+"</li>").join("")+'</ul></div>';
+}
+function card(x){
+  const tags=[];
+  if(isJob(x)) tags.push('<span class="tag dark">✦ Munkahelyre</span>');
+  if(x.j==="o") tags.push('<span class="tag">Hűtés nélkül</span>');
+  if(x.j==="k") tags.push('<span class="tag">Hűtőtáska</span>');
+  if(x.h) tags.push('<span class="tag">Egykezes falat</span>');
+  if(x.d) tags.push('<span class="tag">Eláll: '+x.d+'</span>');
+  if(x.g) tags.push('<span class="tag gold">✦ Ínyenc változat ajánlott</span>');
+  return '<article class="recipe'+(x.c==="job"?" job":"")+'"><div class="recipe-top"></div><div class="recipe-body">'+
+    '<div class="r-cat">'+(CATNAME[x.c]||"").replace("★ ","")+'</div><h3>'+x.t+'</h3>'+
+    '<p class="r-desc">'+x.desc+'</p><div class="tags">'+tags.join("")+'</div>'+
+    '<details><summary>✦ Recept megnyitása</summary><div class="r-inner"><h4>Hozzávalók</h4><ul class="gold-list">'+
+    x.z.map(i=>"<li>"+i+"</li>").join("")+'</ul><h4>Elkészítés</h4><ol class="steps">'+
+    x.s.map(i=>"<li>"+i+"</li>").join("")+'</ol>'+gour(x)+(x.tip?'<div class="tip"><b>Amy tippje:</b> '+x.tip+'</div>':"")+
+    '</div></details></div></article>';
+}
+if(location.hash==="#job-rezepte") setCat("job"); else render();
+</script>
+</body>
+</html>
